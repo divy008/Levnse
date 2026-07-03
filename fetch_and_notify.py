@@ -33,6 +33,21 @@ def save_seen(seen):
         json.dump(list(seen)[-3000:], f)
 
 
+def escape_html(text):
+    return (
+        text.replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+    )
+
+
+def truncate(text, max_chars=220):
+    text = " ".join(text.split())  # collapse newlines/extra whitespace
+    if len(text) <= max_chars:
+        return text
+    return text[:max_chars].rsplit(" ", 1)[0] + " ..."
+
+
 def send_telegram(text):
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     r = requests.post(
@@ -40,6 +55,7 @@ def send_telegram(text):
         data={
             "chat_id": TELEGRAM_CHAT_ID,
             "text": text,
+            "parse_mode": "HTML",
             "disable_web_page_preview": False,
         },
         timeout=15,
@@ -73,7 +89,16 @@ def main():
         title = getattr(entry, "title", "New NSE Announcement")
         link = getattr(entry, "link", "")
         pub = getattr(entry, "published", "")
-        msg = f"\U0001F4E2 {title}\n\U0001F553 {pub}\n\U0001F517 {link}"
+        description = getattr(entry, "summary", "")
+
+        title_html = escape_html(title)
+        desc_html = escape_html(truncate(description, max_chars=220))
+
+        msg = (
+            f"\U0001F4E2 <a href=\"{link}\">{title_html}</a>\n"
+            f"{desc_html}\n"
+            f"\U0001F553 {pub}"
+        )
         send_telegram(msg)
 
     print(f"Sent {len(new_items)} new announcement(s).")
@@ -82,4 +107,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-  
