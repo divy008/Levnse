@@ -19,7 +19,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install feedparser requests
+        run: pip install feedparser requests openpyxl
 
       - name: Run watcher
         env:
@@ -27,10 +27,10 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python fetch_and_notify.py
 
-      - name: Persist seen-items state
+      - name: Persist seen-items state and logs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add seen.json
-          git diff --staged --quiet || git commit -m "update seen state [skip ci]"
+          git add seen.json log.json announcements.xlsx
+          git diff --staged --quiet || git commit -m "update seen state and logs [skip ci]"
           git push
