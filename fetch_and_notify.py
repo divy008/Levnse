@@ -5,6 +5,8 @@ import requests
 
 FEED_URL = "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml"
 STATE_FILE = os.path.join(os.path.dirname(__file__), "seen.json")
+LOG_FILE = os.path.join(os.path.dirname(__file__), "log.json")
+EXCEL_FILE = os.path.join(os.path.dirname(__file__), "announcements.xlsx")
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
@@ -48,6 +50,59 @@ def truncate(text, max_chars=220):
     return text[:max_chars].rsplit(" ", 1)[0] + " ..."
 
 
+def split_subject(description):
+    """NSE descriptions often end with '|SUBJECT: xxx'. Split it out."""
+    description = " ".join(description.split())
+    if "|SUBJECT:" in description:
+        desc_part, subject_part = description.split("|SUBJECT:", 1)
+        return desc_part.strip(), subject_part.strip()
+    return description.strip(), ""
+
+
+def split_datetime(pub):
+    """pubDate looks like '03-Jul-2026 12:09:34' -> ('03-Jul-2026', '12:09:34')"""
+    parts = pub.strip().split(" ", 1)
+    if len(parts) == 2:
+        return parts[0], parts[1]
+    return pub.strip(), ""
+
+
+def load_log():
+    if os.path.exists(LOG_FILE):
+        with open(LOG_FILE) as f:
+            return json.load(f)
+    return []
+
+
+def save_log(log):
+    with open(LOG_FILE, "w") as f:
+        json.dump(log, f, indent=2, ensure_ascii=False)
+
+
+def write_excel(log):
+    from openpyxl import Workbook
+
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Announcements"
+    headers = ["Company", "Subject", "Description", "Date", "Time", "Link"]
+    ws.append(headers)
+    for row in log:
+        ws.append([
+            row.get("company", ""),
+            row.get("subject", ""),
+            row.get("description", ""),
+            row.get("date", ""),
+            row.get("time", ""),
+            row.get("link", ""),
+        ])
+    # basic column widths so it's readable
+    widths = [30, 30, 60, 14, 12, 45]
+    for i, w in enumerate(widths, start=1):
+        ws.column_dimensions[ws.cell(row=1, column=i).column_letter].width = w
+    wb.save(EXCEL_FILE)
+
+
 def send_telegram(text):
     url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
     r = requests.post(
@@ -85,11 +140,26 @@ def main():
         save_seen(seen)
         return
 
+    log = load_log()
+
     for entry in reversed(new_items):  # oldest first
         title = getattr(entry, "title", "New NSE Announcement")
         link = getattr(entry, "link", "")
         pub = getattr(entry, "published", "")
-        description = getattr(entry, "summary", "")
+        raw_description = getattr(entry, "summary", "")
+
+        description, subject = split_subject(raw_description)
+        date_str, time_str = split_datetime(pub)
+
+        # append structured record for JSON/Excel log
+        log.append({
+            "company": title.strip(),
+            "subject": subject,
+            "description": description,
+            "date": date_str,
+            "time": time_str,
+            "link": link,
+        })
 
         title_html = escape_html(title)
         desc_html = escape_html(truncate(description, max_chars=220))
@@ -100,6 +170,9 @@ def main():
             f"\U0001F553 {pub}"
         )
         send_telegram(msg)
+
+    save_log(log)
+    write_excel(log)
 
     print(f"Sent {len(new_items)} new announcement(s).")
     save_seen(seen)
