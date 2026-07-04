@@ -1,5 +1,6 @@
 import os
 import json
+import time
 import feedparser
 import requests
 
@@ -119,10 +120,28 @@ def send_telegram(text):
         print("Telegram send failed:", r.text)
 
 
+def fetch_feed(max_attempts=3):
+    last_error = None
+    for attempt in range(1, max_attempts + 1):
+        try:
+            resp = requests.get(FEED_URL, headers=HEADERS, timeout=30)
+            resp.raise_for_status()
+            return feedparser.parse(resp.content)
+        except requests.exceptions.RequestException as e:
+            last_error = e
+            print(f"Attempt {attempt}/{max_attempts} failed: {e}")
+            if attempt < max_attempts:
+                time.sleep(5 * attempt)  # 5s, 10s backoff
+    print(f"All {max_attempts} attempts failed. Last error: {last_error}")
+    return None
+
+
 def main():
-    resp = requests.get(FEED_URL, headers=HEADERS, timeout=20)
-    resp.raise_for_status()
-    feed = feedparser.parse(resp.content)
+    feed = fetch_feed()
+    if feed is None:
+        # Transient NSE/network issue - don't crash the workflow, just skip this run
+        print("Skipping this run due to fetch failure. Will retry next scheduled run.")
+        return
 
     seen = load_seen()
     is_first_run = len(seen) == 0
@@ -180,3 +199,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
