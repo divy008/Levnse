@@ -1,39 +1,56 @@
 name: NSE Announcements Watcher
 
-concurrency:
-  group: nse-watcher
-  cancel-in-progress: false
-
 on:
-  workflow_dispatch: {}       # triggered externally by cron-job.org every 5 min
-
-permissions:
-  contents: write
+  # બહારથી ક્રોન જોબ દ્વારા ટ્રિગર કરવા માટે આ બંને ઈવેન્ટ્સ જરૂરી છે
+  repository_dispatch:
+    types: [cron-trigger]
+  workflow_dispatch: 
 
 jobs:
   check:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+    # ગીટહબ બોટને ફાઈલો સેવ (Write Permission) કરવાની પરમિશન આપવા માટે
+    permissions:
+      contents: write
 
-      - uses: actions/setup-python@v5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          python-version: "3.11"
+          # બહારની જોબ દ્વારા પુશ કરવા માટે ટોકન સેટ કરવું હિતાવહ છે
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
 
       - name: Install dependencies
-        run: pip install feedparser requests openpyxl
+        run: |
+          pip install feedparser requests openpyxl
 
       - name: Run watcher
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python fetch_and_notify.py
+        run: |
+          python fetch_and_notify.py
 
       - name: Persist seen-items state and logs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add seen.json log.json announcements.xlsx
+          
+          # બધી ફાઇલો સેફલી એડ થશે
+          git add seen.json
+          git add log.json || true
+          git add announcements.xlsx || true
+          
+          # જો ફેરફાર હોય તો જ કમિટ કરશે
           git diff --staged --quiet || git commit -m "update seen state and logs [skip ci]"
+          
+          # બહારથી ક્રોન રન થતું હોવાથી પુશ વહેલું સક્સેસ થાય તે માટે રેબેઝ
           git pull --rebase origin main
           git push
+          
