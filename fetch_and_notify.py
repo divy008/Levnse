@@ -102,7 +102,10 @@ def split_datetime(pub):
 def load_log():
     if os.path.exists(LOG_FILE):
         with open(LOG_FILE) as f:
-            return json.load(f)
+            try:
+                return json.load(f)
+            except json.JSONDecodeError:
+                return []
     return []
 
 
@@ -185,12 +188,22 @@ def main():
             new_items.append(entry)
             seen_list.append(guid)  # Keeps chronological sequence
 
+    log = load_log()
+    # લોગ ડુપ્લિકેટ ન થાય તે માટે ઓલરેડી સેવ થયેલી લિંક્સનું સેટ બનાવો
+    existing_links = {row.get("link", "") for row in log if row.get("link")}
+
+    # Force write files even on empty/first runs so Git always finds them
+    if not os.path.exists(LOG_FILE) or is_first_run:
+        save_log(log)
+    if not os.path.exists(EXCEL_FILE) or is_first_run:
+        write_excel(log)
+
     if is_first_run:
         print(f"First run: recorded {len(seen_list)} existing items as baseline, no alerts sent.")
         save_seen(seen_list)
         return
 
-    log = load_log()
+    telegram_sent_count = 0
 
     for entry in reversed(new_items):  # oldest first
         title = getattr(entry, "title", "New NSE Announcement")
@@ -202,6 +215,10 @@ def main():
         date_str, time_str = split_datetime(pub)
         emoji = sentiment_emoji(subject)
 
+        # જો લિંક ઓલરેડી લોગમાં સેવ હોય, તો તેને ફરીથી એડ ન કરો (ડુપ્લિકેટ પ્રોટેક્શન)
+        if link and link in existing_links:
+            continue
+
         # append structured record for JSON/Excel log
         log.append({
             "company": title.strip(),
@@ -212,6 +229,8 @@ def main():
             "link": link,
             "sentiment": emoji,
         })
+        if link:
+            existing_links.add(link)
 
         title_html = escape_html(title)
         desc_html = escape_html(truncate(description, max_chars=220))
@@ -225,11 +244,13 @@ def main():
             f"\U0001F553 {pub}"
         )
         send_telegram(msg)
+        telegram_sent_count += 1
 
-    save_log(log)
-    write_excel(log)
+    if telegram_sent_count > 0:
+        save_log(log)
+        write_excel(log)
 
-    print(f"Sent {len(new_items)} new announcement(s).")
+    print(f"Sent {telegram_sent_count} new announcement(s).")
     save_seen(seen_list)
 
 
