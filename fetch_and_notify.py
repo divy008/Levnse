@@ -44,6 +44,33 @@ def escape_html(text):
     )
 
 
+# Keyword-based sentiment classification for NSE announcement subjects.
+# Not exhaustive/perfect - tune these lists as you see how real subjects come in.
+BAD_KEYWORDS = [
+    "resignation", "cessation", "insolvency", "litigation", "dispute",
+    "default", "delay", "penalt", "fine", "action initiated", "action taken",
+    "orders passed", "takeover", "corporate insolvency", "winding up",
+    "reduction in capital", "downgrade",
+]
+
+GOOD_KEYWORDS = [
+    "dividend", "bonus", "buyback", "acquisition", "awarding of order",
+    "bagging", "receiving of order", "credit rating- new", "capacity addition",
+    "commencement of commercial production", "investor presentation",
+    "allotment of securities", "amalgamation", "merger", "upgrade",
+    "record date", "scheme of arrangement",
+]
+
+
+def sentiment_emoji(subject):
+    s = subject.lower()
+    if any(k in s for k in BAD_KEYWORDS):
+        return "\U0001F534"  # 🔴
+    if any(k in s for k in GOOD_KEYWORDS):
+        return "\U0001F7E2"  # 🟢
+    return "\U0001F7E1"  # 🟡
+
+
 def truncate(text, max_chars=220):
     text = " ".join(text.split())  # collapse newlines/extra whitespace
     if len(text) <= max_chars:
@@ -86,10 +113,11 @@ def write_excel(log):
     wb = Workbook()
     ws = wb.active
     ws.title = "Announcements"
-    headers = ["Company", "Subject", "Description", "Date", "Time", "Link"]
+    headers = ["Sentiment", "Company", "Subject", "Description", "Date", "Time", "Link"]
     ws.append(headers)
     for row in log:
         ws.append([
+            row.get("sentiment", ""),
             row.get("company", ""),
             row.get("subject", ""),
             row.get("description", ""),
@@ -98,7 +126,7 @@ def write_excel(log):
             row.get("link", ""),
         ])
     # basic column widths so it's readable
-    widths = [30, 30, 60, 14, 12, 45]
+    widths = [10, 30, 30, 60, 14, 12, 45]
     for i, w in enumerate(widths, start=1):
         ws.column_dimensions[ws.cell(row=1, column=i).column_letter].width = w
     wb.save(EXCEL_FILE)
@@ -169,6 +197,7 @@ def main():
 
         description, subject = split_subject(raw_description)
         date_str, time_str = split_datetime(pub)
+        emoji = sentiment_emoji(subject)
 
         # append structured record for JSON/Excel log
         log.append({
@@ -178,13 +207,16 @@ def main():
             "date": date_str,
             "time": time_str,
             "link": link,
+            "sentiment": emoji,
         })
 
         title_html = escape_html(title)
         desc_html = escape_html(truncate(description, max_chars=220))
+        subject_html = escape_html(subject)
 
         msg = (
-            f"\U0001F4E2 <a href=\"{link}\">{title_html}</a>\n"
+            f"{emoji} <a href=\"{link}\">{title_html}</a>\n"
+            f"\U0001F4C4 {subject_html}\n"
             f"{desc_html}\n"
             f"\U0001F553 {pub}"
         )
@@ -199,4 +231,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
