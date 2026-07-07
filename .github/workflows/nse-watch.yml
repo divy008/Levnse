@@ -5,12 +5,10 @@ concurrency:
   cancel-in-progress: false
 
 on:
-  schedule:
-    - cron: "*/10 * * * *"   # every 10 minutes (GitHub may delay slightly during peak load)
-  workflow_dispatch: {}       # lets you trigger it manually from the Actions tab
+  workflow_dispatch: {}       # triggered externally by cron-job.org every 5 min
 
 permissions:
-  contents: write            # needed so the workflow can commit the updated seen.json
+  contents: write
 
 jobs:
   check:
@@ -37,4 +35,5 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add seen.json log.json announcements.xlsx
           git diff --staged --quiet || git commit -m "update seen state and logs [skip ci]"
+          git pull --rebase origin main
           git push
