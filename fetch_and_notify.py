@@ -9,8 +9,11 @@ STATE_FILE = os.path.join(os.path.dirname(__file__), "seen.json")
 LOG_FILE = os.path.join(os.path.dirname(__file__), "log.json")
 EXCEL_FILE = os.path.join(os.path.dirname(__file__), "announcements.xlsx")
 
-TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-TELEGRAM_CHAT_ID = os.environ["TELEGRAM_CHAT_ID"]
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+
+if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
+    raise ValueError("Missing critical Telegram environment variables! Check TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID.")
 
 # NSE blocks requests without browser-like headers
 HEADERS = {
@@ -24,16 +27,18 @@ HEADERS = {
 
 
 def load_seen():
+    """Loads history as a list to maintain chronological order."""
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE) as f:
-            return set(json.load(f))
-    return set()
+            data = json.load(f)
+            return data if isinstance(data, list) else list(data)
+    return []
 
 
-def save_seen(seen):
-    # keep file bounded so it doesn't grow forever
+def save_seen(seen_list):
+    """Saves only the most recent 3000 items sequentially."""
     with open(STATE_FILE, "w") as f:
-        json.dump(list(seen)[-3000:], f)
+        json.dump(seen_list[-3000:], f)
 
 
 def escape_html(text):
@@ -45,7 +50,6 @@ def escape_html(text):
 
 
 # Keyword-based sentiment classification for NSE announcement subjects.
-# Not exhaustive/perfect - tune these lists as you see how real subjects come in.
 BAD_KEYWORDS = [
     "resignation", "cessation", "insolvency", "litigation", "dispute",
     "default", "delay", "penalt", "fine", "action initiated", "action taken",
@@ -167,24 +171,23 @@ def fetch_feed(max_attempts=3):
 def main():
     feed = fetch_feed()
     if feed is None:
-        # Transient NSE/network issue - don't crash the workflow, just skip this run
         print("Skipping this run due to fetch failure. Will retry next scheduled run.")
         return
 
-    seen = load_seen()
-    is_first_run = len(seen) == 0
+    seen_list = load_seen()
+    seen_set = set(seen_list)  # Using a set lookup here is highly efficient
+    is_first_run = len(seen_list) == 0
     new_items = []
 
     for entry in feed.entries:
         guid = entry.get("id", entry.link)
-        if guid not in seen:
+        if guid not in seen_set:
             new_items.append(entry)
-            seen.add(guid)
+            seen_list.append(guid)  # Keeps chronological sequence
 
     if is_first_run:
-        # don't spam on first ever run, just record baseline
-        print(f"First run: recorded {len(seen)} existing items as baseline, no alerts sent.")
-        save_seen(seen)
+        print(f"First run: recorded {len(seen_list)} existing items as baseline, no alerts sent.")
+        save_seen(seen_list)
         return
 
     log = load_log()
@@ -213,9 +216,10 @@ def main():
         title_html = escape_html(title)
         desc_html = escape_html(truncate(description, max_chars=220))
         subject_html = escape_html(subject)
+        link_html = escape_html(link)  # Escape the URL payload completely
 
         msg = (
-            f"{emoji} <a href=\"{link}\">{title_html}</a>\n"
+            f"{emoji} <a href=\"{link_html}\">{title_html}</a>\n"
             f"\U0001F4C4 {subject_html}\n"
             f"{desc_html}\n"
             f"\U0001F553 {pub}"
@@ -226,7 +230,7 @@ def main():
     write_excel(log)
 
     print(f"Sent {len(new_items)} new announcement(s).")
-    save_seen(seen)
+    save_seen(seen_list)
 
 
 if __name__ == "__main__":
