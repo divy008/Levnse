@@ -1,5 +1,9 @@
 name: NSE Announcements Watcher
 
+concurrency:
+  group: nse-watcher
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: "*/10 * * * *"   # every 10 minutes (GitHub may delay slightly during peak load)
