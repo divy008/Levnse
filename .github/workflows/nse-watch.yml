@@ -27,7 +27,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'         # skips re-downloading feedparser/requests/openpyxl every run â€” cuts runtime significantly
+
+      - name: Cache pip packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-nse-watcher-${{ hashFiles('.github/workflows/nse-watcher.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-nse-watcher-
 
       - name: Install dependencies
         run: |
