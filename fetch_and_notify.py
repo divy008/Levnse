@@ -189,7 +189,6 @@ def main():
             seen_list.append(guid)  # Keeps chronological sequence
 
     log = load_log()
-    # લોગ ડુપ્લિકેટ ન થાય તે માટે ઓલરેડી સેવ થયેલી લિંક્સનું સેટ બનાવો
     existing_links = {row.get("link", "") for row in log if row.get("link")}
 
     # Force write files even on empty/first runs so Git always finds them
@@ -215,11 +214,10 @@ def main():
         date_str, time_str = split_datetime(pub)
         emoji = sentiment_emoji(subject)
 
-        # જો લિંક ઓલરેડી લોગમાં સેવ હોય, તો તેને ફરીથી એડ ન કરો (ડુપ્લિકેટ પ્રોટેક્શન)
+        # Duplicate protection: skip if link already logged
         if link and link in existing_links:
             continue
 
-        # append structured record for JSON/Excel log
         log.append({
             "company": title.strip(),
             "subject": subject,
@@ -235,7 +233,7 @@ def main():
         title_html = escape_html(title)
         desc_html = escape_html(truncate(description, max_chars=220))
         subject_html = escape_html(subject)
-        link_html = escape_html(link)  # Escape the URL payload completely
+        link_html = escape_html(link)
 
         msg = (
             f"{emoji} <a href=\"{link_html}\">{title_html}</a>\n"
@@ -245,7 +243,7 @@ def main():
         )
         send_telegram(msg)
         telegram_sent_count += 1
-        time.sleep(1.5) 
+        time.sleep(1.5)
 
     if telegram_sent_count > 0:
         save_log(log)
