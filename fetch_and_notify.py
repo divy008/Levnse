@@ -245,6 +245,7 @@ def main():
         )
         send_telegram(msg)
         telegram_sent_count += 1
+        time.sleep(1.5) 
 
     if telegram_sent_count > 0:
         save_log(log)
