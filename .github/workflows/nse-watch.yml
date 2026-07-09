@@ -16,12 +16,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1 # ફાસ્ટ રન અને મર્જ હિસ્ટ્રી કન્ફ્લિક્ટ અટકાવવા માટે
 
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          # કેશિંગ ઓપ્શન હટાવી દીધો છે જેથી requirements.txt ની ભૂલ ન આવે
 
       - name: Install dependencies
         run: |
@@ -43,7 +43,12 @@ jobs:
           git add log.json || true
           git add announcements.xlsx || true
           
-          git diff --staged --quiet || git commit -m "update seen state and logs [skip ci]"
-          
-          git pull --rebase origin main
-          git push
+          # જો ફેરફાર હોય તો જ કમિટ કરો
+          if ! git diff --staged --quiet; then
+            git commit -m "update seen state and logs [skip ci]"
+            
+            # 🚀 મોટો ફેરફાર: કન્ફ્લિક્ટ અટકાવવા માટે સીધું જ ફોર્સ પુશ
+            git push origin main --force
+          else
+            echo "No changes to commit."
+          fi
