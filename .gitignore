@@ -1,0 +1,37 @@
+# Database
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Logs
+*.log
+run_log.txt
+bot.log
+
+# Excel files
+*.xlsx
+*.xlsm
+
+# Lock files
+.lock
+*.lock
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
