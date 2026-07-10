@@ -1,17 +1,13 @@
 # .github/workflows/nse-watch.yml
 name: NSE Watch - Daily Announcements
 
-# 🔴 CRITICAL: Add permissions
 permissions:
   contents: write
   actions: read
 
 on:
-  # Trigger from cronjobs.org
   repository_dispatch:
     types: [cron-trigger]
-  
-  # Manual trigger for testing
   workflow_dispatch:
 
 jobs:
@@ -29,7 +25,8 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.PAT_TOKEN }}
+        # 🔴 REMOVE this line or use GITHUB_TOKEN
+        # token: ${{ secrets.PAT_TOKEN }}
         persist-credentials: true
         fetch-depth: 0
     
@@ -51,7 +48,6 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         RUN_SOURCE: "cronjobs.org"
       run: |
-        # 🔴 IMPORTANT: Use your actual Python file name
         python fetch_and_notify.py
     
     - name: Upload Excel file as artifact
@@ -67,7 +63,8 @@ jobs:
     - name: Commit and push changes
       if: success()
       env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+        # 🔴 Use GITHUB_TOKEN instead of PAT_TOKEN
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
