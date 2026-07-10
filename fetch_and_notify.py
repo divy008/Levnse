@@ -3,7 +3,7 @@ from datetime import datetime, timedelta, timezone
 from dateutil import parser
 
 # ===== TIMEZONE =====
-IST = timezone(timedelta(hours=5, minutes=30))   # UTC+5:30
+IST = timezone(timedelta(hours=5, minutes=30))
 
 FEED_URL = "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml"
 DB_FILE = "announcements.db"
@@ -100,15 +100,37 @@ class DB:
         c.execute('SELECT COUNT(*) FROM announcements')
         return c.fetchone()[0]
 
-# ===== HELPERS =====
-def sentiment(s):
-    bad = ["resignation","cessation","insolvency","litigation","dispute","default","delay","penalt","fine","downgrade"]
-    good = ["dividend","bonus","buyback","acquisition","awarding","bagging","merger","upgrade","record date"]
-    sl = s.lower()
-    if any(k in sl for k in bad): return "🔴"
-    if any(k in sl for k in good): return "🟢"
+# ===== SENTIMENT (now checks title, subject, description) =====
+def sentiment_emoji(title, subject, description):
+    text = f"{title} {subject} {description}".lower()
+    
+    BAD = [
+        "resignation", "cessation", "insolvency", "litigation", "dispute",
+        "default", "delay", "penalt", "fine", "action initiated",
+        "action taken", "orders passed", "takeover", "corporate insolvency",
+        "winding up", "reduction in capital", "downgrade"
+    ]
+    GOOD = [
+        "dividend", "bonus", "buyback", "acquisition", "awarding of order",
+        "bagging", "receiving of order", "credit rating- new", "capacity addition",
+        "commencement of commercial production", "investor presentation",
+        "allotment of securities", "amalgamation", "merger", "upgrade",
+        "record date", "scheme of arrangement"
+    ]
+    WARNING = [
+        "caution", "warning", "update", "clarification", "announcement",
+        "postponed", "adjourned", "suspended", "cancelled"
+    ]
+    
+    if any(k in text for k in BAD):
+        return "🔴"
+    if any(k in text for k in WARNING):
+        return "⚠️"
+    if any(k in text for k in GOOD):
+        return "🟢"
     return "🟡"
 
+# ===== HELPERS =====
 def skip(title, subject, link):
     if not link: return True
     skip_words = ["declaration of nav", "net asset value", "mutual fund", "etf"]
@@ -138,16 +160,12 @@ def hash_content(title, subject, desc):
     return hashlib.md5(f"{title}|{subject}|{desc}".encode()).hexdigest()
 
 def parse_pub_ist(pub_str):
-    """Parse RSS pub date, assume IST if naive, return naive datetime in IST."""
     try:
         dt = parser.parse(pub_str)
         if dt.tzinfo is None:
-            # Assume IST (UTC+5:30)
             dt = dt.replace(tzinfo=IST)
-        # Convert to IST (if already in other timezone, keep as IST)
-        return dt.astimezone(IST).replace(tzinfo=None)  # naive IST
-    except Exception as e:
-        logger.warning(f"Could not parse pub date: {pub_str} – {e}")
+        return dt.astimezone(IST).replace(tzinfo=None)
+    except:
         return None
 
 def send_telegram(text):
@@ -211,7 +229,6 @@ def main():
             logger.error("No feed")
             return
 
-        # Get current time in IST (naive)
         now_ist = datetime.now(IST).replace(tzinfo=None)
         six_ago_ist = now_ist - timedelta(minutes=6)
         logger.info(f"⏰ Window (IST): {six_ago_ist.strftime('%H:%M:%S')} – {now_ist.strftime('%H:%M:%S')}")
@@ -227,9 +244,8 @@ def main():
 
             entry_time = parse_pub_ist(pub)
             if entry_time is None:
-                continue   # skip if cannot parse
+                continue
 
-            # Compare in IST (naive)
             if not (six_ago_ist <= entry_time <= now_ist):
                 continue
 
@@ -253,13 +269,12 @@ def main():
                 dups += 1
                 continue
 
-            # Save pub_date as ISO string (we'll store as text for simplicity)
             pub_iso = entry_time.isoformat()
             data = {
                 'guid': guid, 'link': link, 'title': title.strip(),
                 'subject': subject, 'description': desc,
                 'date': date_str, 'time': time_str,
-                'sentiment': sentiment(subject),
+                'sentiment': sentiment_emoji(title, subject, desc),   # ← NOW WITH 3 ARGS
                 'pub_date': pub_iso,
                 'hash': h,
                 'pub': pub
@@ -268,8 +283,8 @@ def main():
             if db.add(data):
                 new_items.append(data)
 
-        # ========== SORT OLDEST FIRST (ascending) ==========
-        new_items.sort(key=lambda x: x['pub_date'])   # oldest first
+        # Oldest first
+        new_items.sort(key=lambda x: x['pub_date'])
 
         if new_items:
             logger.info(f"📤 Sending {len(new_items)} alerts (OLDEST FIRST)...")
@@ -280,13 +295,17 @@ def main():
             for i in range(0, len(new_items), 10):
                 batch = new_items[i:i+10]
                 for data in batch:
-                    msg = (f"{data['sentiment']} <a href=\"{data['link']}\">{escape(data['title'])}</a>\n"
-                           f"📄 {escape(data['subject'])}\n"
-                           f"{escape(truncate(data['description'], 220))}\n"
-                           f"🕐 {data['pub']}")
+                    # Message with document link
+                    msg = (
+                        f"{data['sentiment']} <a href=\"{data['link']}\">{escape(data['title'])}</a>\n"
+                        f"📄 {escape(data['subject'])}\n"
+                        f"{escape(truncate(data['description'], 220))}\n"
+                        f"📎 <a href=\"{data['link']}\">View Document</a>\n"
+                        f"🕐 {data['pub']}"
+                    )
                     send_telegram(msg)
                     time.sleep(0.3)
-                time.sleep(1)  # between batches
+                time.sleep(1)
 
         if new_items:
             write_excel(db)
