@@ -50,7 +50,6 @@ class FileLock:
                 os.remove(self.lock_file)
                 return self.acquire()
             return False
-        
         with open(self.lock_file, 'w') as f:
             f.write(str(os.getpid()))
         return True
@@ -68,6 +67,19 @@ class AnnouncementDB:
     def init_db(self):
         conn = sqlite3.connect(self.db_file)
         c = conn.cursor()
+        
+        c.execute("SELECT name FROM sqlite_master WHERE type='table' AND name='announcements'")
+        table_exists = c.fetchone() is not None
+        
+        if table_exists:
+            c.execute("PRAGMA table_info(announcements)")
+            columns = [column[1] for column in c.fetchall()]
+            
+            if 'pub_date' not in columns:
+                c.execute('ALTER TABLE announcements ADD COLUMN pub_date TIMESTAMP')
+                c.execute('UPDATE announcements SET pub_date = sent_at WHERE pub_date IS NULL')
+                logger.info("✅ Added pub_date column to existing database")
+        
         c.execute('''
             CREATE TABLE IF NOT EXISTS announcements (
                 guid TEXT PRIMARY KEY,
@@ -83,10 +95,12 @@ class AnnouncementDB:
                 sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         ''')
+        
         c.execute('CREATE INDEX IF NOT EXISTS idx_pub_date ON announcements(pub_date)')
         c.execute('CREATE INDEX IF NOT EXISTS idx_link ON announcements(link)')
         c.execute('CREATE INDEX IF NOT EXISTS idx_hash ON announcements(hash)')
         c.execute('CREATE INDEX IF NOT EXISTS idx_sent_at ON announcements(sent_at)')
+        
         conn.commit()
         conn.close()
         logger.info("✅ Database initialized")
@@ -121,6 +135,18 @@ class AnnouncementDB:
         finally:
             conn.close()
     
+    def get_recent_count(self, minutes=5):
+        """Get count of announcements from last N minutes"""
+        conn = sqlite3.connect(self.db_file)
+        c = conn.cursor()
+        c.execute('''
+            SELECT COUNT(*) FROM announcements 
+            WHERE sent_at > datetime('now', ?)
+        ''', (f'-{minutes} minutes',))
+        count = c.fetchone()[0]
+        conn.close()
+        return count
+    
     def get_today_count(self):
         conn = sqlite3.connect(self.db_file)
         c = conn.cursor()
@@ -128,6 +154,14 @@ class AnnouncementDB:
             SELECT COUNT(*) FROM announcements 
             WHERE DATE(sent_at) = DATE('now', 'localtime')
         ''')
+        count = c.fetchone()[0]
+        conn.close()
+        return count
+    
+    def get_total_count(self):
+        conn = sqlite3.connect(self.db_file)
+        c = conn.cursor()
+        c.execute('SELECT COUNT(*) FROM announcements')
         count = c.fetchone()[0]
         conn.close()
         return count
@@ -168,7 +202,6 @@ def should_skip(title, subject, link):
     if not link or not link.strip():
         return True
     skip_keywords = ["declaration of nav", "net asset value", "mutual fund", "etf"]
-    
     text = f"{title} {subject}".lower()
     if any(k in text for k in skip_keywords):
         return True
@@ -252,6 +285,7 @@ def write_excel(db):
         FROM announcements 
         WHERE DATE(sent_at) = DATE('now', 'localtime')
         ORDER BY sent_at DESC
+        LIMIT 500
     ''')
     
     count = 0
@@ -269,15 +303,25 @@ def main():
     logger.info(f"🚀 NSE Watch starting at {datetime.now()}")
     logger.info(f"📡 Source: {RUN_SOURCE}")
     
-    # Acquire lock
     lock = FileLock()
     if not lock.acquire():
         logger.warning("⚠️ Another instance running. Exiting.")
         return
     
     try:
-        # Initialize database
         db = AnnouncementDB()
+        
+        # Check if this is first run
+        total_count = db.get_total_count()
+        is_first_run = total_count == 0
+        
+        # Get current time for filtering
+        now = datetime.now()
+        five_minutes_ago = now - timedelta(minutes=5)
+        
+        if is_first_run:
+            logger.info("🆕 FIRST RUN DETECTED! Creating baseline from last 5 minutes only...")
+            logger.info(f"⏰ Baseline window: {five_minutes_ago.strftime('%H:%M:%S')} to {now.strftime('%H:%M:%S')}")
         
         # Cleanup old data (30 days)
         db.cleanup_old(30)
@@ -289,7 +333,7 @@ def main():
             return
         
         # Get today's date
-        today = datetime.now().date()
+        today = now.date()
         today_str = today.strftime("%d-%b-%Y")
         
         logger.info(f"📅 Processing: {today_str}")
@@ -298,96 +342,174 @@ def main():
         duplicate_count = 0
         skipped_count = 0
         total_today = 0
+        baseline_count = 0
         
-        # Process ONLY today's entries
+        # Collect today's entries
+        today_entries = []
         for entry in feed.entries:
             pub = getattr(entry, "published", "")
-            
             if today_str in pub:
+                today_entries.append(entry)
                 total_today += 1
+        
+        logger.info(f"📨 Found {total_today} entries for today")
+        
+        # Process entries
+        new_announcements = []
+        
+        for entry in today_entries:
+            try:
+                guid = entry.get("id", entry.get("link", ""))
+                link = entry.get("link", "")
+                title = getattr(entry, "title", "NSE Announcement")
+                pub = getattr(entry, "published", "")
+                raw_description = getattr(entry, "summary", "")
                 
+                if not link:
+                    skipped_count += 1
+                    continue
+                
+                description, subject = split_subject(raw_description)
+                date_str, time_str = split_datetime(pub)
+                
+                if should_skip(title, subject, link):
+                    skipped_count += 1
+                    continue
+                
+                content_hash = create_hash(title, subject, description)
+                
+                if db.is_duplicate(guid, link, content_hash):
+                    duplicate_count += 1
+                    continue
+                
+                pub_date = parse_pub_date(pub)
+                
+                data = {
+                    'guid': guid,
+                    'link': link,
+                    'title': title.strip(),
+                    'subject': subject,
+                    'description': description,
+                    'date': date_str,
+                    'time': time_str,
+                    'sentiment': sentiment_emoji(subject),
+                    'pub_date': pub_date,
+                    'hash': content_hash,
+                    'pub': pub
+                }
+                
+                # Add to database
+                if db.add_announcement(data):
+                    new_count += 1
+                    new_announcements.append(data)
+                    
+                    # Check if this entry is from last 5 minutes
+                    try:
+                        entry_time = parser.parse(pub)
+                        if entry_time >= five_minutes_ago:
+                            # This is a recent entry (within last 5 minutes)
+                            pass  # Will be sent as alert
+                        else:
+                            # This is an old entry (baseline only)
+                            baseline_count += 1
+                    except:
+                        pass
+                
+            except Exception as e:
+                logger.error(f"❌ Error: {e}")
+                continue
+        
+        # Send alerts ONLY for entries from last 5 minutes
+        if new_announcements:
+            # Filter only recent entries (last 5 minutes)
+            recent_announcements = []
+            baseline_announcements = []
+            
+            for data in new_announcements:
                 try:
-                    guid = entry.get("id", entry.get("link", ""))
-                    link = entry.get("link", "")
-                    title = getattr(entry, "title", "NSE Announcement")
-                    raw_description = getattr(entry, "summary", "")
+                    entry_time = parser.parse(data['pub'])
+                    if entry_time >= five_minutes_ago:
+                        recent_announcements.append(data)
+                    else:
+                        baseline_announcements.append(data)
+                except:
+                    # If can't parse, treat as recent
+                    recent_announcements.append(data)
+            
+            # Sort recent announcements (newest first)
+            recent_announcements.sort(key=lambda x: x['pub_date'], reverse=True)
+            
+            # Send alerts for recent announcements (newest first)
+            if recent_announcements:
+                # For first run, send a summary instead of individual alerts
+                if is_first_run:
+                    logger.info(f"📝 FIRST RUN: {len(baseline_announcements)} old entries saved as baseline")
+                    logger.info(f"📝 FIRST RUN: {len(recent_announcements)} recent entries saved and alerted")
                     
-                    if not link:
-                        skipped_count += 1
-                        continue
+                    # Send summary for first run
+                    send_telegram(
+                        f"🔄 NSE Watch initialized!\n"
+                        f"📊 Baseline: {len(baseline_announcements)} old entries\n"
+                        f"🆕 Recent alerts: {len(recent_announcements)} entries from last 5 minutes\n"
+                        f"⏰ Time: {now.strftime('%H:%M:%S')}"
+                    )
                     
-                    description, subject = split_subject(raw_description)
-                    date_str, time_str = split_datetime(pub)
-                    
-                    if should_skip(title, subject, link):
-                        skipped_count += 1
-                        continue
-                    
-                    content_hash = create_hash(title, subject, description)
-                    
-                    if db.is_duplicate(guid, link, content_hash):
-                        duplicate_count += 1
-                        continue
-                    
-                    pub_date = parse_pub_date(pub)
-                    
-                    data = {
-                        'guid': guid,
-                        'link': link,
-                        'title': title.strip(),
-                        'subject': subject,
-                        'description': description,
-                        'date': date_str,
-                        'time': time_str,
-                        'sentiment': sentiment_emoji(subject),
-                        'pub_date': pub_date,
-                        'hash': content_hash
-                    }
-                    
-                    if db.add_announcement(data):
-                        new_count += 1
-                        
-                        # Send Telegram
-                        title_html = escape_html(title)
-                        desc_html = escape_html(truncate(description, 220))
-                        subject_html = escape_html(subject)
+                    # Still send recent alerts on first run (these are truly new)
+                    for data in recent_announcements:
+                        title_html = escape_html(data['title'])
+                        desc_html = escape_html(truncate(data['description'], 220))
+                        subject_html = escape_html(data['subject'])
                         
                         msg = (
-                            f"{data['sentiment']} <a href=\"{link}\">{title_html}</a>\n"
+                            f"{data['sentiment']} <a href=\"{data['link']}\">{title_html}</a>\n"
                             f"📄 {subject_html}\n"
                             f"{desc_html}\n"
-                            f"🕐 {pub}"
+                            f"🕐 {data['pub']}"
                         )
                         send_telegram(msg)
                         time.sleep(0.3)
+                else:
+                    # Normal run - send all recent alerts
+                    logger.info(f"📤 Sending {len(recent_announcements)} alerts (newest first)...")
                     
-                except Exception as e:
-                    logger.error(f"❌ Error: {e}")
-                    continue
+                    if baseline_announcements:
+                        logger.info(f"📝 {len(baseline_announcements)} older entries saved as baseline (no alerts)")
+                    
+                    for data in recent_announcements:
+                        title_html = escape_html(data['title'])
+                        desc_html = escape_html(truncate(data['description'], 220))
+                        subject_html = escape_html(data['subject'])
+                        
+                        msg = (
+                            f"{data['sentiment']} <a href=\"{data['link']}\">{title_html}</a>\n"
+                            f"📄 {subject_html}\n"
+                            f"{desc_html}\n"
+                            f"🕐 {data['pub']}"
+                        )
+                        send_telegram(msg)
+                        time.sleep(0.3)
         
         # Update Excel
         excel_count = write_excel(db) if new_count > 0 else 0
         
         # Summary
-        today_total = db.get_today_count()
         summary = f"""
 📊 TODAY'S SUMMARY ({today_str}):
    📨 Total in RSS: {total_today}
-   ✅ New alerts: {new_count}
-   🔄 Already seen: {duplicate_count}
+   ✅ New saved: {new_count}
+   🔄 Duplicates: {duplicate_count}
    ⏭️ Filtered: {skipped_count}
    📊 Excel entries: {excel_count}
    📅 Database total: {db.count()}
+   🆕 First run: {'Yes' if is_first_run else 'No'}
+   ⏰ Last 5 min alerts: {len(recent_announcements) if 'recent_announcements' in locals() else 0}
+   📝 Baseline entries: {baseline_count}
         """
         logger.info(summary)
         
-        # Send daily summary
-        if new_count > 0:
-            send_telegram(f"📊 NSE Watch: {new_count} new announcements today!")
-        
         # Log to file
         with open(LOG_FILE, "a") as f:
-            f.write(f"{datetime.now()}: Total={total_today}, New={new_count}, Dups={duplicate_count}, Skipped={skipped_count}\n")
+            f.write(f"{datetime.now()}: Total={total_today}, New={new_count}, Dups={duplicate_count}, Skipped={skipped_count}, FirstRun={is_first_run}\n")
     
     except Exception as e:
         logger.error(f"❌ Fatal error: {e}")
