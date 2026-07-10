@@ -1,6 +1,10 @@
 # .github/workflows/nse-bot.yml
 name: NSE Announcement Bot
 
+permissions:
+  contents: write
+  actions: read
+
 on:
   # ONLY trigger from cronjobs.org
   repository_dispatch:
@@ -12,6 +16,8 @@ on:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
+    permissions:
+        contents: write
     
     # Prevent multiple concurrent runs
     concurrency:
