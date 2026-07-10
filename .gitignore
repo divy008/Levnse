@@ -1,16 +1,16 @@
 # Database
-*.db
+#*.db
 *.db-journal
 *.db-wal
 *.db-shm
 
 # Logs
-*.log
-run_log.txt
+#*.log
+#run_log.txt
 bot.log
 
 # Excel files
-*.xlsx
+#*.xlsx
 *.xlsm
 
 # Lock files
