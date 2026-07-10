@@ -1,33 +1,35 @@
-# .github/workflows/nse-bot.yml
-name: NSE Announcement Bot
+# .github/workflows/nse-watch.yml
+name: NSE Watch - Daily Announcements
 
+# 🔴 CRITICAL: Add permissions
 permissions:
   contents: write
   actions: read
 
 on:
-  # ONLY trigger from cronjobs.org
+  # Trigger from cronjobs.org
   repository_dispatch:
     types: [cron-trigger]
   
-  # Manual trigger for testing (optional)
+  # Manual trigger for testing
   workflow_dispatch:
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    permissions:
-        contents: write
     
-    # Prevent multiple concurrent runs
+    permissions:
+      contents: write
+    
     concurrency:
-      group: nse-bot
+      group: nse-watch
       cancel-in-progress: true
     
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
       with:
+        token: ${{ secrets.PAT_TOKEN }}
         persist-credentials: true
         fetch-depth: 0
     
@@ -40,22 +42,23 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install feedparser requests openpyxl
+        pip install feedparser requests openpyxl python-dateutil
     
-    - name: Run NSE Bot
+    - name: Run NSE Watch Bot
       id: bot
       env:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         RUN_SOURCE: "cronjobs.org"
       run: |
+        # 🔴 IMPORTANT: Use your actual Python file name
         python fetch_and_notify.py
     
     - name: Upload Excel file as artifact
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: announcements-${{ github.run_id }}
+        name: nse-announcements-${{ github.run_id }}
         path: |
           announcements.xlsx
           run_log.txt
@@ -63,26 +66,27 @@ jobs:
     
     - name: Commit and push changes
       if: success()
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action Bot"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
         
-        # Add database, excel and log files
+        # Add files
         git add announcements.db announcements.xlsx run_log.txt || true
         
         # Commit if there are changes
         if ! git diff --staged --quiet; then
+          echo "📝 Committing changes..."
           git commit -m "🔄 Auto-update: NSE announcements [skip ci]"
           git push
         else
           echo "✅ No changes to commit"
         fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
     
     - name: Send failure notification
       if: failure()
       run: |
         curl -X POST -H "Content-Type: application/json" \
-          -d '{"text":"❌ NSE Bot failed! Check logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"}' \
+          -d '{"text":"❌ NSE Watch Bot failed! Check logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"}' \
           "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
