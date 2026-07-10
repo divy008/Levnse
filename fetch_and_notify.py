@@ -1,6 +1,9 @@
 import os, time, feedparser, requests, sqlite3, hashlib, logging
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from dateutil import parser
+
+# ===== TIMEZONE =====
+IST = timezone(timedelta(hours=5, minutes=30))   # UTC+5:30
 
 FEED_URL = "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml"
 DB_FILE = "announcements.db"
@@ -23,6 +26,7 @@ logging.basicConfig(level=logging.INFO,
                     handlers=[logging.FileHandler('bot.log'), logging.StreamHandler()])
 logger = logging.getLogger(__name__)
 
+# ===== LOCK =====
 class FileLock:
     def __init__(self, f=LOCK_FILE): self.f = f
     def acquire(self):
@@ -36,6 +40,7 @@ class FileLock:
     def release(self):
         if os.path.exists(self.f): os.remove(self.f)
 
+# ===== DATABASE =====
 class DB:
     def __init__(self, f=DB_FILE):
         self.f = f
@@ -95,6 +100,7 @@ class DB:
         c.execute('SELECT COUNT(*) FROM announcements')
         return c.fetchone()[0]
 
+# ===== HELPERS =====
 def sentiment(s):
     bad = ["resignation","cessation","insolvency","litigation","dispute","default","delay","penalt","fine","downgrade"]
     good = ["dividend","bonus","buyback","acquisition","awarding","bagging","merger","upgrade","record date"]
@@ -131,9 +137,18 @@ def escape(t): return t.replace("&","&amp;").replace("<","&lt;").replace(">","&g
 def hash_content(title, subject, desc):
     return hashlib.md5(f"{title}|{subject}|{desc}".encode()).hexdigest()
 
-def parse_pub(pub_str):
-    try: return parser.parse(pub_str).isoformat()
-    except: return datetime.now().isoformat()
+def parse_pub_ist(pub_str):
+    """Parse RSS pub date, assume IST if naive, return naive datetime in IST."""
+    try:
+        dt = parser.parse(pub_str)
+        if dt.tzinfo is None:
+            # Assume IST (UTC+5:30)
+            dt = dt.replace(tzinfo=IST)
+        # Convert to IST (if already in other timezone, keep as IST)
+        return dt.astimezone(IST).replace(tzinfo=None)  # naive IST
+    except Exception as e:
+        logger.warning(f"Could not parse pub date: {pub_str} – {e}")
+        return None
 
 def send_telegram(text):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
@@ -180,6 +195,7 @@ def write_excel(db):
     logger.info(f"📊 Excel updated with {cnt} today's entries")
     return cnt
 
+# ===== MAIN =====
 def main():
     logger.info(f"🚀 Starting at {datetime.now()}")
     lock = FileLock()
@@ -195,9 +211,10 @@ def main():
             logger.error("No feed")
             return
 
-        now = datetime.now()
-        six_ago = now - timedelta(minutes=6)
-        logger.info(f"⏰ Window: {six_ago.strftime('%H:%M:%S')} – {now.strftime('%H:%M:%S')}")
+        # Get current time in IST (naive)
+        now_ist = datetime.now(IST).replace(tzinfo=None)
+        six_ago_ist = now_ist - timedelta(minutes=6)
+        logger.info(f"⏰ Window (IST): {six_ago_ist.strftime('%H:%M:%S')} – {now_ist.strftime('%H:%M:%S')}")
 
         new_items = []
         dups = 0
@@ -207,11 +224,13 @@ def main():
             pub = getattr(entry, "published", "")
             if not pub:
                 continue
-            try:
-                entry_time = parser.parse(pub)
-                if not (six_ago <= entry_time <= now):
-                    continue
-            except:
+
+            entry_time = parse_pub_ist(pub)
+            if entry_time is None:
+                continue   # skip if cannot parse
+
+            # Compare in IST (naive)
+            if not (six_ago_ist <= entry_time <= now_ist):
                 continue
 
             guid = entry.get("id", entry.get("link", ""))
@@ -234,7 +253,8 @@ def main():
                 dups += 1
                 continue
 
-            pub_iso = parse_pub(pub)
+            # Save pub_date as ISO string (we'll store as text for simplicity)
+            pub_iso = entry_time.isoformat()
             data = {
                 'guid': guid, 'link': link, 'title': title.strip(),
                 'subject': subject, 'description': desc,
@@ -248,8 +268,8 @@ def main():
             if db.add(data):
                 new_items.append(data)
 
-        # ========== SORT OLDEST FIRST ==========
-        new_items.sort(key=lambda x: x['pub_date'])   # ascending (oldest first)
+        # ========== SORT OLDEST FIRST (ascending) ==========
+        new_items.sort(key=lambda x: x['pub_date'])   # oldest first
 
         if new_items:
             logger.info(f"📤 Sending {len(new_items)} alerts (OLDEST FIRST)...")
@@ -266,7 +286,7 @@ def main():
                            f"🕐 {data['pub']}")
                     send_telegram(msg)
                     time.sleep(0.3)
-                time.sleep(1)
+                time.sleep(1)  # between batches
 
         if new_items:
             write_excel(db)
