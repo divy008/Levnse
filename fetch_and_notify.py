@@ -65,6 +65,17 @@ GOOD_KEYWORDS = [
     "record date", "scheme of arrangement",
 ]
 
+# Filters: announcements matching these are skipped entirely (not logged, not sent).
+SKIP_SUBJECT_KEYWORDS = [
+    "declaration of nav",
+    "net asset value",
+]
+
+SKIP_TITLE_KEYWORDS = [
+    "mutual fund",
+    "etf",
+]
+
 
 def sentiment_emoji(subject):
     s = subject.lower()
@@ -73,6 +84,19 @@ def sentiment_emoji(subject):
     if any(k in s for k in GOOD_KEYWORDS):
         return "\U0001F7E2"  # 🟢
     return "\U0001F7E1"  # 🟡
+
+
+def should_skip(title, subject, link):
+    """Filter out mutual fund / NAV declaration noise and entries with no link."""
+    if not link or not link.strip():
+        return True
+    title_l = title.lower()
+    subject_l = subject.lower()
+    if any(k in subject_l for k in SKIP_SUBJECT_KEYWORDS):
+        return True
+    if any(k in title_l for k in SKIP_TITLE_KEYWORDS):
+        return True
+    return False
 
 
 def truncate(text, max_chars=220):
@@ -203,6 +227,7 @@ def main():
         return
 
     telegram_sent_count = 0
+    skipped_count = 0
 
     for entry in reversed(new_items):  # oldest first
         title = getattr(entry, "title", "New NSE Announcement")
@@ -212,6 +237,12 @@ def main():
 
         description, subject = split_subject(raw_description)
         date_str, time_str = split_datetime(pub)
+
+        # Skip mutual fund / NAV noise and entries with no link
+        if should_skip(title, subject, link):
+            skipped_count += 1
+            continue
+
         emoji = sentiment_emoji(subject)
 
         # Duplicate protection: skip if link already logged
@@ -249,7 +280,7 @@ def main():
         save_log(log)
         write_excel(log)
 
-    print(f"Sent {telegram_sent_count} new announcement(s).")
+    print(f"Sent {telegram_sent_count} new announcement(s). Skipped {skipped_count} filtered item(s).")
     save_seen(seen_list)
 
 
