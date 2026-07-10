@@ -43,7 +43,7 @@ jobs:
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         RUN_SOURCE: "cronjobs.org"
       run: |
-        python nse_bot.py
+        python fetch_and_notify.py
     
     - name: Upload Excel file as artifact
       if: always()
