@@ -1,71 +1,82 @@
-name: NSE Announcements Watcher
+# .github/workflows/nse-bot.yml
+name: NSE Announcement Bot
 
 on:
+  # ONLY trigger from cronjobs.org
   repository_dispatch:
     types: [cron-trigger]
+  
+  # Manual trigger for testing (optional)
   workflow_dispatch:
 
-concurrency:
-  group: nse-watcher
-  cancel-in-progress: false   # queue overlapping runs instead of racing them (prevents duplicate Telegram messages)
-
 jobs:
-  check:
+  run-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 4        # fail fast rather than let a hung run block the next trigger for a long time
-    permissions:
-      contents: write
-
+    
+    # Prevent multiple concurrent runs
+    concurrency:
+      group: nse-bot
+      cancel-in-progress: true
+    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 1
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Cache pip packages
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-nse-watcher-${{ hashFiles('.github/workflows/nse-watcher.yml') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-nse-watcher-
-
-      - name: Install dependencies
-        run: |
-          pip install feedparser requests openpyxl
-
-      - name: Run watcher
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: |
-          python fetch_and_notify.py
-
-      - name: Persist seen-items state and logs
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add seen.json
-          git add log.json || true
-          git add announcements.xlsx || true
-
-          if ! git diff --staged --quiet; then
-            git commit -m "update seen state and logs [skip ci]"
-
-            # Retry with rebase instead of force-push, so we never silently
-            # discard another run's state if pushes ever land close together.
-            for i in 1 2 3; do
-              git pull --rebase origin main && git push origin main && break
-              echo "Push attempt $i failed, retrying..."
-              sleep 3
-            done
-          else
-            echo "No changes to commit."
-          fi
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: true
+        fetch-depth: 0
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install feedparser requests openpyxl
+    
+    - name: Run NSE Bot
+      id: bot
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        RUN_SOURCE: "cronjobs.org"
+      run: |
+        python nse_bot.py
+    
+    - name: Upload Excel file as artifact
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: announcements-${{ github.run_id }}
+        path: |
+          announcements.xlsx
+          run_log.txt
+        retention-days: 7
+    
+    - name: Commit and push changes
+      if: success()
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action Bot"
+        
+        # Add database, excel and log files
+        git add announcements.db announcements.xlsx run_log.txt || true
+        
+        # Commit if there are changes
+        if ! git diff --staged --quiet; then
+          git commit -m "🔄 Auto-update: NSE announcements [skip ci]"
+          git push
+        else
+          echo "✅ No changes to commit"
+        fi
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Send failure notification
+      if: failure()
+      run: |
+        curl -X POST -H "Content-Type: application/json" \
+          -d '{"text":"❌ NSE Bot failed! Check logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"}' \
+          "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
