@@ -1,14 +1,12 @@
 import os
-import json
 import time
 import feedparser
 import requests
 from datetime import datetime, timedelta
 import sqlite3
-from pathlib import Path
 import hashlib
-import sys
 import logging
+from dateutil import parser
 
 # ===== CONFIGURATION =====
 FEED_URL = "https://nsearchives.nseindia.com/content/RSS/Online_announcements.xml"
@@ -30,7 +28,7 @@ HEADERS = {
     "Accept": "application/xml,text/xml,*/*",
 }
 
-# ===== LOGGING SETUP =====
+# ===== LOGGING =====
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
@@ -48,7 +46,6 @@ class FileLock:
     
     def acquire(self):
         if os.path.exists(self.lock_file):
-            # Check if lock is stale (older than 5 minutes)
             if time.time() - os.path.getmtime(self.lock_file) > 300:
                 os.remove(self.lock_file)
                 return self.acquire()
@@ -81,13 +78,15 @@ class AnnouncementDB:
                 date TEXT,
                 time TEXT,
                 sentiment TEXT,
-                sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-                hash TEXT UNIQUE
+                pub_date TIMESTAMP,
+                hash TEXT UNIQUE,
+                sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
         ''')
+        c.execute('CREATE INDEX IF NOT EXISTS idx_pub_date ON announcements(pub_date)')
         c.execute('CREATE INDEX IF NOT EXISTS idx_link ON announcements(link)')
-        c.execute('CREATE INDEX IF NOT EXISTS idx_sent_at ON announcements(sent_at)')
         c.execute('CREATE INDEX IF NOT EXISTS idx_hash ON announcements(hash)')
+        c.execute('CREATE INDEX IF NOT EXISTS idx_sent_at ON announcements(sent_at)')
         conn.commit()
         conn.close()
         logger.info("✅ Database initialized")
@@ -107,13 +106,13 @@ class AnnouncementDB:
         try:
             c.execute('''
                 INSERT OR IGNORE INTO announcements 
-                (guid, link, title, subject, description, date, time, sentiment, hash)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                (guid, link, title, subject, description, date, time, sentiment, pub_date, hash)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             ''', (
                 data['guid'], data['link'], data['title'],
                 data['subject'], data['description'],
                 data['date'], data['time'], data['sentiment'],
-                data['hash']
+                data['pub_date'], data['hash']
             ))
             conn.commit()
             return c.rowcount > 0
@@ -122,19 +121,18 @@ class AnnouncementDB:
         finally:
             conn.close()
     
-    def get_recent(self, days=30):
+    def get_today_count(self):
         conn = sqlite3.connect(self.db_file)
         c = conn.cursor()
         c.execute('''
-            SELECT * FROM announcements 
-            WHERE sent_at > datetime('now', ?)
-            ORDER BY sent_at DESC
-        ''', (f'-{days} days',))
-        results = c.fetchall()
+            SELECT COUNT(*) FROM announcements 
+            WHERE DATE(sent_at) = DATE('now', 'localtime')
+        ''')
+        count = c.fetchone()[0]
         conn.close()
-        return results
+        return count
     
-    def cleanup_old(self, days=90):
+    def cleanup_old(self, days=30):
         conn = sqlite3.connect(self.db_file)
         c = conn.cursor()
         c.execute('DELETE FROM announcements WHERE sent_at < datetime("now", ?)', 
@@ -156,8 +154,8 @@ class AnnouncementDB:
 
 # ===== HELPER FUNCTIONS =====
 def sentiment_emoji(subject):
-    BAD = ["resignation", "cessation", "insolvency", "litigation", "dispute", "default", "delay", "penalt", "fine"]
-    GOOD = ["dividend", "bonus", "buyback", "acquisition", "awarding", "bagging", "merger", "upgrade"]
+    BAD = ["resignation", "cessation", "insolvency", "litigation", "dispute", "default", "delay", "penalt", "fine", "downgrade"]
+    GOOD = ["dividend", "bonus", "buyback", "acquisition", "awarding", "bagging", "merger", "upgrade", "record date"]
     
     s = subject.lower()
     if any(k in s for k in BAD):
@@ -169,12 +167,10 @@ def sentiment_emoji(subject):
 def should_skip(title, subject, link):
     if not link or not link.strip():
         return True
-    skip_subjects = ["declaration of nav", "net asset value"]
-    skip_titles = ["mutual fund", "etf"]
+    skip_keywords = ["declaration of nav", "net asset value", "mutual fund", "etf"]
     
-    if any(k in subject.lower() for k in skip_subjects):
-        return True
-    if any(k in title.lower() for k in skip_titles):
+    text = f"{title} {subject}".lower()
+    if any(k in text for k in skip_keywords):
         return True
     return False
 
@@ -199,9 +195,15 @@ def escape_html(text):
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 def create_hash(title, subject, description):
-    """Create unique hash for content to detect duplicates"""
     content = f"{title}|{subject}|{description}"
     return hashlib.md5(content.encode('utf-8')).hexdigest()
+
+def parse_pub_date(pub_str):
+    try:
+        dt = parser.parse(pub_str)
+        return dt.isoformat()
+    except:
+        return datetime.now().isoformat()
 
 def send_telegram(text):
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
@@ -233,20 +235,24 @@ def fetch_feed(max_attempts=3):
     return None
 
 def write_excel(db):
-    """Export database to Excel with batching"""
     try:
         from openpyxl import Workbook
     except ImportError:
-        logger.warning("⚠️ openpyxl not installed, skipping Excel export")
-        return
+        logger.warning("⚠️ openpyxl not installed")
+        return 0
     
     wb = Workbook(write_only=True)
-    ws = wb.create_sheet("Announcements")
+    ws = wb.create_sheet("Today's Announcements")
     ws.append(["Sentiment", "Company", "Subject", "Description", "Date", "Time", "Link", "Sent At"])
     
     conn = sqlite3.connect(db.db_file)
     c = conn.cursor()
-    c.execute('SELECT sentiment, title, subject, description, date, time, link, sent_at FROM announcements ORDER BY sent_at DESC LIMIT 5000')
+    c.execute('''
+        SELECT sentiment, title, subject, description, date, time, link, sent_at 
+        FROM announcements 
+        WHERE DATE(sent_at) = DATE('now', 'localtime')
+        ORDER BY sent_at DESC
+    ''')
     
     count = 0
     for row in c:
@@ -255,138 +261,137 @@ def write_excel(db):
     
     conn.close()
     wb.save(EXCEL_FILE)
-    logger.info(f"📊 Excel file updated with {count} recent announcements")
+    logger.info(f"📊 Excel updated with {count} today's announcements")
+    return count
 
 # ===== MAIN FUNCTION =====
 def main():
-    logger.info(f"🚀 NSE Bot starting at {datetime.now()}")
+    logger.info(f"🚀 NSE Watch starting at {datetime.now()}")
     logger.info(f"📡 Source: {RUN_SOURCE}")
     
-    # Acquire lock (prevent concurrent runs)
+    # Acquire lock
     lock = FileLock()
     if not lock.acquire():
-        logger.warning("⚠️ Another instance is already running. Exiting.")
+        logger.warning("⚠️ Another instance running. Exiting.")
         return
     
     try:
         # Initialize database
         db = AnnouncementDB()
-        logger.info(f"📊 Database has {db.count()} total announcements")
         
-        # Cleanup old data (90 days)
-        db.cleanup_old(90)
+        # Cleanup old data (30 days)
+        db.cleanup_old(30)
         
         # Fetch feed
         feed = fetch_feed()
         if feed is None:
-            logger.error("❌ Failed to fetch feed. Exiting.")
+            logger.error("❌ Failed to fetch feed")
             return
         
-        # Process entries
+        # Get today's date
+        today = datetime.now().date()
+        today_str = today.strftime("%d-%b-%Y")
+        
+        logger.info(f"📅 Processing: {today_str}")
+        
         new_count = 0
-        skipped_count = 0
         duplicate_count = 0
-        error_count = 0
+        skipped_count = 0
+        total_today = 0
         
-        # Process entries in reverse (oldest first) - limit to 50 per run
-        entries_to_process = list(reversed(feed.entries))[:50]
-        logger.info(f"📨 Processing {len(entries_to_process)} entries...")
-        
-        for entry in entries_to_process:
-            try:
-                guid = entry.get("id", entry.get("link", ""))
-                link = entry.get("link", "")
-                title = getattr(entry, "title", "New NSE Announcement")
-                pub = getattr(entry, "published", "")
-                raw_description = getattr(entry, "summary", "")
+        # Process ONLY today's entries
+        for entry in feed.entries:
+            pub = getattr(entry, "published", "")
+            
+            if today_str in pub:
+                total_today += 1
                 
-                # Skip if no GUID or link
-                if not guid or not link:
-                    skipped_count += 1
-                    continue
-                
-                # Process description
-                description, subject = split_subject(raw_description)
-                date_str, time_str = split_datetime(pub)
-                
-                # Skip unwanted announcements
-                if should_skip(title, subject, link):
-                    skipped_count += 1
-                    continue
-                
-                # Create content hash
-                content_hash = create_hash(title, subject, description)
-                
-                # Check duplicate
-                if db.is_duplicate(guid, link, content_hash):
-                    duplicate_count += 1
-                    continue
-                
-                # Prepare data
-                data = {
-                    'guid': guid,
-                    'link': link,
-                    'title': title.strip(),
-                    'subject': subject,
-                    'description': description,
-                    'date': date_str,
-                    'time': time_str,
-                    'sentiment': sentiment_emoji(subject),
-                    'hash': content_hash
-                }
-                
-                # Save to database
-                if db.add_announcement(data):
-                    new_count += 1
+                try:
+                    guid = entry.get("id", entry.get("link", ""))
+                    link = entry.get("link", "")
+                    title = getattr(entry, "title", "NSE Announcement")
+                    raw_description = getattr(entry, "summary", "")
                     
-                    # Send Telegram
-                    title_html = escape_html(title)
-                    desc_html = escape_html(truncate(description, 220))
-                    subject_html = escape_html(subject)
+                    if not link:
+                        skipped_count += 1
+                        continue
                     
-                    msg = (
-                        f"{data['sentiment']} <a href=\"{link}\">{title_html}</a>\n"
-                        f"📄 {subject_html}\n"
-                        f"{desc_html}\n"
-                        f"🕐 {pub}"
-                    )
-                    send_telegram(msg)
-                    time.sleep(0.5)  # Rate limiting
-                
-            except Exception as e:
-                error_count += 1
-                logger.error(f"❌ Error processing entry: {e}")
-                continue
+                    description, subject = split_subject(raw_description)
+                    date_str, time_str = split_datetime(pub)
+                    
+                    if should_skip(title, subject, link):
+                        skipped_count += 1
+                        continue
+                    
+                    content_hash = create_hash(title, subject, description)
+                    
+                    if db.is_duplicate(guid, link, content_hash):
+                        duplicate_count += 1
+                        continue
+                    
+                    pub_date = parse_pub_date(pub)
+                    
+                    data = {
+                        'guid': guid,
+                        'link': link,
+                        'title': title.strip(),
+                        'subject': subject,
+                        'description': description,
+                        'date': date_str,
+                        'time': time_str,
+                        'sentiment': sentiment_emoji(subject),
+                        'pub_date': pub_date,
+                        'hash': content_hash
+                    }
+                    
+                    if db.add_announcement(data):
+                        new_count += 1
+                        
+                        # Send Telegram
+                        title_html = escape_html(title)
+                        desc_html = escape_html(truncate(description, 220))
+                        subject_html = escape_html(subject)
+                        
+                        msg = (
+                            f"{data['sentiment']} <a href=\"{link}\">{title_html}</a>\n"
+                            f"📄 {subject_html}\n"
+                            f"{desc_html}\n"
+                            f"🕐 {pub}"
+                        )
+                        send_telegram(msg)
+                        time.sleep(0.3)
+                    
+                except Exception as e:
+                    logger.error(f"❌ Error: {e}")
+                    continue
         
-        # Update Excel file if there are new announcements
-        if new_count > 0:
-            write_excel(db)
+        # Update Excel
+        excel_count = write_excel(db) if new_count > 0 else 0
         
         # Summary
+        today_total = db.get_today_count()
         summary = f"""
-📊 SUMMARY:
-   ✅ New announcements: {new_count}
-   🔄 Duplicates skipped: {duplicate_count}
-   ⏭️ Filtered skipped: {skipped_count}
-   ❌ Errors: {error_count}
-   📅 Database size: {db.count()} total
-   📁 Source: {RUN_SOURCE}
+📊 TODAY'S SUMMARY ({today_str}):
+   📨 Total in RSS: {total_today}
+   ✅ New alerts: {new_count}
+   🔄 Already seen: {duplicate_count}
+   ⏭️ Filtered: {skipped_count}
+   📊 Excel entries: {excel_count}
+   📅 Database total: {db.count()}
         """
         logger.info(summary)
         
+        # Send daily summary
+        if new_count > 0:
+            send_telegram(f"📊 NSE Watch: {new_count} new announcements today!")
+        
         # Log to file
         with open(LOG_FILE, "a") as f:
-            f.write(f"{datetime.now()}: New={new_count}, Dups={duplicate_count}, Skipped={skipped_count}, Source={RUN_SOURCE}\n")
-        
-        # Send summary to Telegram if there were new announcements
-        if new_count > 0:
-            send_telegram(f"✅ NSE Bot: {new_count} new announcements processed successfully!")
-        
+            f.write(f"{datetime.now()}: Total={total_today}, New={new_count}, Dups={duplicate_count}, Skipped={skipped_count}\n")
+    
     except Exception as e:
         logger.error(f"❌ Fatal error: {e}")
-        send_telegram(f"❌ NSE Bot crashed: {str(e)[:100]}")
         raise
-    
     finally:
         lock.release()
         logger.info("✅ Done!")
