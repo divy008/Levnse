@@ -1,9 +1,7 @@
-# .github/workflows/nse-watch.yml
 name: NSE Watch - Daily Announcements
 
 permissions:
   contents: write
-  actions: read
 
 on:
   repository_dispatch:
@@ -13,77 +11,43 @@ on:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    
     permissions:
       contents: write
-    
     concurrency:
       group: nse-watch
       cancel-in-progress: true
-    
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
       with:
-        # 🔴 REMOVE this line or use GITHUB_TOKEN
-        # token: ${{ secrets.PAT_TOKEN }}
         persist-credentials: true
         fetch-depth: 0
-    
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-        cache: 'pip'
-    
+
     - name: Install dependencies
       run: |
-        python -m pip install --upgrade pip
         pip install feedparser requests openpyxl python-dateutil
-    
+
     - name: Run NSE Watch Bot
-      id: bot
       env:
         TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        RUN_SOURCE: "cronjobs.org"
+        GOOGLE_SHEETS_WEB_APP_URL: ${{ secrets.GOOGLE_SHEETS_WEB_APP_URL }}
       run: |
         python fetch_and_notify.py
-    
-    - name: Upload Excel file as artifact
-      if: always()
-      uses: actions/upload-artifact@v4
-      with:
-        name: nse-announcements-${{ github.run_id }}
-        path: |
-          announcements.xlsx
-          run_log.txt
-        retention-days: 7
-    
+
     - name: Commit and push changes
       if: success()
-      env:
-        # 🔴 Use GITHUB_TOKEN instead of PAT_TOKEN
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        
-        # Add files
         git add announcements.db announcements.xlsx run_log.txt || true
-        
-        # Commit if there are changes
         if ! git diff --staged --quiet; then
-          echo "📝 Committing changes..."
           git commit -m "🔄 Auto-update: NSE announcements [skip ci]"
           git push
-        else
-          echo "✅ No changes to commit"
         fi
-    
-    - name: Send failure notification
-      if: failure()
-      run: |
-        curl -X POST -H "Content-Type: application/json" \
-          -d '{"text":"❌ NSE Watch Bot failed! Check logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"}' \
-          "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage?chat_id=${{ secrets.TELEGRAM_CHAT_ID }}"
