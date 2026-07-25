@@ -33,6 +33,131 @@ HEADERS = {
     "Accept": "application/xml,text/xml,*/*",
 }
 
+# ===== CATEGORY EMOJI MAPPING =====
+CATEGORY_MAP = {
+    # 🟢 1. Growth & Wins
+    "Dividend": "🎯",
+    "Bonus": "🎯",
+    "Buyback": "🎯",
+    "Capacity addition": "🎯",
+    "Capacity addition (Sub-para 3-Para B)": "🎯",
+    "Commencement of commercial production/operations": "🎯",
+    "Commencement or postponement (Sub-para 1-Para B)": "🎯",
+    "Awarding of order(s)/contract(s)": "🎯",
+    "Awarding of order(s)/contract(s)-(Sub-para 4-Para B)": "🎯",
+    "Bagging/Receiving of orders/contracts": "🎯",
+    "Bagging/Receiving of orders/contracts (Sub-para 4-Para B)": "🎯",
+
+    # 🤝 2. Deals, M&A & Expansion
+    "Acquisition": "🤝",
+    "Acquisition (including agreement to acquire)-XBRL": "🤝",
+    "Update-Acquisition (including agreement to acquire)-XBRL": "🤝",
+    "Acquisition of 'to be incorporated companies'-XBRL": "🤝",
+    "Amalgamation/Merger": "🤝",
+    "Update-Amalgamation/ Merger-XBRL": "🤝",
+    "De-merger-XBRL": "🤝",
+    "Scheme of Arrangement": "🤝",
+    "Sale or disposal": "🤝",
+    "Sale or disposal-XBRL": "🤝",
+    "Update-Sale or disposal of unit(s)/division(s)/subsidiary-XBRL": "🤝",
+    "Agreements": "🤝",
+    "Agreements (Sub-para 5-Para B)": "🤝",
+    "Agreements,Contracts,Arrangements,MOU-XBRL": "🤝",
+    "Arrangements for strategic, technical, manufacturing, or marketing tie up": "🤝",
+
+    # 💳 3. Capital, Securities & Debt
+    "Alteration Of Capital and Fund Raising-XBRL": "💳",
+    "Allotment of Securities": "💳",
+    "Issue of Securities": "💳",
+    "ESOP/ESOS/ESPS": "💳",
+    "Options to purchase securities": "💳",
+    "Options to purchase securities ESOPS (Sub-para 10-Para B)": "💳",
+    "Credit Rating": "💳",
+    "Credit Rating- New": "💳",
+    "Confirmation of Redemption/Payment of Interest and Principal": "💳",
+    "Giving guarantees/indemnity/ becoming a surety for third party": "💳",
+    "Giving of guarantees or indemnity (Sub-para 11-Para B)": "💳",
+    "Statement of utilization of issue proceeds": "💳",
+    "ISD for Buyback-Tender Offer": "💳",
+
+    # 👤 4. Board & Leadership Changes
+    "Appointment": "👤",
+    "Change in Directors/KMP/SMP/Auditor/RTA": "👤",
+    "Change in Director(s)": "👤",
+    "Change in Management": "👤",
+    "Change in Company Secretary/Compliance Officer": "👤",
+    "Resignation": "👤",
+    "Resignation of Director/KMP/SMP": "👤",
+    "Cessation": "👤",
+    "Change in Auditors": "👤",
+
+    # ⚖️ 5. Legal, Regulatory & Penalties
+    "Pendency of Litigation(s)/dispute(s) or the outcome impacting the Company": "⚖️",
+    "Pendency of any litigation(s) or dispute(s)-(Sub-para 8-Para B)": "⚖️",
+    "Actions initiated/taken or orders passed-XBRL": "⚖️",
+    "Action(s) taken or orders passed": "⚖️",
+    "Delay/default in the payment of fines/penalties/dues etc. to authority": "⚖️",
+    "Corporate Insolvency Resolution Process": "⚖️",
+    "Corporate Insolvency Resolution Process-XBRL": "⚖️",
+    "News Verification": "⚖️",
+    "Reply to Clarification- Financial results": "⚖️",
+
+    # 🗓️ 6. Meetings & Corporate Dates
+    "Board Meeting Intimation": "🗓️",
+    "Outcome of Board Meeting": "🗓️",
+    "Outcome of Board Meeting-XBRL": "🗓️",
+    "Notice Of Shareholders Meetings-XBRL": "🗓️",
+    "Shareholders meeting": "🗓️",
+    "Record Date": "🗓️",
+    "Record Date Updates": "🗓️",
+    "Notice of Unitholder meetings": "🗓️",
+
+    # ⚡ 7. Price, Volume & Market Activity
+    "Spurt in Volume": "⚡",
+    "Price movement": "⚡",
+    "Movement in Units": "⚡",
+    "Trading Window": "⚡",
+    "Trading Window-XBRL": "⚡",
+    "Trading Plan under PIT": "⚡",
+
+    # 📢 8. Investor Relations
+    "Press Release": "📢",
+    "Investor Presentation": "📢",
+    "Analyst/Investor Meet Para A-XBRL": "📢",
+    "Analysts/Institutional Investor Meet/Con. Call Updates": "📢",
+    "Monthly Business Updates": "📢",
+    "Copy of Newspaper Publication": "📢",
+
+    # 📁 9. Routine Compliance & Disclosures
+    "Certificate under SEBI (Depositories and Participants) Regulations, 2018": "📁",
+    "Quarterly Compliance Report on Corporate governance - within 21 days from the end of the quarter": "📁",
+    "Integrated Filing- Governance": "📁",
+    "Security Cover": "📁",
+    "Security Cover Certificate": "📁",
+    "Annual Report": "📁",
+    "Annual Impact Report": "📁",
+    "Annual Disclosure": "📁",
+    "Structural Digital Database": "📁",
+    "Amendment to AOA/MOA": "📁",
+    "Name Change": "📁",
+    "Portfolio": "📁",
+    "Corrigendum": "📁",
+    "Updates": "📁",
+    "General Updates": "📁",
+    "Update": "📁",
+    "Disclosure under Regulation 6(1)": "📁",
+    "Disclosure under Regulation 7(1)": "📁",
+    "Disclosure under Regulation 13(3)": "📁",
+    "Disclosure under Regulation 27(2)": "📁",
+    "Intimation under Regulation 50(1)": "📁",
+    "Intimation under Regulation 50(2)": "📁",
+    "Disclosure Under Regulation 51": "📁",
+    "Disclosure under Regulation 52(4)": "📁",
+    "Disclosure under Regulation 52(6)": "📁",
+    "Disclosure under SEBI Takeover Regulations": "📁",
+    "Disclosure of all complaints including SCORES complaints received by the InvIT on a quarterly basis": "📁"
+}
+
 # ===== LOGGING =====
 logging.basicConfig(
     level=logging.INFO,
@@ -148,8 +273,18 @@ class AnnouncementDB:
         conn.close()
         return count
 
-# ===== SENTIMENT EMOJI (checks title + subject + description) =====
+# ===== CATEGORY & SENTIMENT EMOJI HELPERS =====
+def get_category_emoji(subject):
+    """Return specific topic emoji based on subject mapping."""
+    if not subject:
+        return "📄"
+    for key, emoji in CATEGORY_MAP.items():
+        if key.lower() in subject.lower():
+            return emoji
+    return "📄"
+
 def sentiment_emoji(title, subject, description):
+    """Determine sentiment status emoji."""
     text = f"{title} {subject} {description}".lower()
 
     BAD = [
@@ -166,14 +301,14 @@ def sentiment_emoji(title, subject, description):
         "record date", "scheme of arrangement"
     ]
     WARNING = [
-        "caution", "warning", "update", "clarification", "announcement","press release",
+        "caution", "warning", "update", "clarification", "announcement", "press release",
         "postponed", "adjourned", "suspended", "cancelled"
     ]
 
     if any(k in text for k in BAD):
         return "🔴"
     if any(k in text for k in WARNING):
-        return "🧐"
+        return "⚠️🧐"
     if any(k in text for k in GOOD):
         return "🟢"
     return "🟡"
@@ -410,12 +545,13 @@ def main():
                     title_html = escape_html(data['title'])
                     desc_html = escape_html(truncate(data['description'], 220))
                     subject_html = escape_html(data['subject'])
+                    cat_emoji = get_category_emoji(data['subject'])
 
                     msg = (
-                        f"{data['sentiment']} <a href=\"{data['link']}\">{title_html}</a>\n"
-                        f"📄 {subject_html}\n"
+                        f"{data['sentiment']} {cat_emoji} <a href=\"{data['link']}\">{title_html}</a>\n"
+                        f"📄 <b>{subject_html}</b>\n"
                         f"{desc_html}\n"
-                        f"📎 <a href=\"{data['link']}\">View Document</a>\n"
+                        f"🔗 <a href=\"{data['link']}\">View Document</a>\n"
                         f"🕐 {data['pub']}"
                     )
                     send_telegram(msg)
