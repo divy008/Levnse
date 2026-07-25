@@ -12,7 +12,6 @@ from dateutil import parser
 # ===== ENVIRONMENT VARIABLES =====
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
-GOOGLE_SHEETS_WEB_APP_URL = os.getenv("GOOGLE_SHEETS_WEB_APP_URL")  # Optional
 RUN_SOURCE = os.getenv("RUN_SOURCE", "cronjobs.org")
 
 if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
@@ -25,7 +24,6 @@ FALLBACK_FEED_URL = "https://www.bseindia.com/corporates/ann.html"
 # BSE Separate Storage Files
 DB_FILE = "bse_announcements.db"
 SEEN_JSON_FILE = "bse_seen.json"
-LOG_JSON_FILE = "bse_log.json"
 RUN_LOG_FILE = "bse_run_log.txt"
 EXCEL_FILE = "bse_announcements.xlsx"
 LOCK_FILE = ".bse_lock"
@@ -67,7 +65,7 @@ class FileLock:
             os.remove(self.lock_file)
 
 
-# ===== JSON STATE MANAGER (NSE Style) =====
+# ===== JSON STATE MANAGER =====
 def load_json_set(file_path):
     if os.path.exists(file_path):
         try:
@@ -286,39 +284,6 @@ def fetch_feed():
     return None
 
 
-# ===== GOOGLE SHEETS EXPORT =====
-def send_to_google_sheets(new_items, web_app_url):
-    if not new_items or not web_app_url:
-        return False
-
-    data_to_send = [
-        {
-            "company": item["company"],
-            "scripcode": item["scripcode"],
-            "description": item["description"],
-            "date": item["date"],
-            "time": item["time"],
-            "link": item["link"],
-            "sentiment": item["sentiment"],
-        }
-        for item in new_items
-    ]
-
-    payload = {"action": "add_records", "data": data_to_send}
-
-    try:
-        response = requests.post(web_app_url, json=payload, timeout=30)
-        if response.status_code == 200:
-            logger.info(f"✅ Sent {len(data_to_send)} records to Google Sheets")
-            return True
-        else:
-            logger.error(f"❌ Google Sheets POST failed: {response.text}")
-            return False
-    except Exception as e:
-        logger.error(f"❌ Error sending to Google Sheets: {e}")
-        return False
-
-
 # ===== EXCEL EXPORT =====
 def write_excel(db):
     try:
@@ -366,7 +331,7 @@ def main():
         db = AnnouncementDB()
         db.cleanup_old(30)
 
-        # Load BSE JSON Seen Tracker
+        # Load JSON Seen Tracker
         seen_hashes = load_json_set(SEEN_JSON_FILE)
 
         feed = fetch_feed()
@@ -374,9 +339,10 @@ def main():
             logger.error("❌ Failed to fetch BSE feed")
             return
 
+        # STRICT 6-MINUTE SCANNING WINDOW
         now_ist = datetime.now(IST).replace(tzinfo=None)
-        window_start_ist = now_ist - timedelta(minutes=15)
-        logger.info(f"⏰ Window (IST): {window_start_ist.strftime('%H:%M:%S')} – {now_ist.strftime('%H:%M:%S')}")
+        six_ago_ist = now_ist - timedelta(minutes=6)
+        logger.info(f"⏰ Window (IST): {six_ago_ist.strftime('%H:%M:%S')} – {now_ist.strftime('%H:%M:%S')}")
 
         new_items = []
         duplicates = 0
@@ -391,7 +357,8 @@ def main():
             if entry_time is None:
                 continue
 
-            if not (window_start_ist <= entry_time <= now_ist):
+            # Strict 6-minute filter
+            if not (six_ago_ist <= entry_time <= now_ist):
                 continue
 
             link = entry.get("link", "")
@@ -430,6 +397,7 @@ def main():
                 new_items.append(data)
                 seen_hashes.add(content_hash)
                 seen_hashes.add(guid)
+                seen_hashes.add(link)
 
         new_items.sort(key=lambda x: x["pub_date"])
 
@@ -439,12 +407,17 @@ def main():
             for i in range(0, len(new_items), batch_size):
                 batch = new_items[i : i + batch_size]
                 for data in batch:
-                    company_html = escape_html(data["company"])
+                    company_clean = data["company"]
+                    # Prevent duplicate scripcode in company title
+                    if data["scripcode"] and f"({data['scripcode']})" in company_clean:
+                        scrip_info = ""
+                    else:
+                        scrip_info = f" ({data['scripcode']})" if data["scripcode"] else ""
+
                     desc_html = escape_html(truncate(data["description"], 250))
-                    scrip_info = f" ({data['scripcode']})" if data['scripcode'] else ""
 
                     msg = (
-                        f"{data['sentiment']} <b>{company_html}</b>{scrip_info}\n"
+                        f"{data['sentiment']} <b>{escape_html(company_clean)}</b>{scrip_info}\n"
                         f"{desc_html}\n"
                         f"📎 <a href=\"{data['link']}\">View BSE Filing</a>\n"
                         f"🕐 {data['time']} | {data['date']}"
@@ -454,17 +427,14 @@ def main():
                 if i + batch_size < len(new_items):
                     time.sleep(1)
 
-            if GOOGLE_SHEETS_WEB_APP_URL:
-                send_to_google_sheets(new_items, GOOGLE_SHEETS_WEB_APP_URL)
-
             write_excel(db)
 
-        # Save BSE JSON State File
+        # Save JSON State
         save_json_set(SEEN_JSON_FILE, seen_hashes)
 
         total = db.get_total_count()
         logger.info(
-            f"📊 SUMMARY: New={len(new_items)}, Dups={duplicates}, Skipped={skipped}, Total DB={total}"
+            f"📊 SUMMARY (Last 6 min IST): New={len(new_items)}, Dups={duplicates}, Skipped={skipped}, Total DB={total}"
         )
         with open(RUN_LOG_FILE, "a") as f:
             f.write(f"{datetime.now()}: New={len(new_items)}, Dups={duplicates}, Skipped={skipped}\n")
