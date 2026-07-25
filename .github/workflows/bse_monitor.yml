@@ -5,7 +5,7 @@ permissions:
 
 on:
   repository_dispatch:
-    types: [cron-trigger-bse]
+    types: [cron-trigger]
   workflow_dispatch:
 
 jobs:
