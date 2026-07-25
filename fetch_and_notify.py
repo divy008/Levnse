@@ -166,14 +166,14 @@ def sentiment_emoji(title, subject, description):
         "record date", "scheme of arrangement"
     ]
     WARNING = [
-        "caution", "warning", "update", "clarification", "announcement",
+        "caution", "warning", "update", "clarification", "announcement","press release",
         "postponed", "adjourned", "suspended", "cancelled"
     ]
 
     if any(k in text for k in BAD):
         return "🔴"
     if any(k in text for k in WARNING):
-        return "⚠️"
+        return "🧐"
     if any(k in text for k in GOOD):
         return "🟢"
     return "🟡"
