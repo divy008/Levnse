@@ -1,46 +1,52 @@
-name: BSE Announcement Monitor
+name: BSE Watch - Daily Announcements
+
+permissions:
+  contents: write
 
 on:
   repository_dispatch:
-    types: [trigger-bse-check]
+    types: [cron-trigger-bse]
   workflow_dispatch:
 
 jobs:
-  run-bse-monitor:
+  run-bot:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    concurrency:
+      group: bse-watch
+      cancel-in-progress: true
+
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        persist-credentials: true
+        fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-          cache: 'pip'
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
 
-      - name: Restore BSE Database Cache
-        uses: actions/cache@v4
-        with:
-          path: bse_announcements.db
-          key: bse-db-${{ github.run_id }}
-          restore-keys: |
-            bse-db-
+    - name: Install dependencies
+      run: |
+        pip install feedparser requests openpyxl python-dateutil
 
-      - name: Install Dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install feedparser requests python-dateutil openpyxl
+    - name: Run BSE Watch Bot
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      run: |
+        python bse_monitor.py
 
-      - name: Run BSE Script
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          RUN_SOURCE: "cronjobs.org"
-        run: |
-          python bse_monitor.py
-
-      - name: Save BSE Database Cache
-        uses: actions/cache@v4
-        with:
-          path: bse_announcements.db
-          key: bse-db-${{ github.run_id }}
+    - name: Commit and push changes
+      if: success()
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add bse_announcements.db bse_announcements.xlsx bse_run_log.txt bse_bot.log || true
+        if ! git diff --staged --quiet; then
+          git commit -m "🔄 Auto-update: BSE announcements [skip ci]"
+          git push
+        fi
