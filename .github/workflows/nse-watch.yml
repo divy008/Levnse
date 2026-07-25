@@ -53,9 +53,8 @@ jobs:
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add announcements.db announcements.xlsx run_log.txt bse_announcements.db bse_announcements.xlsx bse_run_log.txt bse_bot.log || true
+        git add announcements.db announcements.xlsx run_log.txt log.json seen.json bse_announcements.db bse_announcements.xlsx bse_run_log.txt bse_seen.json bse_log.json bse_bot.log || true
         if ! git diff --staged --quiet; then
-          git commit -m "🔄 Auto-update: NSE & BSE announcements [skip ci]"
+          git commit -m "🔄 Auto-update: NSE & BSE state [skip ci]"
           git push origin HEAD
         fi
-        
