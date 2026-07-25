@@ -381,7 +381,7 @@ def main():
                     msg = (
                         f"{data['sentiment']} <b>{company_html}</b>{scrip_info}\n"
                         f"{desc_html}\n"
-                        f"📎 <a href=\"{data['link']}\">View BSE Filing</a>\n"
+                        f"📎 <a href=\"{data['link']}\">View Document</a>\n"
                         f"🕐 {data['time']} | {data['date']}"
                     )
                     send_telegram(msg)
