@@ -1,4 +1,4 @@
-name: NSE Watch - Daily Announcements
+name: NSE & BSE Watch - Daily Announcements
 
 permissions:
   contents: write
@@ -22,7 +22,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         persist-credentials: true
-        fetch-depth: 0
+        fetch-depth: 1  # 👈 આનાથી 21 સેકન્ડનો સમય ઘટીને 1-2 સેકન્ડ થઈ જશે
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -41,13 +41,21 @@ jobs:
       run: |
         python fetch_and_notify.py
 
+    - name: Run BSE Watch Bot
+      env:
+        TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      run: |
+        python bse_monitor.py
+
     - name: Commit and push changes
-      if: success()
+      if: always()  # 👈 જો કોઈ એક સ્ક્રિપ્ટમાં પ્રોબ્લેમ આવે તો પણ જે સ્ક્રિપ્ટનો ડેટા આવ્યો હોય તે સેવ થશે
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        git add announcements.db announcements.xlsx run_log.txt || true
+        git add announcements.db announcements.xlsx run_log.txt bse_announcements.db bse_announcements.xlsx bse_run_log.txt bse_bot.log || true
         if ! git diff --staged --quiet; then
-          git commit -m "🔄 Auto-update: NSE announcements [skip ci]"
-          git push
+          git commit -m "🔄 Auto-update: NSE & BSE announcements [skip ci]"
+          git push origin HEAD
         fi
+        
