@@ -36,6 +36,91 @@ HEADERS = {
     "Accept": "application/xml,text/xml,*/*",
 }
 
+# ===== CATEGORY EMOJI MAPPING =====
+CATEGORY_MAP = {
+    # 🟢 1. Growth & Wins
+    "Dividend": "🎯",
+    "Bonus": "🎯",
+    "Buyback": "🎯",
+    "Capacity addition": "🎯",
+    "Commencement of commercial": "🎯",
+    "Awarding of order": "🎯",
+    "Bagging/Receiving of order": "🎯",
+    "Order Win": "🎯",
+    "Receiving of order": "🎯",
+
+    # 🤝 2. Deals, M&A & Expansion
+    "Acquisition": "🤝",
+    "Amalgamation": "🤝",
+    "Merger": "🤝",
+    "De-merger": "🤝",
+    "Scheme of Arrangement": "🤝",
+    "Sale or disposal": "🤝",
+    "Agreements": "🤝",
+    "MoU": "🤝",
+    "Joint Venture": "🤝",
+    "Tie up": "🤝",
+
+    # 💳 3. Capital, Securities & Debt
+    "Fund Raising": "💳",
+    "Allotment of Securities": "💳",
+    "Issue of Securities": "💳",
+    "ESOP": "💳",
+    "ESOS": "💳",
+    "Credit Rating": "💳",
+    "Redemption": "💳",
+    "Payment of Interest": "💳",
+    "Guarantees": "💳",
+
+    # 👤 4. Board & Leadership Changes
+    "Appointment": "👤",
+    "Change in Director": "👤",
+    "Change in KMP": "👤",
+    "Management": "👤",
+    "Company Secretary": "👤",
+    "Resignation": "👤",
+    "Cessation": "👤",
+    "Auditor": "👤",
+
+    # ⚖️ 5. Legal, Regulatory & Penalties
+    "Litigation": "⚖️",
+    "Dispute": "⚖️",
+    "Action": "⚖️",
+    "Penalty": "⚖️",
+    "Fine": "⚖️",
+    "Insolvency": "⚖️",
+    "CIRP": "⚖️",
+    "Clarification": "⚖️",
+
+    # 🗓️ 6. Meetings & Corporate Dates
+    "Board Meeting": "🗓️",
+    "Outcome of Board Meeting": "🗓️",
+    "General Meeting": "🗓️",
+    "AGM": "🗓️",
+    "EGM": "🗓️",
+    "Record Date": "🗓️",
+
+    # ⚡ 7. Price, Volume & Market Activity
+    "Spurt in Volume": "⚡",
+    "Price Movement": "⚡",
+    "Trading Window": "⚡",
+
+    # 📢 8. Investor Relations
+    "Press Release": "📢",
+    "Investor Presentation": "📢",
+    "Analyst": "📢",
+    "Institutional Investor": "📢",
+    "Conference Call": "📢",
+
+    # 📁 9. Routine Compliance & Disclosures
+    "Compliance": "📁",
+    "Governance": "📁",
+    "Security Cover": "📁",
+    "Annual Report": "📁",
+    "Disclosure": "📁",
+    "Closure of Trading Window": "📁",
+}
+
 # ===== LOGGING =====
 logging.basicConfig(
     level=logging.INFO,
@@ -183,7 +268,16 @@ class AnnouncementDB:
         return count
 
 
-# ===== SENTIMENT EMOJI =====
+# ===== CATEGORY & SENTIMENT EMOJI HELPERS =====
+def get_category_emoji(description):
+    """Scans description to match appropriate category emoji."""
+    if not description:
+        return "📄"
+    for key, emoji in CATEGORY_MAP.items():
+        if key.lower() in description.lower():
+            return emoji
+    return "📄"
+
 def sentiment_emoji(company, description):
     text = f"{company} {description}".lower()
 
@@ -208,7 +302,7 @@ def sentiment_emoji(company, description):
     if any(k in text for k in BAD):
         return "🔴"
     if any(k in text for k in WARNING):
-        return "⚠️"
+        return "⚠️🧐"
     if any(k in text for k in GOOD):
         return "🟢"
     return "🟡"
@@ -408,16 +502,16 @@ def main():
                 batch = new_items[i : i + batch_size]
                 for data in batch:
                     company_clean = data["company"]
-                    # Prevent duplicate scripcode in company title
                     if data["scripcode"] and f"({data['scripcode']})" in company_clean:
                         scrip_info = ""
                     else:
                         scrip_info = f" ({data['scripcode']})" if data["scripcode"] else ""
 
                     desc_html = escape_html(truncate(data["description"], 250))
+                    cat_emoji = get_category_emoji(data["description"])
 
                     msg = (
-                        f"{data['sentiment']} <b>{escape_html(company_clean)}</b>{scrip_info}\n"
+                        f"{data['sentiment']} {cat_emoji} <b>{escape_html(company_clean)}</b>{scrip_info}\n"
                         f"{desc_html}\n"
                         f"📎 <a href=\"{data['link']}\">View Document</a>\n"
                         f"🕐 {data['time']} | {data['date']}"
