@@ -1,5 +1,6 @@
 import os
 import time
+import json
 import feedparser
 import requests
 import sqlite3
@@ -11,6 +12,7 @@ from dateutil import parser
 # ===== ENVIRONMENT VARIABLES =====
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
+GOOGLE_SHEETS_WEB_APP_URL = os.getenv("GOOGLE_SHEETS_WEB_APP_URL")  # Optional
 RUN_SOURCE = os.getenv("RUN_SOURCE", "cronjobs.org")
 
 if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
@@ -19,8 +21,12 @@ if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
 # ===== CONFIGURATION =====
 FEED_URL = "https://beta.bseindia.com/data/xml/announcements.xml"
 FALLBACK_FEED_URL = "https://www.bseindia.com/corporates/ann.html"
+
+# BSE Separate Storage Files
 DB_FILE = "bse_announcements.db"
-LOG_FILE = "bse_run_log.txt"
+SEEN_JSON_FILE = "bse_seen.json"
+LOG_JSON_FILE = "bse_log.json"
+RUN_LOG_FILE = "bse_run_log.txt"
 EXCEL_FILE = "bse_announcements.xlsx"
 LOCK_FILE = ".bse_lock"
 
@@ -61,6 +67,25 @@ class FileLock:
             os.remove(self.lock_file)
 
 
+# ===== JSON STATE MANAGER (NSE Style) =====
+def load_json_set(file_path):
+    if os.path.exists(file_path):
+        try:
+            with open(file_path, "r") as f:
+                return set(json.load(f))
+        except Exception as e:
+            logger.warning(f"⚠️ Could not load {file_path}: {e}")
+    return set()
+
+def save_json_set(file_path, data_set, max_items=2000):
+    try:
+        data_list = list(data_set)[-max_items:]
+        with open(file_path, "w") as f:
+            json.dump(data_list, f, indent=2)
+    except Exception as e:
+        logger.error(f"❌ Failed to save {file_path}: {e}")
+
+
 # ===== DATABASE =====
 class AnnouncementDB:
     def __init__(self, db_file=DB_FILE):
@@ -94,7 +119,9 @@ class AnnouncementDB:
         conn.close()
         logger.info("✅ BSE Database initialized")
 
-    def is_duplicate(self, guid, link, content_hash):
+    def is_duplicate(self, guid, link, content_hash, seen_hashes):
+        if content_hash in seen_hashes or guid in seen_hashes or link in seen_hashes:
+            return True
         conn = sqlite3.connect(self.db_file)
         c = conn.cursor()
         c.execute(
@@ -259,6 +286,39 @@ def fetch_feed():
     return None
 
 
+# ===== GOOGLE SHEETS EXPORT =====
+def send_to_google_sheets(new_items, web_app_url):
+    if not new_items or not web_app_url:
+        return False
+
+    data_to_send = [
+        {
+            "company": item["company"],
+            "scripcode": item["scripcode"],
+            "description": item["description"],
+            "date": item["date"],
+            "time": item["time"],
+            "link": item["link"],
+            "sentiment": item["sentiment"],
+        }
+        for item in new_items
+    ]
+
+    payload = {"action": "add_records", "data": data_to_send}
+
+    try:
+        response = requests.post(web_app_url, json=payload, timeout=30)
+        if response.status_code == 200:
+            logger.info(f"✅ Sent {len(data_to_send)} records to Google Sheets")
+            return True
+        else:
+            logger.error(f"❌ Google Sheets POST failed: {response.text}")
+            return False
+    except Exception as e:
+        logger.error(f"❌ Error sending to Google Sheets: {e}")
+        return False
+
+
 # ===== EXCEL EXPORT =====
 def write_excel(db):
     try:
@@ -306,6 +366,9 @@ def main():
         db = AnnouncementDB()
         db.cleanup_old(30)
 
+        # Load BSE JSON Seen Tracker
+        seen_hashes = load_json_set(SEEN_JSON_FILE)
+
         feed = fetch_feed()
         if feed is None:
             logger.error("❌ Failed to fetch BSE feed")
@@ -345,7 +408,7 @@ def main():
             time_str = entry_time.strftime("%H:%M:%S")
 
             content_hash = create_hash(company, scripcode, description)
-            if db.is_duplicate(guid, link, content_hash):
+            if db.is_duplicate(guid, link, content_hash, seen_hashes):
                 duplicates += 1
                 continue
 
@@ -365,6 +428,8 @@ def main():
 
             if db.add_announcement(data):
                 new_items.append(data)
+                seen_hashes.add(content_hash)
+                seen_hashes.add(guid)
 
         new_items.sort(key=lambda x: x["pub_date"])
 
@@ -381,7 +446,7 @@ def main():
                     msg = (
                         f"{data['sentiment']} <b>{company_html}</b>{scrip_info}\n"
                         f"{desc_html}\n"
-                        f"📎 <a href=\"{data['link']}\">View Document</a>\n"
+                        f"📎 <a href=\"{data['link']}\">View BSE Filing</a>\n"
                         f"🕐 {data['time']} | {data['date']}"
                     )
                     send_telegram(msg)
@@ -389,12 +454,20 @@ def main():
                 if i + batch_size < len(new_items):
                     time.sleep(1)
 
+            if GOOGLE_SHEETS_WEB_APP_URL:
+                send_to_google_sheets(new_items, GOOGLE_SHEETS_WEB_APP_URL)
+
             write_excel(db)
+
+        # Save BSE JSON State File
+        save_json_set(SEEN_JSON_FILE, seen_hashes)
 
         total = db.get_total_count()
         logger.info(
             f"📊 SUMMARY: New={len(new_items)}, Dups={duplicates}, Skipped={skipped}, Total DB={total}"
         )
+        with open(RUN_LOG_FILE, "a") as f:
+            f.write(f"{datetime.now()}: New={len(new_items)}, Dups={duplicates}, Skipped={skipped}\n")
 
     except Exception as e:
         logger.error(f"❌ Fatal error: {e}", exc_info=True)
