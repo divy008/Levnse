@@ -1704,3 +1704,11 @@
 2026-07-27 09:35:48,529 - INFO - 📊 Excel updated with 315 announcements
 2026-07-27 09:35:48,530 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=17, Skipped=0, Total DB=479
 2026-07-27 09:35:48,530 - INFO - ✅ Done
+2026-07-27 09:40:36,022 - INFO - 🚀 BSE Watch starting at 2026-07-27 09:40:36.022848
+2026-07-27 09:40:36,023 - INFO - 📡 Source: cronjobs.org
+2026-07-27 09:40:36,023 - INFO - ✅ BSE Database initialized
+2026-07-27 09:40:43,951 - INFO - ⏰ Window (IST): 15:04:43 – 15:10:43
+2026-07-27 09:40:44,439 - INFO - 📤 Sending 6 alerts to Telegram...
+2026-07-27 09:40:52,681 - INFO - 📊 Excel updated with 321 announcements
+2026-07-27 09:40:52,682 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=1, Skipped=0, Total DB=485
+2026-07-27 09:40:52,682 - INFO - ✅ Done
