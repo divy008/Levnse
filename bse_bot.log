@@ -2404,3 +2404,11 @@
 2026-07-27 16:55:41,180 - INFO - 📊 Excel updated with 500 announcements
 2026-07-27 16:55:41,182 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=3, Skipped=0, Total DB=1340
 2026-07-27 16:55:41,182 - INFO - ✅ Done
+2026-07-27 17:00:43,469 - INFO - 🚀 BSE Watch starting at 2026-07-27 17:00:43.469707
+2026-07-27 17:00:43,469 - INFO - 📡 Source: cronjobs.org
+2026-07-27 17:00:43,470 - INFO - ✅ BSE Database initialized
+2026-07-27 17:00:46,138 - INFO - ⏰ Window (IST): 22:24:46 – 22:30:46
+2026-07-27 17:00:46,596 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-07-27 17:00:51,283 - INFO - 📊 Excel updated with 500 announcements
+2026-07-27 17:00:51,284 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=0, Skipped=0, Total DB=1345
+2026-07-27 17:00:51,284 - INFO - ✅ Done
