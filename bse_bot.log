@@ -4012,3 +4012,11 @@
 2026-07-28 14:21:22,480 - INFO - 📊 Excel updated with 500 announcements
 2026-07-28 14:21:22,482 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=4, Skipped=0, Total DB=2514
 2026-07-28 14:21:22,482 - INFO - ✅ Done
+2026-07-28 14:26:02,073 - INFO - 🚀 BSE Watch starting at 2026-07-28 14:26:02.073762
+2026-07-28 14:26:02,073 - INFO - 📡 Source: cronjobs.org
+2026-07-28 14:26:02,074 - INFO - ✅ BSE Database initialized
+2026-07-28 14:26:09,006 - INFO - ⏰ Window (IST): 19:50:09 – 19:56:09
+2026-07-28 14:26:09,575 - INFO - 📤 Sending 8 alerts to Telegram...
+2026-07-28 14:26:19,680 - INFO - 📊 Excel updated with 500 announcements
+2026-07-28 14:26:19,681 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=1, Skipped=0, Total DB=2522
+2026-07-28 14:26:19,681 - INFO - ✅ Done
