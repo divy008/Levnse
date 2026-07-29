@@ -4911,3 +4911,11 @@
 2026-07-29 04:16:00,626 - INFO - 📊 Excel updated with 12 announcements
 2026-07-29 04:16:00,627 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=226, Skipped=44, Total DB=2685
 2026-07-29 04:16:00,628 - INFO - ✅ Done
+2026-07-29 04:20:58,373 - INFO - 🚀 BSE Watch starting at 2026-07-29 04:20:58.373771
+2026-07-29 04:20:58,373 - INFO - 📡 Source: cronjobs.org
+2026-07-29 04:20:58,374 - INFO - ✅ BSE Database initialized
+2026-07-29 04:21:00,058 - INFO - ⏰ Window (IST): 09:45:00 – 09:51:00
+2026-07-29 04:21:00,097 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-07-29 04:21:00,998 - INFO - 📊 Excel updated with 13 announcements
+2026-07-29 04:21:01,000 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=4, Skipped=0, Total DB=2686
+2026-07-29 04:21:01,000 - INFO - ✅ Done
