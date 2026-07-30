@@ -8231,3 +8231,11 @@
 2026-07-30 19:35:30,788 - INFO - ⏰ Window (IST): 00:59:30 – 01:05:30
 2026-07-30 19:35:30,809 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=5755
 2026-07-30 19:35:30,810 - INFO - ✅ Done
+2026-07-30 19:40:20,975 - INFO - 🚀 BSE Watch starting at 2026-07-30 19:40:20.975385
+2026-07-30 19:40:20,975 - INFO - 📡 Source: cronjobs.org
+2026-07-30 19:40:20,976 - INFO - ✅ BSE Database initialized
+2026-07-30 19:40:21,481 - INFO - ⏰ Window (IST): 01:04:21 – 01:10:21
+2026-07-30 19:40:22,190 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-07-30 19:40:23,360 - INFO - 📊 Excel updated with 500 announcements
+2026-07-30 19:40:23,361 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=5756
+2026-07-30 19:40:23,361 - INFO - ✅ Done
