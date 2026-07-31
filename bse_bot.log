@@ -9700,3 +9700,11 @@
 2026-07-31 15:15:52,032 - INFO - 📊 Excel updated with 500 announcements
 2026-07-31 15:15:52,034 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=0, Skipped=0, Total DB=7341
 2026-07-31 15:15:52,034 - INFO - ✅ Done
+2026-07-31 15:20:38,705 - INFO - 🚀 BSE Watch starting at 2026-07-31 15:20:38.705292
+2026-07-31 15:20:38,705 - INFO - 📡 Source: cronjobs.org
+2026-07-31 15:20:38,706 - INFO - ✅ BSE Database initialized
+2026-07-31 15:20:41,630 - INFO - ⏰ Window (IST): 20:44:41 – 20:50:41
+2026-07-31 15:20:42,176 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-07-31 15:20:45,026 - INFO - 📊 Excel updated with 500 announcements
+2026-07-31 15:20:45,027 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=2, Skipped=0, Total DB=7344
+2026-07-31 15:20:45,027 - INFO - ✅ Done
