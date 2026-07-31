@@ -9444,3 +9444,11 @@
 2026-07-31 12:36:03,552 - INFO - 📊 Excel updated with 500 announcements
 2026-07-31 12:36:03,553 - INFO - 📊 SUMMARY (Last 6 min IST): New=20, Dups=29, Skipped=0, Total DB=6886
 2026-07-31 12:36:03,553 - INFO - ✅ Done
+2026-07-31 12:40:41,468 - INFO - 🚀 BSE Watch starting at 2026-07-31 12:40:41.468207
+2026-07-31 12:40:41,468 - INFO - 📡 Source: cronjobs.org
+2026-07-31 12:40:41,468 - INFO - ✅ BSE Database initialized
+2026-07-31 12:40:43,973 - INFO - ⏰ Window (IST): 18:04:43 – 18:10:43
+2026-07-31 12:40:44,473 - INFO - 📤 Sending 18 alerts to Telegram...
+2026-07-31 12:41:00,465 - INFO - 📊 Excel updated with 500 announcements
+2026-07-31 12:41:00,467 - INFO - 📊 SUMMARY (Last 6 min IST): New=18, Dups=27, Skipped=0, Total DB=6904
+2026-07-31 12:41:00,467 - INFO - ✅ Done
