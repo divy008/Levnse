@@ -9984,3 +9984,11 @@
 2026-07-31 18:15:36,224 - INFO - ⏰ Window (IST): 23:39:36 – 23:45:36
 2026-07-31 18:15:36,769 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=7461
 2026-07-31 18:15:36,769 - INFO - ✅ Done
+2026-07-31 18:20:37,994 - INFO - 🚀 BSE Watch starting at 2026-07-31 18:20:37.994067
+2026-07-31 18:20:37,994 - INFO - 📡 Source: cronjobs.org
+2026-07-31 18:20:37,994 - INFO - ✅ BSE Database initialized
+2026-07-31 18:20:41,950 - INFO - ⏰ Window (IST): 23:44:41 – 23:50:41
+2026-07-31 18:20:42,619 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-07-31 18:20:43,863 - INFO - 📊 Excel updated with 500 announcements
+2026-07-31 18:20:43,865 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=7462
+2026-07-31 18:20:43,865 - INFO - ✅ Done
