@@ -10511,3 +10511,11 @@
 2026-08-01 04:25:21,806 - INFO - ⏰ Window (IST): 09:49:21 – 09:55:21
 2026-08-01 04:25:21,879 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=7472
 2026-08-01 04:25:21,880 - INFO - ✅ Done
+2026-08-01 04:30:35,816 - INFO - 🚀 BSE Watch starting at 2026-08-01 04:30:35.816922
+2026-08-01 04:30:35,817 - INFO - 📡 Source: cronjobs.org
+2026-08-01 04:30:35,817 - INFO - ✅ BSE Database initialized
+2026-08-01 04:30:36,502 - INFO - ⏰ Window (IST): 09:54:36 – 10:00:36
+2026-08-01 04:30:36,558 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-08-01 04:30:37,592 - INFO - 📊 Excel updated with 6 announcements
+2026-08-01 04:30:37,593 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=2, Skipped=0, Total DB=7473
+2026-08-01 04:30:37,593 - INFO - ✅ Done
