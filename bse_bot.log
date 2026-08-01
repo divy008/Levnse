@@ -11141,3 +11141,11 @@
 2026-08-01 11:01:10,589 - INFO - 📊 Excel updated with 486 announcements
 2026-08-01 11:01:10,591 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=1, Skipped=0, Total DB=7953
 2026-08-01 11:01:10,591 - INFO - ✅ Done
+2026-08-01 11:05:51,364 - INFO - 🚀 BSE Watch starting at 2026-08-01 11:05:51.364356
+2026-08-01 11:05:51,364 - INFO - 📡 Source: cronjobs.org
+2026-08-01 11:05:51,365 - INFO - ✅ BSE Database initialized
+2026-08-01 11:05:53,514 - INFO - ⏰ Window (IST): 16:29:53 – 16:35:53
+2026-08-01 11:05:53,644 - INFO - 📤 Sending 10 alerts to Telegram...
+2026-08-01 11:06:05,600 - INFO - 📊 Excel updated with 496 announcements
+2026-08-01 11:06:05,602 - INFO - 📊 SUMMARY (Last 6 min IST): New=10, Dups=6, Skipped=0, Total DB=7963
+2026-08-01 11:06:05,602 - INFO - ✅ Done
