@@ -12146,3 +12146,11 @@
 2026-08-03 02:50:20,505 - INFO - ⏰ Window (IST): 08:14:20 – 08:20:20
 2026-08-03 02:50:20,507 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=8291
 2026-08-03 02:50:20,508 - INFO - ✅ Done
+2026-08-03 02:55:25,492 - INFO - 🚀 BSE Watch starting at 2026-08-03 02:55:25.492594
+2026-08-03 02:55:25,492 - INFO - 📡 Source: cronjobs.org
+2026-08-03 02:55:25,493 - INFO - ✅ BSE Database initialized
+2026-08-03 02:55:26,075 - INFO - ⏰ Window (IST): 08:19:26 – 08:25:26
+2026-08-03 02:55:26,204 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-08-03 02:55:29,042 - INFO - 📊 Excel updated with 4 announcements
+2026-08-03 02:55:29,043 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=8294
+2026-08-03 02:55:29,044 - INFO - ✅ Done
