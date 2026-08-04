@@ -14667,3 +14667,11 @@
 2026-08-04 09:56:05,688 - INFO - 📊 Excel updated with 500 announcements
 2026-08-04 09:56:05,690 - INFO - 📊 SUMMARY (Last 6 min IST): New=19, Dups=17, Skipped=0, Total DB=10465
 2026-08-04 09:56:05,690 - INFO - ✅ Done
+2026-08-04 10:00:59,962 - INFO - 🚀 BSE Watch starting at 2026-08-04 10:00:59.962935
+2026-08-04 10:00:59,963 - INFO - 📡 Source: cronjobs.org
+2026-08-04 10:00:59,963 - INFO - ✅ BSE Database initialized
+2026-08-04 10:01:01,732 - INFO - ⏰ Window (IST): 15:25:01 – 15:31:01
+2026-08-04 10:01:01,998 - INFO - 📤 Sending 17 alerts to Telegram...
+2026-08-04 10:01:20,989 - INFO - 📊 Excel updated with 500 announcements
+2026-08-04 10:01:20,990 - INFO - 📊 SUMMARY (Last 6 min IST): New=17, Dups=0, Skipped=0, Total DB=10482
+2026-08-04 10:01:20,991 - INFO - ✅ Done
