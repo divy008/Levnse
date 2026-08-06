@@ -17664,3 +17664,11 @@
 2026-08-06 02:25:27,661 - INFO - ⏰ Window (IST): 07:49:27 – 07:55:27
 2026-08-06 02:25:27,755 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=13506
 2026-08-06 02:25:27,755 - INFO - ✅ Done
+2026-08-06 02:30:24,857 - INFO - 🚀 BSE Watch starting at 2026-08-06 02:30:24.857228
+2026-08-06 02:30:24,857 - INFO - 📡 Source: cronjobs.org
+2026-08-06 02:30:24,857 - INFO - ✅ BSE Database initialized
+2026-08-06 02:30:25,809 - INFO - ⏰ Window (IST): 07:54:25 – 08:00:25
+2026-08-06 02:30:25,953 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-08-06 02:30:28,151 - INFO - 📊 Excel updated with 3 announcements
+2026-08-06 02:30:28,153 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=13508
+2026-08-06 02:30:28,153 - INFO - ✅ Done
