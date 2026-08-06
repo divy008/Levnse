@@ -18892,3 +18892,9 @@
 2026-08-06 15:39:40,125 - INFO - 📊 Excel updated with 500 announcements
 2026-08-06 15:39:40,127 - INFO - 📊 SUMMARY (Last 6 min IST): New=12, Dups=36, Skipped=0, Total DB=15405
 2026-08-06 15:39:40,127 - INFO - ✅ Done
+2026-08-06 16:28:49,968 - INFO - 🚀 BSE Watch starting at 2026-08-06 16:28:49.968589
+2026-08-06 16:28:49,968 - INFO - 📡 Source: cronjobs.org
+2026-08-06 16:28:49,969 - INFO - ✅ BSE Database initialized
+2026-08-06 16:29:15,117 - WARNING - ⚠️ Fetch attempt 1 failed for https://beta.bseindia.com/data/xml/announcements.xml: HTTPSConnectionPool(host='beta.bseindia.com', port=443): Read timed out. (read timeout=25)
+2026-08-06 16:29:29,573 - ERROR - ❌ Failed to fetch BSE feed
+2026-08-06 16:29:29,573 - INFO - ✅ Done
