@@ -20534,3 +20534,11 @@
 2026-08-07 17:50:44,121 - INFO - ⏰ Window (IST): 23:14:44 – 23:20:44
 2026-08-07 17:50:44,659 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=17640
 2026-08-07 17:50:44,660 - INFO - ✅ Done
+2026-08-07 17:55:46,247 - INFO - 🚀 BSE Watch starting at 2026-08-07 17:55:46.247552
+2026-08-07 17:55:46,247 - INFO - 📡 Source: cronjobs.org
+2026-08-07 17:55:46,248 - INFO - ✅ BSE Database initialized
+2026-08-07 17:55:49,517 - INFO - ⏰ Window (IST): 23:19:49 – 23:25:49
+2026-08-07 17:55:50,124 - INFO - 📤 Sending 6 alerts to Telegram...
+2026-08-07 17:55:58,761 - INFO - 📊 Excel updated with 500 announcements
+2026-08-07 17:55:58,763 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=23, Skipped=1, Total DB=17646
+2026-08-07 17:55:58,763 - INFO - ✅ Done
