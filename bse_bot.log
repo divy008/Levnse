@@ -20477,3 +20477,10 @@
 2026-08-07 17:01:08,164 - INFO - ⏰ Window (IST): 22:25:08 – 22:31:08
 2026-08-07 17:01:08,499 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=17640
 2026-08-07 17:01:08,500 - INFO - ✅ Done
+2026-08-07 17:05:41,252 - INFO - 🚀 BSE Watch starting at 2026-08-07 17:05:41.252030
+2026-08-07 17:05:41,252 - INFO - 📡 Source: cronjobs.org
+2026-08-07 17:05:41,252 - INFO - ✅ BSE Database initialized
+2026-08-07 17:06:06,361 - WARNING - ⚠️ Fetch attempt 1 failed for https://beta.bseindia.com/data/xml/announcements.xml: HTTPSConnectionPool(host='beta.bseindia.com', port=443): Read timed out. (read timeout=25)
+2026-08-07 17:06:12,832 - INFO - ⏰ Window (IST): 22:30:12 – 22:36:12
+2026-08-07 17:06:13,238 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=17640
+2026-08-07 17:06:13,238 - INFO - ✅ Done
