@@ -20912,3 +20912,8 @@
 2026-08-08 01:40:33,775 - WARNING - ⚠️ Fetch attempt 1 failed for https://beta.bseindia.com/data/xml/announcements.xml: 404 Client Error: Not Found for url: https://beta.bseindia.com/data/xml/announcements.xml
 2026-08-08 01:40:37,872 - ERROR - ❌ Failed to fetch BSE feed
 2026-08-08 01:40:37,872 - INFO - ✅ Done
+2026-08-08 01:45:25,452 - INFO - 🚀 BSE Watch starting at 2026-08-08 01:45:25.452630
+2026-08-08 01:45:25,452 - INFO - 📡 Source: cronjobs.org
+2026-08-08 01:45:25,453 - INFO - ✅ BSE Database initialized
+2026-08-08 01:45:42,617 - ERROR - ❌ Failed to fetch BSE feed
+2026-08-08 01:45:42,617 - INFO - ✅ Done
