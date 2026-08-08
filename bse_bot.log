@@ -20940,3 +20940,10 @@
 2026-08-08 02:05:19,795 - INFO - ✅ BSE Database initialized
 2026-08-08 02:05:20,695 - ERROR - ❌ Failed to fetch BSE feed
 2026-08-08 02:05:20,695 - INFO - ✅ Done
+2026-08-08 02:10:24,694 - INFO - 🚀 BSE Watch starting at 2026-08-08 02:10:24.694513
+2026-08-08 02:10:24,694 - INFO - 📡 Source: cronjobs.org
+2026-08-08 02:10:24,695 - INFO - ✅ BSE Database initialized
+2026-08-08 02:10:25,018 - WARNING - ⚠️ Fetch attempt 1 failed for https://beta.bseindia.com/data/xml/announcements.xml: 404 Client Error: Not Found for url: https://beta.bseindia.com/data/xml/announcements.xml
+2026-08-08 02:10:28,056 - WARNING - ⚠️ Fetch attempt 2 failed for https://beta.bseindia.com/data/xml/announcements.xml: 404 Client Error: Not Found for url: https://beta.bseindia.com/data/xml/announcements.xml
+2026-08-08 02:10:31,682 - ERROR - ❌ Failed to fetch BSE feed
+2026-08-08 02:10:31,682 - INFO - ✅ Done
