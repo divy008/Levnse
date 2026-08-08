@@ -22169,3 +22169,11 @@
 2026-08-08 15:26:00,641 - INFO - 📊 Excel updated with 500 announcements
 2026-08-08 15:26:00,643 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=1, Skipped=0, Total DB=18543
 2026-08-08 15:26:00,643 - INFO - ✅ Done
+2026-08-08 15:30:51,910 - INFO - 🚀 BSE Watch starting at 2026-08-08 15:30:51.910457
+2026-08-08 15:30:51,910 - INFO - 📡 Source: cronjobs.org
+2026-08-08 15:30:51,911 - INFO - ✅ BSE Database initialized
+2026-08-08 15:30:53,155 - INFO - ⏰ Window (IST): 20:54:53 – 21:00:53
+2026-08-08 15:30:53,340 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-08-08 15:30:54,327 - INFO - 📊 Excel updated with 500 announcements
+2026-08-08 15:30:54,328 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=2, Skipped=0, Total DB=18544
+2026-08-08 15:30:54,328 - INFO - ✅ Done
