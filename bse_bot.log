@@ -22199,3 +22199,11 @@
 2026-08-08 15:45:22,119 - INFO - ⏰ Window (IST): 21:09:22 – 21:15:22
 2026-08-08 15:45:22,274 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=2, Skipped=0, Total DB=18547
 2026-08-08 15:45:22,275 - INFO - ✅ Done
+2026-08-08 15:50:59,094 - INFO - 🚀 BSE Watch starting at 2026-08-08 15:50:59.094715
+2026-08-08 15:50:59,094 - INFO - 📡 Source: cronjobs.org
+2026-08-08 15:50:59,095 - INFO - ✅ BSE Database initialized
+2026-08-08 15:51:03,151 - INFO - ⏰ Window (IST): 21:15:03 – 21:21:03
+2026-08-08 15:51:03,278 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-08-08 15:51:05,178 - INFO - 📊 Excel updated with 500 announcements
+2026-08-08 15:51:05,180 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=18549
+2026-08-08 15:51:05,180 - INFO - ✅ Done
