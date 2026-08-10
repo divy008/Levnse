@@ -24154,3 +24154,11 @@
 2026-08-10 17:35:36,687 - INFO - ⏰ Window (IST): 22:59:36 – 23:05:36
 2026-08-10 17:35:37,440 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1, Skipped=0, Total DB=20701
 2026-08-10 17:35:37,440 - INFO - ✅ Done
+2026-08-10 17:40:22,253 - INFO - 🚀 BSE Watch starting at 2026-08-10 17:40:22.253187
+2026-08-10 17:40:22,253 - INFO - 📡 Source: cronjobs.org
+2026-08-10 17:40:22,254 - INFO - ✅ BSE Database initialized
+2026-08-10 17:40:30,702 - INFO - ⏰ Window (IST): 23:04:30 – 23:10:30
+2026-08-10 17:40:31,447 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-08-10 17:40:33,689 - INFO - 📊 Excel updated with 500 announcements
+2026-08-10 17:40:33,691 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=20703
+2026-08-10 17:40:33,691 - INFO - ✅ Done
