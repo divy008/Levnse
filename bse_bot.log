@@ -24046,3 +24046,11 @@
 2026-08-10 16:25:42,311 - INFO - 📊 Excel updated with 500 announcements
 2026-08-10 16:25:42,313 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=20665
 2026-08-10 16:25:42,313 - INFO - ✅ Done
+2026-08-10 16:30:41,801 - INFO - 🚀 BSE Watch starting at 2026-08-10 16:30:41.801692
+2026-08-10 16:30:41,801 - INFO - 📡 Source: cronjobs.org
+2026-08-10 16:30:41,802 - INFO - ✅ BSE Database initialized
+2026-08-10 16:30:47,898 - INFO - ⏰ Window (IST): 21:54:47 – 22:00:47
+2026-08-10 16:30:48,408 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-08-10 16:30:52,804 - INFO - 📊 Excel updated with 500 announcements
+2026-08-10 16:30:52,806 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=1, Skipped=0, Total DB=20670
+2026-08-10 16:30:52,807 - INFO - ✅ Done
