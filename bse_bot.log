@@ -24170,3 +24170,11 @@
 2026-08-10 17:45:39,867 - INFO - 📊 Excel updated with 500 announcements
 2026-08-10 17:45:39,869 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=2, Skipped=0, Total DB=20704
 2026-08-10 17:45:39,869 - INFO - ✅ Done
+2026-08-10 17:50:30,518 - INFO - 🚀 BSE Watch starting at 2026-08-10 17:50:30.518032
+2026-08-10 17:50:30,518 - INFO - 📡 Source: cronjobs.org
+2026-08-10 17:50:30,518 - INFO - ✅ BSE Database initialized
+2026-08-10 17:50:38,965 - INFO - ⏰ Window (IST): 23:14:38 – 23:20:38
+2026-08-10 17:50:39,710 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-08-10 17:50:42,861 - INFO - 📊 Excel updated with 500 announcements
+2026-08-10 17:50:42,862 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=888, Skipped=72, Total DB=20707
+2026-08-10 17:50:42,863 - INFO - ✅ Done
