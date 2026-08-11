@@ -24735,3 +24735,11 @@
 2026-08-11 04:05:21,276 - INFO - ⏰ Window (IST): 09:29:21 – 09:35:21
 2026-08-11 04:05:21,317 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=20735
 2026-08-11 04:05:21,317 - INFO - ✅ Done
+2026-08-11 04:10:25,189 - INFO - 🚀 BSE Watch starting at 2026-08-11 04:10:25.189679
+2026-08-11 04:10:25,189 - INFO - 📡 Source: cronjobs.org
+2026-08-11 04:10:25,190 - INFO - ✅ BSE Database initialized
+2026-08-11 04:10:25,812 - INFO - ⏰ Window (IST): 09:34:25 – 09:40:25
+2026-08-11 04:10:25,860 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-08-11 04:10:27,079 - INFO - 📊 Excel updated with 9 announcements
+2026-08-11 04:10:27,081 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=20736
+2026-08-11 04:10:27,081 - INFO - ✅ Done
