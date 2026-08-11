@@ -26071,3 +26071,11 @@
 2026-08-11 18:05:49,243 - INFO - 📊 Excel updated with 500 announcements
 2026-08-11 18:05:49,245 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=1, Total DB=23029
 2026-08-11 18:05:49,245 - INFO - ✅ Done
+2026-08-11 18:10:34,363 - INFO - 🚀 BSE Watch starting at 2026-08-11 18:10:34.363174
+2026-08-11 18:10:34,363 - INFO - 📡 Source: cronjobs.org
+2026-08-11 18:10:34,364 - INFO - ✅ BSE Database initialized
+2026-08-11 18:10:37,765 - INFO - ⏰ Window (IST): 23:34:37 – 23:40:37
+2026-08-11 18:10:38,261 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-08-11 18:10:41,776 - INFO - 📊 Excel updated with 500 announcements
+2026-08-11 18:10:41,778 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=40, Skipped=1, Total DB=23033
+2026-08-11 18:10:41,778 - INFO - ✅ Done
