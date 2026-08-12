@@ -27139,3 +27139,11 @@
 2026-08-12 09:46:04,807 - INFO - 📊 Excel updated with 500 announcements
 2026-08-12 09:46:04,809 - INFO - 📊 SUMMARY (Last 6 min IST): New=18, Dups=12, Skipped=0, Total DB=23747
 2026-08-12 09:46:04,809 - INFO - ✅ Done
+2026-08-12 09:51:03,146 - INFO - 🚀 BSE Watch starting at 2026-08-12 09:51:03.146221
+2026-08-12 09:51:03,146 - INFO - 📡 Source: cronjobs.org
+2026-08-12 09:51:03,147 - INFO - ✅ BSE Database initialized
+2026-08-12 09:51:04,983 - INFO - ⏰ Window (IST): 15:15:04 – 15:21:04
+2026-08-12 09:51:05,263 - INFO - 📤 Sending 20 alerts to Telegram...
+2026-08-12 09:51:34,259 - INFO - 📊 Excel updated with 500 announcements
+2026-08-12 09:51:34,261 - INFO - 📊 SUMMARY (Last 6 min IST): New=20, Dups=7, Skipped=0, Total DB=23767
+2026-08-12 09:51:34,261 - INFO - ✅ Done
