@@ -26694,3 +26694,11 @@
 2026-08-12 05:05:49,995 - INFO - 📊 Excel updated with 28 announcements
 2026-08-12 05:05:49,997 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=2, Skipped=2, Total DB=23072
 2026-08-12 05:05:49,997 - INFO - ✅ Done
+2026-08-12 05:10:54,217 - INFO - 🚀 BSE Watch starting at 2026-08-12 05:10:54.217521
+2026-08-12 05:10:54,217 - INFO - 📡 Source: cronjobs.org
+2026-08-12 05:10:54,218 - INFO - ✅ BSE Database initialized
+2026-08-12 05:10:55,152 - INFO - ⏰ Window (IST): 10:34:55 – 10:40:55
+2026-08-12 05:10:55,263 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-08-12 05:10:59,703 - INFO - 📊 Excel updated with 33 announcements
+2026-08-12 05:10:59,705 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=640, Skipped=15, Total DB=23077
+2026-08-12 05:10:59,705 - INFO - ✅ Done
