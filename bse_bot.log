@@ -29847,3 +29847,11 @@
 2026-08-13 18:35:37,714 - INFO - ✅ BSE Database initialized
 2026-08-13 18:35:38,728 - ERROR - ❌ Failed to fetch BSE feed
 2026-08-13 18:35:38,728 - INFO - ✅ Done
+2026-08-13 18:40:32,671 - INFO - 🚀 BSE Watch starting at 2026-08-13 18:40:32.671792
+2026-08-13 18:40:32,671 - INFO - 📡 Source: cronjobs.org
+2026-08-13 18:40:32,672 - INFO - ✅ BSE Database initialized
+2026-08-13 18:40:33,191 - INFO - ⏰ Window (IST): 00:04:33 – 00:10:33
+2026-08-13 18:40:33,206 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-08-13 18:40:36,367 - INFO - 📊 Excel updated with 500 announcements
+2026-08-13 18:40:36,381 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=1, Skipped=0, Total DB=29264
+2026-08-13 18:40:36,382 - INFO - ✅ Done
