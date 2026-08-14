@@ -31790,3 +31790,9 @@
 2026-08-14 19:01:00,780 - INFO - ⏰ Window (IST): 00:25:00 – 00:31:00
 2026-08-14 19:01:00,800 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=33072
 2026-08-14 19:01:00,800 - INFO - ✅ Done
+2026-08-14 19:05:52,127 - INFO - 🚀 BSE Watch starting at 2026-08-14 19:05:52.127816
+2026-08-14 19:05:52,127 - INFO - 📡 Source: cronjobs.org
+2026-08-14 19:05:52,128 - INFO - ✅ BSE Database initialized
+2026-08-14 19:05:52,927 - INFO - ⏰ Window (IST): 00:29:52 – 00:35:52
+2026-08-14 19:05:52,947 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1, Skipped=0, Total DB=33072
+2026-08-14 19:05:52,947 - INFO - ✅ Done
