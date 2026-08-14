@@ -31634,3 +31634,11 @@
 2026-08-14 17:21:09,106 - INFO - 📊 Excel updated with 500 announcements
 2026-08-14 17:21:09,108 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=0, Skipped=2, Total DB=33009
 2026-08-14 17:21:09,109 - INFO - ✅ Done
+2026-08-14 17:26:01,549 - INFO - 🚀 BSE Watch starting at 2026-08-14 17:26:01.549259
+2026-08-14 17:26:01,549 - INFO - 📡 Source: cronjobs.org
+2026-08-14 17:26:01,549 - INFO - ✅ BSE Database initialized
+2026-08-14 17:26:06,713 - INFO - ⏰ Window (IST): 22:50:06 – 22:56:06
+2026-08-14 17:26:07,678 - INFO - 📤 Sending 8 alerts to Telegram...
+2026-08-14 17:26:18,688 - INFO - 📊 Excel updated with 500 announcements
+2026-08-14 17:26:18,689 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=0, Skipped=1, Total DB=33017
+2026-08-14 17:26:18,690 - INFO - ✅ Done
