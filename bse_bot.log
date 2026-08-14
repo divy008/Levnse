@@ -31101,3 +31101,11 @@
 2026-08-14 11:46:58,664 - INFO - 📊 Excel updated with 500 announcements
 2026-08-14 11:46:58,666 - INFO - 📊 SUMMARY (Last 6 min IST): New=37, Dups=14, Skipped=0, Total DB=31147
 2026-08-14 11:46:58,666 - INFO - ✅ Done
+2026-08-14 11:51:25,249 - INFO - 🚀 BSE Watch starting at 2026-08-14 11:51:25.249618
+2026-08-14 11:51:25,249 - INFO - 📡 Source: cronjobs.org
+2026-08-14 11:51:25,250 - INFO - ✅ BSE Database initialized
+2026-08-14 11:51:28,290 - INFO - ⏰ Window (IST): 17:15:28 – 17:21:28
+2026-08-14 11:51:28,927 - INFO - 📤 Sending 54 alerts to Telegram...
+2026-08-14 11:52:36,055 - INFO - 📊 Excel updated with 500 announcements
+2026-08-14 11:52:36,057 - INFO - 📊 SUMMARY (Last 6 min IST): New=54, Dups=4, Skipped=0, Total DB=31201
+2026-08-14 11:52:36,057 - INFO - ✅ Done
