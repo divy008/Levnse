@@ -33430,3 +33430,11 @@
 2026-08-15 16:55:22,182 - INFO - ⏰ Window (IST): 22:19:22 – 22:25:22
 2026-08-15 16:55:22,243 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=33448
 2026-08-15 16:55:22,243 - INFO - ✅ Done
+2026-08-15 17:00:33,044 - INFO - 🚀 BSE Watch starting at 2026-08-15 17:00:33.044212
+2026-08-15 17:00:33,044 - INFO - 📡 Source: cronjobs.org
+2026-08-15 17:00:33,044 - INFO - ✅ BSE Database initialized
+2026-08-15 17:00:33,976 - INFO - ⏰ Window (IST): 22:24:33 – 22:30:33
+2026-08-15 17:00:34,086 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-08-15 17:00:36,477 - INFO - 📊 Excel updated with 371 announcements
+2026-08-15 17:00:36,479 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=33450
+2026-08-15 17:00:36,479 - INFO - ✅ Done
