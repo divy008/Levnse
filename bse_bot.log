@@ -34604,3 +34604,11 @@
 2026-08-17 10:00:57,369 - INFO - 📊 Excel updated with 500 announcements
 2026-08-17 10:00:57,371 - INFO - 📊 SUMMARY (Last 6 min IST): New=10, Dups=2, Skipped=0, Total DB=33978
 2026-08-17 10:00:57,371 - INFO - ✅ Done
+2026-08-17 10:05:38,411 - INFO - 🚀 BSE Watch starting at 2026-08-17 10:05:38.411396
+2026-08-17 10:05:38,411 - INFO - 📡 Source: cronjobs.org
+2026-08-17 10:05:38,412 - INFO - ✅ BSE Database initialized
+2026-08-17 10:05:40,580 - INFO - ⏰ Window (IST): 15:29:40 – 15:35:40
+2026-08-17 10:05:40,928 - INFO - 📤 Sending 9 alerts to Telegram...
+2026-08-17 10:05:51,500 - INFO - 📊 Excel updated with 500 announcements
+2026-08-17 10:05:51,502 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=9, Skipped=0, Total DB=33987
+2026-08-17 10:05:51,502 - INFO - ✅ Done
