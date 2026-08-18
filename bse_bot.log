@@ -37025,3 +37025,11 @@
 2026-08-18 17:05:34,255 - INFO - ⏰ Window (IST): 22:29:34 – 22:35:34
 2026-08-18 17:05:34,635 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=35680
 2026-08-18 17:05:34,636 - INFO - ✅ Done
+2026-08-18 17:10:40,863 - INFO - 🚀 BSE Watch starting at 2026-08-18 17:10:40.863223
+2026-08-18 17:10:40,863 - INFO - 📡 Source: cronjobs.org
+2026-08-18 17:10:40,863 - INFO - ✅ BSE Database initialized
+2026-08-18 17:10:42,509 - INFO - ⏰ Window (IST): 22:34:42 – 22:40:42
+2026-08-18 17:10:43,025 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-08-18 17:10:45,202 - INFO - 📊 Excel updated with 500 announcements
+2026-08-18 17:10:45,204 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=3, Total DB=35682
+2026-08-18 17:10:45,204 - INFO - ✅ Done
