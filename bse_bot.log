@@ -38421,3 +38421,11 @@
 2026-08-19 12:31:14,045 - INFO - 📊 Excel updated with 500 announcements
 2026-08-19 12:31:14,047 - INFO - 📊 SUMMARY (Last 6 min IST): New=17, Dups=44, Skipped=0, Total DB=36344
 2026-08-19 12:31:14,047 - INFO - ✅ Done
+2026-08-19 12:35:45,826 - INFO - 🚀 BSE Watch starting at 2026-08-19 12:35:45.826562
+2026-08-19 12:35:45,826 - INFO - 📡 Source: cronjobs.org
+2026-08-19 12:35:45,827 - INFO - ✅ BSE Database initialized
+2026-08-19 12:35:48,620 - INFO - ⏰ Window (IST): 17:59:48 – 18:05:48
+2026-08-19 12:35:48,984 - INFO - 📤 Sending 10 alerts to Telegram...
+2026-08-19 12:35:59,453 - INFO - 📊 Excel updated with 500 announcements
+2026-08-19 12:35:59,455 - INFO - 📊 SUMMARY (Last 6 min IST): New=10, Dups=2, Skipped=0, Total DB=36354
+2026-08-19 12:35:59,456 - INFO - ✅ Done
