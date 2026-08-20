@@ -40373,3 +40373,11 @@
 2026-08-20 13:25:58,158 - INFO - 📊 Excel updated with 500 announcements
 2026-08-20 13:25:58,160 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=0, Skipped=0, Total DB=37505
 2026-08-20 13:25:58,160 - INFO - ✅ Done
+2026-08-20 13:30:58,163 - INFO - 🚀 BSE Watch starting at 2026-08-20 13:30:58.163540
+2026-08-20 13:30:58,163 - INFO - 📡 Source: cronjobs.org
+2026-08-20 13:30:58,164 - INFO - ✅ BSE Database initialized
+2026-08-20 13:30:59,940 - INFO - ⏰ Window (IST): 18:54:59 – 19:00:59
+2026-08-20 13:31:00,263 - INFO - 📤 Sending 14 alerts to Telegram...
+2026-08-20 13:31:17,033 - INFO - 📊 Excel updated with 500 announcements
+2026-08-20 13:31:17,035 - INFO - 📊 SUMMARY (Last 6 min IST): New=14, Dups=420, Skipped=36, Total DB=37519
+2026-08-20 13:31:17,035 - INFO - ✅ Done
