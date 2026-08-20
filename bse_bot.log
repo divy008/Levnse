@@ -40827,3 +40827,11 @@
 2026-08-20 18:20:45,030 - INFO - ⏰ Window (IST): 23:44:45 – 23:50:45
 2026-08-20 18:20:45,667 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=37705
 2026-08-20 18:20:45,667 - INFO - ✅ Done
+2026-08-20 18:25:38,473 - INFO - 🚀 BSE Watch starting at 2026-08-20 18:25:38.473457
+2026-08-20 18:25:38,473 - INFO - 📡 Source: cronjobs.org
+2026-08-20 18:25:38,474 - INFO - ✅ BSE Database initialized
+2026-08-20 18:25:41,052 - INFO - ⏰ Window (IST): 23:49:41 – 23:55:41
+2026-08-20 18:25:41,583 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-08-20 18:25:42,580 - INFO - 📊 Excel updated with 500 announcements
+2026-08-20 18:25:42,582 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=37706
+2026-08-20 18:25:42,582 - INFO - ✅ Done
