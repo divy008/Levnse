@@ -40317,3 +40317,11 @@
 2026-08-20 12:51:00,788 - INFO - 📊 Excel updated with 500 announcements
 2026-08-20 12:51:00,791 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=1, Skipped=0, Total DB=37447
 2026-08-20 12:51:00,791 - INFO - ✅ Done
+2026-08-20 12:55:48,520 - INFO - 🚀 BSE Watch starting at 2026-08-20 12:55:48.519998
+2026-08-20 12:55:48,520 - INFO - 📡 Source: cronjobs.org
+2026-08-20 12:55:48,520 - INFO - ✅ BSE Database initialized
+2026-08-20 12:55:51,005 - INFO - ⏰ Window (IST): 18:19:51 – 18:25:51
+2026-08-20 12:55:51,423 - INFO - 📤 Sending 12 alerts to Telegram...
+2026-08-20 12:56:06,573 - INFO - 📊 Excel updated with 500 announcements
+2026-08-20 12:56:06,575 - INFO - 📊 SUMMARY (Last 6 min IST): New=12, Dups=6, Skipped=0, Total DB=37459
+2026-08-20 12:56:06,575 - INFO - ✅ Done
