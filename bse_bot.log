@@ -40181,3 +40181,11 @@
 2026-08-20 11:25:58,125 - INFO - ⏰ Window (IST): 16:49:58 – 16:55:58
 2026-08-20 11:25:58,331 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=37213
 2026-08-20 11:25:58,332 - INFO - ✅ Done
+2026-08-20 11:30:40,769 - INFO - 🚀 BSE Watch starting at 2026-08-20 11:30:40.769461
+2026-08-20 11:30:40,769 - INFO - 📡 Source: cronjobs.org
+2026-08-20 11:30:40,770 - INFO - ✅ BSE Database initialized
+2026-08-20 11:30:43,512 - INFO - ⏰ Window (IST): 16:54:43 – 17:00:43
+2026-08-20 11:30:43,916 - INFO - 📤 Sending 15 alerts to Telegram...
+2026-08-20 11:31:02,900 - INFO - 📊 Excel updated with 500 announcements
+2026-08-20 11:31:02,902 - INFO - 📊 SUMMARY (Last 6 min IST): New=15, Dups=3, Skipped=0, Total DB=37228
+2026-08-20 11:31:02,902 - INFO - ✅ Done
