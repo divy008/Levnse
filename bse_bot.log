@@ -40269,3 +40269,11 @@
 2026-08-20 12:21:09,216 - INFO - 📊 Excel updated with 500 announcements
 2026-08-20 12:21:09,218 - INFO - 📊 SUMMARY (Last 6 min IST): New=13, Dups=6, Skipped=0, Total DB=37374
 2026-08-20 12:21:09,218 - INFO - ✅ Done
+2026-08-20 12:25:46,615 - INFO - 🚀 BSE Watch starting at 2026-08-20 12:25:46.615383
+2026-08-20 12:25:46,615 - INFO - 📡 Source: cronjobs.org
+2026-08-20 12:25:46,616 - INFO - ✅ BSE Database initialized
+2026-08-20 12:25:48,894 - INFO - ⏰ Window (IST): 17:49:48 – 17:55:48
+2026-08-20 12:25:49,326 - INFO - 📤 Sending 18 alerts to Telegram...
+2026-08-20 12:26:09,399 - INFO - 📊 Excel updated with 500 announcements
+2026-08-20 12:26:09,401 - INFO - 📊 SUMMARY (Last 6 min IST): New=18, Dups=1, Skipped=0, Total DB=37392
+2026-08-20 12:26:09,401 - INFO - ✅ Done
