@@ -40161,3 +40161,11 @@
 2026-08-20 11:10:54,840 - INFO - 📊 Excel updated with 500 announcements
 2026-08-20 11:10:54,842 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=3, Skipped=0, Total DB=37202
 2026-08-20 11:10:54,842 - INFO - ✅ Done
+2026-08-20 11:15:40,418 - INFO - 🚀 BSE Watch starting at 2026-08-20 11:15:40.418627
+2026-08-20 11:15:40,418 - INFO - 📡 Source: cronjobs.org
+2026-08-20 11:15:40,419 - INFO - ✅ BSE Database initialized
+2026-08-20 11:15:44,896 - INFO - ⏰ Window (IST): 16:39:44 – 16:45:44
+2026-08-20 11:15:45,339 - INFO - 📤 Sending 11 alerts to Telegram...
+2026-08-20 11:15:59,283 - INFO - 📊 Excel updated with 500 announcements
+2026-08-20 11:15:59,285 - INFO - 📊 SUMMARY (Last 6 min IST): New=11, Dups=9, Skipped=0, Total DB=37213
+2026-08-20 11:15:59,285 - INFO - ✅ Done
