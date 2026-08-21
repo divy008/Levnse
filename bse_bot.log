@@ -42110,3 +42110,11 @@
 2026-08-21 12:15:58,886 - INFO - 📊 Excel updated with 500 announcements
 2026-08-21 12:15:58,888 - INFO - 📊 SUMMARY (Last 6 min IST): New=12, Dups=3, Skipped=0, Total DB=38354
 2026-08-21 12:15:58,888 - INFO - ✅ Done
+2026-08-21 12:20:47,497 - INFO - 🚀 BSE Watch starting at 2026-08-21 12:20:47.497296
+2026-08-21 12:20:47,497 - INFO - 📡 Source: cronjobs.org
+2026-08-21 12:20:47,498 - INFO - ✅ BSE Database initialized
+2026-08-21 12:20:49,624 - INFO - ⏰ Window (IST): 17:44:49 – 17:50:49
+2026-08-21 12:20:50,031 - INFO - 📤 Sending 18 alerts to Telegram...
+2026-08-21 12:21:10,478 - INFO - 📊 Excel updated with 500 announcements
+2026-08-21 12:21:10,480 - INFO - 📊 SUMMARY (Last 6 min IST): New=18, Dups=95, Skipped=0, Total DB=38372
+2026-08-21 12:21:10,480 - INFO - ✅ Done
