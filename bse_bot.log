@@ -42302,3 +42302,11 @@
 2026-08-21 14:16:00,762 - INFO - 📊 Excel updated with 500 announcements
 2026-08-21 14:16:00,764 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=25, Skipped=0, Total DB=38576
 2026-08-21 14:16:00,764 - INFO - ✅ Done
+2026-08-21 14:20:54,173 - INFO - 🚀 BSE Watch starting at 2026-08-21 14:20:54.173912
+2026-08-21 14:20:54,174 - INFO - 📡 Source: cronjobs.org
+2026-08-21 14:20:54,174 - INFO - ✅ BSE Database initialized
+2026-08-21 14:20:56,855 - INFO - ⏰ Window (IST): 19:44:56 – 19:50:56
+2026-08-21 14:20:57,137 - INFO - 📤 Sending 7 alerts to Telegram...
+2026-08-21 14:21:07,273 - INFO - 📊 Excel updated with 500 announcements
+2026-08-21 14:21:07,275 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=20, Skipped=0, Total DB=38583
+2026-08-21 14:21:07,275 - INFO - ✅ Done
