@@ -43090,3 +43090,11 @@
 2026-08-22 02:50:22,037 - INFO - ⏰ Window (IST): 08:14:22 – 08:20:22
 2026-08-22 02:50:22,080 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=38702
 2026-08-22 02:50:22,080 - INFO - ✅ Done
+2026-08-22 02:55:21,232 - INFO - 🚀 BSE Watch starting at 2026-08-22 02:55:21.232521
+2026-08-22 02:55:21,232 - INFO - 📡 Source: cronjobs.org
+2026-08-22 02:55:21,232 - INFO - ✅ BSE Database initialized
+2026-08-22 02:55:21,927 - INFO - ⏰ Window (IST): 08:19:21 – 08:25:21
+2026-08-22 02:55:22,150 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-08-22 02:55:23,209 - INFO - 📊 Excel updated with 1 announcements
+2026-08-22 02:55:23,210 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=38703
+2026-08-22 02:55:23,211 - INFO - ✅ Done
