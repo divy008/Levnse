@@ -42999,3 +42999,10 @@
 2026-08-22 01:35:20,237 - INFO - ⏰ Window (IST): 06:59:20 – 07:05:20
 2026-08-22 01:35:20,279 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=38702
 2026-08-22 01:35:20,279 - INFO - ✅ Done
+2026-08-22 01:40:22,914 - INFO - 🚀 BSE Watch starting at 2026-08-22 01:40:22.914538
+2026-08-22 01:40:22,914 - INFO - 📡 Source: cronjobs.org
+2026-08-22 01:40:22,915 - INFO - ✅ BSE Database initialized
+2026-08-22 01:40:38,006 - WARNING - ⚠️ Fetch attempt 1 failed for https://beta.bseindia.com/data/xml/announcements.xml: 404 Client Error: Not Found for url: https://beta.bseindia.com/data/xml/announcements.xml
+2026-08-22 01:40:41,063 - WARNING - ⚠️ Fetch attempt 2 failed for https://beta.bseindia.com/data/xml/announcements.xml: 404 Client Error: Not Found for url: https://beta.bseindia.com/data/xml/announcements.xml
+2026-08-22 01:40:44,986 - ERROR - ❌ Failed to fetch BSE feed
+2026-08-22 01:40:44,986 - INFO - ✅ Done
