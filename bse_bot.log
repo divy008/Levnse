@@ -43912,3 +43912,11 @@
 2026-08-22 11:50:25,936 - INFO - ⏰ Window (IST): 17:14:25 – 17:20:25
 2026-08-22 11:50:26,057 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=38997
 2026-08-22 11:50:26,058 - INFO - ✅ Done
+2026-08-22 11:55:58,346 - INFO - 🚀 BSE Watch starting at 2026-08-22 11:55:58.346351
+2026-08-22 11:55:58,346 - INFO - 📡 Source: cronjobs.org
+2026-08-22 11:55:58,347 - INFO - ✅ BSE Database initialized
+2026-08-22 11:55:58,727 - INFO - ⏰ Window (IST): 17:19:58 – 17:25:58
+2026-08-22 11:55:58,941 - INFO - 📤 Sending 7 alerts to Telegram...
+2026-08-22 11:56:06,310 - INFO - 📊 Excel updated with 302 announcements
+2026-08-22 11:56:06,312 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=1, Skipped=0, Total DB=39004
+2026-08-22 11:56:06,312 - INFO - ✅ Done
