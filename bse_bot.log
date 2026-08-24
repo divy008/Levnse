@@ -46221,3 +46221,12 @@
 2026-08-24 17:20:59,420 - INFO - ⏰ Window (IST): 22:44:59 – 22:50:59
 2026-08-24 17:20:59,809 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40012
 2026-08-24 17:20:59,809 - INFO - ✅ Done
+2026-08-24 17:25:58,023 - INFO - 🚀 BSE Watch starting at 2026-08-24 17:25:58.023058
+2026-08-24 17:25:58,023 - INFO - 📡 Source: cronjobs.org
+2026-08-24 17:25:58,023 - INFO - ✅ BSE Database initialized
+2026-08-24 17:25:58,037 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-08-24 17:26:01,376 - INFO - ⏰ Window (IST): 22:50:01 – 22:56:01
+2026-08-24 17:26:01,914 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-08-24 17:26:03,090 - INFO - 📊 Excel updated with 500 announcements
+2026-08-24 17:26:03,092 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=40010
+2026-08-24 17:26:03,092 - INFO - ✅ Done
