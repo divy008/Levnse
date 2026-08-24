@@ -45137,3 +45137,11 @@
 2026-08-24 06:21:12,945 - INFO - ⏰ Window (IST): 11:45:12 – 11:51:12
 2026-08-24 06:21:13,057 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=39212
 2026-08-24 06:21:13,057 - INFO - ✅ Done
+2026-08-24 06:25:49,440 - INFO - 🚀 BSE Watch starting at 2026-08-24 06:25:49.440716
+2026-08-24 06:25:49,440 - INFO - 📡 Source: cronjobs.org
+2026-08-24 06:25:49,441 - INFO - ✅ BSE Database initialized
+2026-08-24 06:25:50,738 - INFO - ⏰ Window (IST): 11:49:50 – 11:55:50
+2026-08-24 06:25:50,935 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-08-24 06:25:55,463 - INFO - 📊 Excel updated with 91 announcements
+2026-08-24 06:25:55,465 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=1, Skipped=0, Total DB=39217
+2026-08-24 06:25:55,465 - INFO - ✅ Done
