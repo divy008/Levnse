@@ -45649,3 +45649,11 @@
 2026-08-24 11:41:28,341 - INFO - 📊 Excel updated with 500 announcements
 2026-08-24 11:41:28,343 - INFO - 📊 SUMMARY (Last 6 min IST): New=15, Dups=0, Skipped=0, Total DB=39677
 2026-08-24 11:41:28,343 - INFO - ✅ Done
+2026-08-24 11:46:08,930 - INFO - 🚀 BSE Watch starting at 2026-08-24 11:46:08.930171
+2026-08-24 11:46:08,930 - INFO - 📡 Source: cronjobs.org
+2026-08-24 11:46:08,930 - INFO - ✅ BSE Database initialized
+2026-08-24 11:46:11,205 - INFO - ⏰ Window (IST): 17:10:11 – 17:16:11
+2026-08-24 11:46:11,523 - INFO - 📤 Sending 18 alerts to Telegram...
+2026-08-24 11:46:34,333 - INFO - 📊 Excel updated with 500 announcements
+2026-08-24 11:46:34,336 - INFO - 📊 SUMMARY (Last 6 min IST): New=18, Dups=3, Skipped=0, Total DB=39695
+2026-08-24 11:46:34,336 - INFO - ✅ Done
