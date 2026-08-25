@@ -46705,3 +46705,9 @@
 2026-08-25 02:25:21,117 - INFO - ⏰ Window (IST): 07:49:21 – 07:55:21
 2026-08-25 02:25:21,172 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40048
 2026-08-25 02:25:21,172 - INFO - ✅ Done
+2026-08-25 02:30:26,169 - INFO - 🚀 BSE Watch starting at 2026-08-25 02:30:26.169908
+2026-08-25 02:30:26,170 - INFO - 📡 Source: cronjobs.org
+2026-08-25 02:30:26,170 - INFO - ✅ BSE Database initialized
+2026-08-25 02:30:27,031 - INFO - ⏰ Window (IST): 07:54:27 – 08:00:27
+2026-08-25 02:30:27,071 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1, Skipped=0, Total DB=40048
+2026-08-25 02:30:27,072 - INFO - ✅ Done
