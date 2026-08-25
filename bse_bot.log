@@ -47411,3 +47411,11 @@
 2026-08-25 10:06:05,181 - INFO - 📊 Excel updated with 407 announcements
 2026-08-25 10:06:05,183 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=4, Skipped=0, Total DB=40454
 2026-08-25 10:06:05,184 - INFO - ✅ Done
+2026-08-25 10:11:00,475 - INFO - 🚀 BSE Watch starting at 2026-08-25 10:11:00.475536
+2026-08-25 10:11:00,475 - INFO - 📡 Source: cronjobs.org
+2026-08-25 10:11:00,476 - INFO - ✅ BSE Database initialized
+2026-08-25 10:11:02,542 - INFO - ⏰ Window (IST): 15:35:02 – 15:41:02
+2026-08-25 10:11:02,921 - INFO - 📤 Sending 13 alerts to Telegram...
+2026-08-25 10:11:20,025 - INFO - 📊 Excel updated with 420 announcements
+2026-08-25 10:11:20,027 - INFO - 📊 SUMMARY (Last 6 min IST): New=13, Dups=0, Skipped=0, Total DB=40467
+2026-08-25 10:11:20,027 - INFO - ✅ Done
