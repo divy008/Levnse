@@ -48844,3 +48844,12 @@
 2026-08-26 05:46:03,934 - INFO - 📊 Excel updated with 50 announcements
 2026-08-26 05:46:03,936 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=6, Skipped=0, Total DB=41286
 2026-08-26 05:46:03,936 - INFO - ✅ Done
+2026-08-26 05:50:59,310 - INFO - 🚀 BSE Watch starting at 2026-08-26 05:50:59.310321
+2026-08-26 05:50:59,310 - INFO - 📡 Source: cronjobs.org
+2026-08-26 05:50:59,310 - INFO - ✅ BSE Database initialized
+2026-08-26 05:50:59,324 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-08-26 05:51:00,101 - INFO - ⏰ Window (IST): 11:15:00 – 11:21:00
+2026-08-26 05:51:00,194 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-08-26 05:51:03,798 - INFO - 📊 Excel updated with 54 announcements
+2026-08-26 05:51:03,800 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=0, Skipped=0, Total DB=41287
+2026-08-26 05:51:03,800 - INFO - ✅ Done
