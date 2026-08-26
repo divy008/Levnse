@@ -50194,3 +50194,10 @@
 2026-08-26 19:35:26,393 - INFO - ⏰ Window (IST): 00:59:26 – 01:05:26
 2026-08-26 19:35:26,396 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=41145
 2026-08-26 19:35:26,397 - INFO - ✅ Done
+2026-08-26 19:40:52,640 - INFO - 🚀 BSE Watch starting at 2026-08-26 19:40:52.640425
+2026-08-26 19:40:52,640 - INFO - 📡 Source: cronjobs.org
+2026-08-26 19:40:52,641 - INFO - ✅ BSE Database initialized
+2026-08-26 19:40:52,656 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-08-26 19:40:52,939 - INFO - ⏰ Window (IST): 01:04:52 – 01:10:52
+2026-08-26 19:40:52,943 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=41144
+2026-08-26 19:40:52,943 - INFO - ✅ Done
