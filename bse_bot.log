@@ -49265,3 +49265,12 @@
 2026-08-26 09:46:21,638 - INFO - 📊 Excel updated with 347 announcements
 2026-08-26 09:46:21,640 - INFO - 📊 SUMMARY (Last 6 min IST): New=12, Dups=245, Skipped=43, Total DB=41299
 2026-08-26 09:46:21,640 - INFO - ✅ Done
+2026-08-26 09:51:03,082 - INFO - 🚀 BSE Watch starting at 2026-08-26 09:51:03.081997
+2026-08-26 09:51:03,082 - INFO - 📡 Source: cronjobs.org
+2026-08-26 09:51:03,082 - INFO - ✅ BSE Database initialized
+2026-08-26 09:51:03,098 - INFO - 🧹 Cleaned up 5 old BSE announcements
+2026-08-26 09:51:20,995 - INFO - ⏰ Window (IST): 15:15:20 – 15:21:20
+2026-08-26 09:51:21,266 - INFO - 📤 Sending 7 alerts to Telegram...
+2026-08-26 09:51:30,767 - INFO - 📊 Excel updated with 354 announcements
+2026-08-26 09:51:30,769 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=1, Skipped=0, Total DB=41301
+2026-08-26 09:51:30,769 - INFO - ✅ Done
