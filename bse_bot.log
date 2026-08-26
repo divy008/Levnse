@@ -49901,3 +49901,12 @@
 2026-08-26 16:26:00,549 - INFO - 📊 Excel updated with 500 announcements
 2026-08-26 16:26:00,551 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=888, Skipped=75, Total DB=41144
 2026-08-26 16:26:00,552 - INFO - ✅ Done
+2026-08-26 16:31:04,908 - INFO - 🚀 BSE Watch starting at 2026-08-26 16:31:04.908054
+2026-08-26 16:31:04,908 - INFO - 📡 Source: cronjobs.org
+2026-08-26 16:31:04,908 - INFO - ✅ BSE Database initialized
+2026-08-26 16:31:04,923 - INFO - 🧹 Cleaned up 4 old BSE announcements
+2026-08-26 16:31:07,288 - INFO - ⏰ Window (IST): 21:55:07 – 22:01:07
+2026-08-26 16:31:07,643 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-08-26 16:31:12,335 - INFO - 📊 Excel updated with 500 announcements
+2026-08-26 16:31:12,337 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=1, Skipped=0, Total DB=41145
+2026-08-26 16:31:12,337 - INFO - ✅ Done
