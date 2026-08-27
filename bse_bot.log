@@ -52202,3 +52202,11 @@
 2026-08-27 19:30:26,884 - INFO - ⏰ Window (IST): 00:54:26 – 01:00:26
 2026-08-27 19:30:26,924 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=41299
 2026-08-27 19:30:26,924 - INFO - ✅ Done
+2026-08-27 19:35:53,674 - INFO - 🚀 BSE Watch starting at 2026-08-27 19:35:53.674972
+2026-08-27 19:35:53,675 - INFO - 📡 Source: cronjobs.org
+2026-08-27 19:35:53,675 - INFO - ✅ BSE Database initialized
+2026-08-27 19:35:54,098 - INFO - ⏰ Window (IST): 00:59:54 – 01:05:54
+2026-08-27 19:35:54,139 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-08-27 19:35:56,259 - INFO - 📊 Excel updated with 500 announcements
+2026-08-27 19:35:56,261 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=41301
+2026-08-27 19:35:56,261 - INFO - ✅ Done
