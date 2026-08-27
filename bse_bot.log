@@ -51613,3 +51613,12 @@
 2026-08-27 13:36:25,753 - INFO - 📊 Excel updated with 500 announcements
 2026-08-27 13:36:25,754 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=22, Skipped=0, Total DB=41282
 2026-08-27 13:36:25,755 - INFO - ✅ Done
+2026-08-27 13:41:16,510 - INFO - 🚀 BSE Watch starting at 2026-08-27 13:41:16.510168
+2026-08-27 13:41:16,510 - INFO - 📡 Source: cronjobs.org
+2026-08-27 13:41:16,510 - INFO - ✅ BSE Database initialized
+2026-08-27 13:41:16,580 - INFO - 🧹 Cleaned up 21 old BSE announcements
+2026-08-27 13:41:19,193 - INFO - ⏰ Window (IST): 19:05:19 – 19:11:19
+2026-08-27 13:41:20,170 - INFO - 📤 Sending 16 alerts to Telegram...
+2026-08-27 13:41:42,312 - INFO - 📊 Excel updated with 500 announcements
+2026-08-27 13:41:42,313 - INFO - 📊 SUMMARY (Last 6 min IST): New=16, Dups=28, Skipped=0, Total DB=41277
+2026-08-27 13:41:42,314 - INFO - ✅ Done
