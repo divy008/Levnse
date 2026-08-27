@@ -52160,3 +52160,10 @@
 2026-08-27 19:00:30,766 - INFO - ⏰ Window (IST): 00:24:30 – 00:30:30
 2026-08-27 19:00:30,769 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=41300
 2026-08-27 19:00:30,769 - INFO - ✅ Done
+2026-08-27 19:05:22,729 - INFO - 🚀 BSE Watch starting at 2026-08-27 19:05:22.729705
+2026-08-27 19:05:22,729 - INFO - 📡 Source: cronjobs.org
+2026-08-27 19:05:22,730 - INFO - ✅ BSE Database initialized
+2026-08-27 19:05:22,994 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-08-27 19:05:23,338 - INFO - ⏰ Window (IST): 00:29:23 – 00:35:23
+2026-08-27 19:05:23,341 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=41299
+2026-08-27 19:05:23,341 - INFO - ✅ Done
