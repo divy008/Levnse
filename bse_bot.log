@@ -52121,3 +52121,12 @@
 2026-08-27 18:31:04,791 - INFO - ✅ BSE Database initialized
 2026-08-27 18:31:06,248 - ERROR - ❌ Failed to fetch BSE feed
 2026-08-27 18:31:06,248 - INFO - ✅ Done
+2026-08-27 18:35:27,531 - INFO - 🚀 BSE Watch starting at 2026-08-27 18:35:27.531909
+2026-08-27 18:35:27,532 - INFO - 📡 Source: cronjobs.org
+2026-08-27 18:35:27,532 - INFO - ✅ BSE Database initialized
+2026-08-27 18:35:27,614 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-08-27 18:35:28,118 - INFO - ⏰ Window (IST): 23:59:28 – 00:05:28
+2026-08-27 18:35:28,120 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-08-27 18:35:29,526 - INFO - 📊 Excel updated with 500 announcements
+2026-08-27 18:35:29,543 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=41300
+2026-08-27 18:35:29,543 - INFO - ✅ Done
