@@ -52130,3 +52130,9 @@
 2026-08-27 18:35:29,526 - INFO - 📊 Excel updated with 500 announcements
 2026-08-27 18:35:29,543 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=41300
 2026-08-27 18:35:29,543 - INFO - ✅ Done
+2026-08-27 18:41:57,118 - INFO - 🚀 BSE Watch starting at 2026-08-27 18:41:57.118680
+2026-08-27 18:41:57,118 - INFO - 📡 Source: cronjobs.org
+2026-08-27 18:41:57,119 - INFO - ✅ BSE Database initialized
+2026-08-27 18:41:57,505 - INFO - ⏰ Window (IST): 00:05:57 – 00:11:57
+2026-08-27 18:41:57,509 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=1, Total DB=41300
+2026-08-27 18:41:57,509 - INFO - ✅ Done
