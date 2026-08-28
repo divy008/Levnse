@@ -52664,3 +52664,12 @@
 2026-08-28 04:35:22,370 - INFO - 📊 Excel updated with 13 announcements
 2026-08-28 04:35:22,372 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=41297
 2026-08-28 04:35:22,373 - INFO - ✅ Done
+2026-08-28 04:40:23,782 - INFO - 🚀 BSE Watch starting at 2026-08-28 04:40:23.782006
+2026-08-28 04:40:23,782 - INFO - 📡 Source: cronjobs.org
+2026-08-28 04:40:23,782 - INFO - ✅ BSE Database initialized
+2026-08-28 04:40:24,016 - INFO - 🧹 Cleaned up 6 old BSE announcements
+2026-08-28 04:40:24,689 - INFO - ⏰ Window (IST): 10:04:24 – 10:10:24
+2026-08-28 04:40:24,736 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-08-28 04:40:25,839 - INFO - 📊 Excel updated with 14 announcements
+2026-08-28 04:40:25,841 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=2, Skipped=0, Total DB=41292
+2026-08-28 04:40:25,841 - INFO - ✅ Done
