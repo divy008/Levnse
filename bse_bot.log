@@ -52707,3 +52707,12 @@
 2026-08-28 05:01:15,609 - INFO - 📊 Excel updated with 30 announcements
 2026-08-28 05:01:15,612 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=2, Skipped=2, Total DB=41291
 2026-08-28 05:01:15,612 - INFO - ✅ Done
+2026-08-28 05:06:00,556 - INFO - 🚀 BSE Watch starting at 2026-08-28 05:06:00.556936
+2026-08-28 05:06:00,557 - INFO - 📡 Source: cronjobs.org
+2026-08-28 05:06:00,557 - INFO - ✅ BSE Database initialized
+2026-08-28 05:06:00,574 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-08-28 05:06:01,479 - INFO - ⏰ Window (IST): 10:30:01 – 10:36:01
+2026-08-28 05:06:01,544 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-08-28 05:06:06,196 - INFO - 📊 Excel updated with 35 announcements
+2026-08-28 05:06:06,199 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=1, Skipped=0, Total DB=41294
+2026-08-28 05:06:06,199 - INFO - ✅ Done
