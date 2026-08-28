@@ -54226,3 +54226,10 @@
 2026-08-28 19:50:22,692 - INFO - ⏰ Window (IST): 01:14:22 – 01:20:22
 2026-08-28 19:50:22,721 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40658
 2026-08-28 19:50:22,722 - INFO - ✅ Done
+2026-08-28 19:55:19,636 - INFO - 🚀 BSE Watch starting at 2026-08-28 19:55:19.636184
+2026-08-28 19:55:19,636 - INFO - 📡 Source: cronjobs.org
+2026-08-28 19:55:19,637 - INFO - ✅ BSE Database initialized
+2026-08-28 19:55:19,662 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-08-28 19:55:20,250 - INFO - ⏰ Window (IST): 01:19:20 – 01:25:20
+2026-08-28 19:55:20,279 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40657
+2026-08-28 19:55:20,279 - INFO - ✅ Done
