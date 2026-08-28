@@ -52507,3 +52507,10 @@
 2026-08-28 02:40:21,415 - INFO - ⏰ Window (IST): 08:04:21 – 08:10:21
 2026-08-28 02:40:21,445 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=41298
 2026-08-28 02:40:21,445 - INFO - ✅ Done
+2026-08-28 02:45:22,751 - INFO - 🚀 BSE Watch starting at 2026-08-28 02:45:22.751224
+2026-08-28 02:45:22,751 - INFO - 📡 Source: cronjobs.org
+2026-08-28 02:45:22,751 - INFO - ✅ BSE Database initialized
+2026-08-28 02:45:23,001 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-08-28 02:45:23,390 - INFO - ⏰ Window (IST): 08:09:23 – 08:15:23
+2026-08-28 02:45:23,418 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=41297
+2026-08-28 02:45:23,418 - INFO - ✅ Done
