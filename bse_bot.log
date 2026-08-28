@@ -54018,3 +54018,10 @@
 2026-08-28 17:30:35,453 - INFO - 📊 Excel updated with 500 announcements
 2026-08-28 17:30:35,454 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=40666
 2026-08-28 17:30:35,454 - INFO - ✅ Done
+2026-08-28 17:35:56,937 - INFO - 🚀 BSE Watch starting at 2026-08-28 17:35:56.937011
+2026-08-28 17:35:56,937 - INFO - 📡 Source: cronjobs.org
+2026-08-28 17:35:56,937 - INFO - ✅ BSE Database initialized
+2026-08-28 17:35:56,951 - INFO - 🧹 Cleaned up 9 old BSE announcements
+2026-08-28 17:35:58,407 - INFO - ⏰ Window (IST): 22:59:58 – 23:05:58
+2026-08-28 17:35:58,631 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40657
+2026-08-28 17:35:58,631 - INFO - ✅ Done
