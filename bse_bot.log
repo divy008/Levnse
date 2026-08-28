@@ -53247,3 +53247,11 @@
 2026-08-28 10:06:07,731 - INFO - 📊 Excel updated with 372 announcements
 2026-08-28 10:06:07,733 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=2, Skipped=0, Total DB=41157
 2026-08-28 10:06:07,733 - INFO - ✅ Done
+2026-08-28 10:11:00,431 - INFO - 🚀 BSE Watch starting at 2026-08-28 10:11:00.431189
+2026-08-28 10:11:00,431 - INFO - 📡 Source: cronjobs.org
+2026-08-28 10:11:00,431 - INFO - ✅ BSE Database initialized
+2026-08-28 10:11:01,816 - INFO - ⏰ Window (IST): 15:35:01 – 15:41:01
+2026-08-28 10:11:02,071 - INFO - 📤 Sending 13 alerts to Telegram...
+2026-08-28 10:11:17,344 - INFO - 📊 Excel updated with 385 announcements
+2026-08-28 10:11:17,346 - INFO - 📊 SUMMARY (Last 6 min IST): New=13, Dups=0, Skipped=0, Total DB=41170
+2026-08-28 10:11:17,346 - INFO - ✅ Done
