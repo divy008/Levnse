@@ -54588,3 +54588,11 @@
 2026-08-29 03:40:23,162 - INFO - ⏰ Window (IST): 09:04:23 – 09:10:23
 2026-08-29 03:40:23,203 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40639
 2026-08-29 03:40:23,203 - INFO - ✅ Done
+2026-08-29 03:45:23,629 - INFO - 🚀 BSE Watch starting at 2026-08-29 03:45:23.629493
+2026-08-29 03:45:23,629 - INFO - 📡 Source: cronjobs.org
+2026-08-29 03:45:23,630 - INFO - ✅ BSE Database initialized
+2026-08-29 03:45:24,255 - INFO - ⏰ Window (IST): 09:09:24 – 09:15:24
+2026-08-29 03:45:24,286 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-08-29 03:45:25,430 - INFO - 📊 Excel updated with 2 announcements
+2026-08-29 03:45:25,432 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=40640
+2026-08-29 03:45:25,433 - INFO - ✅ Done
