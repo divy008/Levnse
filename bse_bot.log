@@ -55115,3 +55115,12 @@
 2026-08-29 08:56:12,715 - INFO - 📊 Excel updated with 244 announcements
 2026-08-29 08:56:12,717 - INFO - 📊 SUMMARY (Last 6 min IST): New=14, Dups=56, Skipped=0, Total DB=40509
 2026-08-29 08:56:12,717 - INFO - ✅ Done
+2026-08-29 09:01:16,992 - INFO - 🚀 BSE Watch starting at 2026-08-29 09:01:16.992252
+2026-08-29 09:01:16,992 - INFO - 📡 Source: cronjobs.org
+2026-08-29 09:01:16,992 - INFO - ✅ BSE Database initialized
+2026-08-29 09:01:17,073 - INFO - 🧹 Cleaned up 23 old BSE announcements
+2026-08-29 09:01:17,365 - INFO - ⏰ Window (IST): 14:25:17 – 14:31:17
+2026-08-29 09:01:17,914 - INFO - 📤 Sending 7 alerts to Telegram...
+2026-08-29 09:01:26,334 - INFO - 📊 Excel updated with 251 announcements
+2026-08-29 09:01:26,336 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=0, Skipped=0, Total DB=40493
+2026-08-29 09:01:26,336 - INFO - ✅ Done
