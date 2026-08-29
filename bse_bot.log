@@ -54470,3 +54470,11 @@
 2026-08-29 02:10:21,188 - INFO - ⏰ Window (IST): 07:34:21 – 07:40:21
 2026-08-29 02:10:21,228 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40657
 2026-08-29 02:10:21,228 - INFO - ✅ Done
+2026-08-29 02:15:23,180 - INFO - 🚀 BSE Watch starting at 2026-08-29 02:15:23.180639
+2026-08-29 02:15:23,180 - INFO - 📡 Source: cronjobs.org
+2026-08-29 02:15:23,181 - INFO - ✅ BSE Database initialized
+2026-08-29 02:15:23,744 - INFO - ⏰ Window (IST): 07:39:23 – 07:45:23
+2026-08-29 02:15:23,997 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-08-29 02:15:25,135 - INFO - 📊 Excel updated with 1 announcements
+2026-08-29 02:15:25,137 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=40658
+2026-08-29 02:15:25,137 - INFO - ✅ Done
