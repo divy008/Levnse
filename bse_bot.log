@@ -57105,3 +57105,12 @@
 2026-08-31 09:26:16,909 - INFO - 📊 Excel updated with 401 announcements
 2026-08-31 09:26:16,911 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=7, Skipped=3, Total DB=38210
 2026-08-31 09:26:16,911 - INFO - ✅ Done
+2026-08-31 09:31:04,876 - INFO - 🚀 BSE Watch starting at 2026-08-31 09:31:04.876770
+2026-08-31 09:31:04,876 - INFO - 📡 Source: cronjobs.org
+2026-08-31 09:31:04,877 - INFO - ✅ BSE Database initialized
+2026-08-31 09:31:04,893 - INFO - 🧹 Cleaned up 11 old BSE announcements
+2026-08-31 09:31:06,859 - INFO - ⏰ Window (IST): 14:55:06 – 15:01:06
+2026-08-31 09:31:07,174 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-08-31 09:31:09,024 - INFO - 📊 Excel updated with 403 announcements
+2026-08-31 09:31:09,026 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=38201
+2026-08-31 09:31:09,026 - INFO - ✅ Done
