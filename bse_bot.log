@@ -56527,3 +56527,12 @@
 2026-08-31 03:45:28,790 - INFO - ⏰ Window (IST): 09:09:28 – 09:15:28
 2026-08-31 03:45:28,793 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=38145
 2026-08-31 03:45:28,793 - INFO - ✅ Done
+2026-08-31 03:50:57,289 - INFO - 🚀 BSE Watch starting at 2026-08-31 03:50:57.289746
+2026-08-31 03:50:57,289 - INFO - 📡 Source: cronjobs.org
+2026-08-31 03:50:57,290 - INFO - ✅ BSE Database initialized
+2026-08-31 03:50:57,303 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-08-31 03:50:57,693 - INFO - ⏰ Window (IST): 09:14:57 – 09:20:57
+2026-08-31 03:50:57,696 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-08-31 03:50:58,783 - INFO - 📊 Excel updated with 9 announcements
+2026-08-31 03:50:58,785 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=38144
+2026-08-31 03:50:58,785 - INFO - ✅ Done
