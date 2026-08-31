@@ -57888,3 +57888,11 @@
 2026-08-31 16:51:10,003 - INFO - 📊 Excel updated with 500 announcements
 2026-08-31 16:51:10,005 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=38862
 2026-08-31 16:51:10,005 - INFO - ✅ Done
+2026-08-31 16:55:23,723 - INFO - 🚀 BSE Watch starting at 2026-08-31 16:55:23.723554
+2026-08-31 16:55:23,723 - INFO - 📡 Source: cronjobs.org
+2026-08-31 16:55:23,724 - INFO - ✅ BSE Database initialized
+2026-08-31 16:55:26,636 - INFO - ⏰ Window (IST): 22:19:26 – 22:25:26
+2026-08-31 16:55:28,392 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-08-31 16:55:31,778 - INFO - 📊 Excel updated with 500 announcements
+2026-08-31 16:55:31,780 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=10, Skipped=0, Total DB=38865
+2026-08-31 16:55:31,780 - INFO - ✅ Done
