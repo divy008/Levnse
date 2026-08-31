@@ -56622,3 +56622,12 @@
 2026-08-31 04:50:54,550 - INFO - ⏰ Window (IST): 10:14:54 – 10:20:54
 2026-08-31 04:50:54,554 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=2, Skipped=0, Total DB=38143
 2026-08-31 04:50:54,554 - INFO - ✅ Done
+2026-08-31 04:56:01,740 - INFO - 🚀 BSE Watch starting at 2026-08-31 04:56:01.740483
+2026-08-31 04:56:01,740 - INFO - 📡 Source: cronjobs.org
+2026-08-31 04:56:01,741 - INFO - ✅ BSE Database initialized
+2026-08-31 04:56:01,750 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-08-31 04:56:02,238 - INFO - ⏰ Window (IST): 10:20:02 – 10:26:02
+2026-08-31 04:56:02,338 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-08-31 04:56:06,927 - INFO - 📊 Excel updated with 21 announcements
+2026-08-31 04:56:06,929 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=3, Skipped=2, Total DB=38146
+2026-08-31 04:56:06,929 - INFO - ✅ Done
