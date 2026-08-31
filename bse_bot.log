@@ -57043,3 +57043,12 @@
 2026-08-31 08:50:37,993 - INFO - 📊 Excel updated with 347 announcements
 2026-08-31 08:50:37,995 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=1, Skipped=0, Total DB=38222
 2026-08-31 08:50:37,995 - INFO - ✅ Done
+2026-08-31 08:56:06,926 - INFO - 🚀 BSE Watch starting at 2026-08-31 08:56:06.926758
+2026-08-31 08:56:06,926 - INFO - 📡 Source: cronjobs.org
+2026-08-31 08:56:06,927 - INFO - ✅ BSE Database initialized
+2026-08-31 08:56:06,987 - INFO - 🧹 Cleaned up 13 old BSE announcements
+2026-08-31 08:56:08,208 - INFO - ⏰ Window (IST): 14:20:08 – 14:26:08
+2026-08-31 08:56:08,408 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-08-31 08:56:12,828 - INFO - 📊 Excel updated with 351 announcements
+2026-08-31 08:56:12,830 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=0, Skipped=0, Total DB=38213
+2026-08-31 08:56:12,830 - INFO - ✅ Done
