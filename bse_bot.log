@@ -56631,3 +56631,12 @@
 2026-08-31 04:56:06,927 - INFO - 📊 Excel updated with 21 announcements
 2026-08-31 04:56:06,929 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=3, Skipped=2, Total DB=38146
 2026-08-31 04:56:06,929 - INFO - ✅ Done
+2026-08-31 05:00:30,748 - INFO - 🚀 BSE Watch starting at 2026-08-31 05:00:30.748527
+2026-08-31 05:00:30,748 - INFO - 📡 Source: cronjobs.org
+2026-08-31 05:00:30,749 - INFO - ✅ BSE Database initialized
+2026-08-31 05:00:30,776 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-08-31 05:00:31,070 - INFO - ⏰ Window (IST): 10:24:31 – 10:30:31
+2026-08-31 05:00:31,077 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-08-31 05:00:33,798 - INFO - 📊 Excel updated with 24 announcements
+2026-08-31 05:00:33,800 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=5, Skipped=2, Total DB=38148
+2026-08-31 05:00:33,800 - INFO - ✅ Done
