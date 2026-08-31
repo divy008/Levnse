@@ -56877,3 +56877,12 @@
 2026-08-31 07:16:16,479 - INFO - 📊 Excel updated with 184 announcements
 2026-08-31 07:16:16,481 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=2, Skipped=0, Total DB=38171
 2026-08-31 07:16:16,481 - INFO - ✅ Done
+2026-08-31 07:20:56,800 - INFO - 🚀 BSE Watch starting at 2026-08-31 07:20:56.800506
+2026-08-31 07:20:56,800 - INFO - 📡 Source: cronjobs.org
+2026-08-31 07:20:56,801 - INFO - ✅ BSE Database initialized
+2026-08-31 07:20:56,815 - INFO - 🧹 Cleaned up 9 old BSE announcements
+2026-08-31 07:20:59,315 - INFO - ⏰ Window (IST): 12:44:59 – 12:50:59
+2026-08-31 07:20:59,731 - INFO - 📤 Sending 10 alerts to Telegram...
+2026-08-31 07:21:11,707 - INFO - 📊 Excel updated with 194 announcements
+2026-08-31 07:21:11,709 - INFO - 📊 SUMMARY (Last 6 min IST): New=10, Dups=13, Skipped=0, Total DB=38172
+2026-08-31 07:21:11,709 - INFO - ✅ Done
