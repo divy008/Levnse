@@ -58349,3 +58349,11 @@
 2026-09-01 01:35:21,031 - INFO - ⏰ Window (IST): 06:59:21 – 07:05:21
 2026-09-01 01:35:21,071 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=38880
 2026-09-01 01:35:21,071 - INFO - ✅ Done
+2026-09-01 01:40:57,850 - INFO - 🚀 BSE Watch starting at 2026-09-01 01:40:57.850965
+2026-09-01 01:40:57,851 - INFO - 📡 Source: cronjobs.org
+2026-09-01 01:40:57,851 - INFO - ✅ BSE Database initialized
+2026-09-01 01:40:58,367 - INFO - ⏰ Window (IST): 07:04:58 – 07:10:58
+2026-09-01 01:40:58,405 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-01 01:40:59,455 - INFO - 📊 Excel updated with 1 announcements
+2026-09-01 01:40:59,458 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=38881
+2026-09-01 01:40:59,458 - INFO - ✅ Done
