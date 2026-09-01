@@ -59671,3 +59671,11 @@
 2026-09-01 16:21:13,379 - INFO - 📊 Excel updated with 500 announcements
 2026-09-01 16:21:13,382 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=1, Skipped=0, Total DB=40569
 2026-09-01 16:21:13,382 - INFO - ✅ Done
+2026-09-01 16:25:54,105 - INFO - 🚀 BSE Watch starting at 2026-09-01 16:25:54.105303
+2026-09-01 16:25:54,105 - INFO - 📡 Source: cronjobs.org
+2026-09-01 16:25:54,105 - INFO - ✅ BSE Database initialized
+2026-09-01 16:25:57,507 - INFO - ⏰ Window (IST): 21:49:57 – 21:55:57
+2026-09-01 16:25:58,029 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-01 16:26:00,734 - INFO - 📊 Excel updated with 500 announcements
+2026-09-01 16:26:00,736 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=40572
+2026-09-01 16:26:00,736 - INFO - ✅ Done
