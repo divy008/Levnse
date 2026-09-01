@@ -58721,3 +58721,11 @@
 2026-09-01 06:21:08,085 - INFO - 📊 Excel updated with 120 announcements
 2026-09-01 06:21:08,087 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=39000
 2026-09-01 06:21:08,087 - INFO - ✅ Done
+2026-09-01 06:26:03,100 - INFO - 🚀 BSE Watch starting at 2026-09-01 06:26:03.100265
+2026-09-01 06:26:03,100 - INFO - 📡 Source: cronjobs.org
+2026-09-01 06:26:03,100 - INFO - ✅ BSE Database initialized
+2026-09-01 06:26:05,552 - INFO - ⏰ Window (IST): 11:50:05 – 11:56:05
+2026-09-01 06:26:05,663 - INFO - 📤 Sending 11 alerts to Telegram...
+2026-09-01 06:26:19,107 - INFO - 📊 Excel updated with 131 announcements
+2026-09-01 06:26:19,109 - INFO - 📊 SUMMARY (Last 6 min IST): New=11, Dups=1, Skipped=0, Total DB=39011
+2026-09-01 06:26:19,109 - INFO - ✅ Done
