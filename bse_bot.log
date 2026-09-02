@@ -61743,3 +61743,11 @@
 2026-09-02 17:01:32,241 - INFO - 📊 Excel updated with 500 announcements
 2026-09-02 17:01:32,242 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=1, Skipped=0, Total DB=40901
 2026-09-02 17:01:32,242 - INFO - ✅ Done
+2026-09-02 17:06:01,526 - INFO - 🚀 BSE Watch starting at 2026-09-02 17:06:01.526533
+2026-09-02 17:06:01,526 - INFO - 📡 Source: cronjobs.org
+2026-09-02 17:06:01,527 - INFO - ✅ BSE Database initialized
+2026-09-02 17:06:04,764 - INFO - ⏰ Window (IST): 22:30:04 – 22:36:04
+2026-09-02 17:06:05,298 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-02 17:06:08,091 - INFO - 📊 Excel updated with 500 announcements
+2026-09-02 17:06:08,093 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=1, Skipped=0, Total DB=40904
+2026-09-02 17:06:08,093 - INFO - ✅ Done
