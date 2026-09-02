@@ -60268,3 +60268,11 @@
 2026-09-02 02:50:31,395 - INFO - ⏰ Window (IST): 08:14:31 – 08:20:31
 2026-09-02 02:50:31,464 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40644
 2026-09-02 02:50:31,465 - INFO - ✅ Done
+2026-09-02 02:55:21,536 - INFO - 🚀 BSE Watch starting at 2026-09-02 02:55:21.536417
+2026-09-02 02:55:21,536 - INFO - 📡 Source: cronjobs.org
+2026-09-02 02:55:21,537 - INFO - ✅ BSE Database initialized
+2026-09-02 02:55:22,618 - INFO - ⏰ Window (IST): 08:19:22 – 08:25:22
+2026-09-02 02:55:22,732 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-02 02:55:23,891 - INFO - 📊 Excel updated with 1 announcements
+2026-09-02 02:55:23,893 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=3, Skipped=0, Total DB=40645
+2026-09-02 02:55:23,893 - INFO - ✅ Done
