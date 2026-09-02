@@ -60499,3 +60499,12 @@
 2026-09-02 05:16:08,855 - INFO - 📊 Excel updated with 56 announcements
 2026-09-02 05:16:08,857 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=0, Skipped=0, Total DB=40656
 2026-09-02 05:16:08,857 - INFO - ✅ Done
+2026-09-02 05:20:57,940 - INFO - 🚀 BSE Watch starting at 2026-09-02 05:20:57.940771
+2026-09-02 05:20:57,940 - INFO - 📡 Source: cronjobs.org
+2026-09-02 05:20:57,941 - INFO - ✅ BSE Database initialized
+2026-09-02 05:20:57,955 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-09-02 05:20:59,177 - INFO - ⏰ Window (IST): 10:44:59 – 10:50:59
+2026-09-02 05:20:59,341 - INFO - 📤 Sending 7 alerts to Telegram...
+2026-09-02 05:21:08,424 - INFO - 📊 Excel updated with 63 announcements
+2026-09-02 05:21:08,426 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=2, Skipped=0, Total DB=40660
+2026-09-02 05:21:08,426 - INFO - ✅ Done
