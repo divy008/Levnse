@@ -60343,3 +60343,11 @@
 2026-09-02 03:40:25,072 - INFO - ⏰ Window (IST): 09:04:25 – 09:10:25
 2026-09-02 03:40:25,175 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40638
 2026-09-02 03:40:25,175 - INFO - ✅ Done
+2026-09-02 03:45:56,533 - INFO - 🚀 BSE Watch starting at 2026-09-02 03:45:56.533499
+2026-09-02 03:45:56,533 - INFO - 📡 Source: cronjobs.org
+2026-09-02 03:45:56,534 - INFO - ✅ BSE Database initialized
+2026-09-02 03:45:57,326 - INFO - ⏰ Window (IST): 09:09:57 – 09:15:57
+2026-09-02 03:45:57,400 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-02 03:45:58,422 - INFO - 📊 Excel updated with 7 announcements
+2026-09-02 03:45:58,424 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=62, Skipped=0, Total DB=40639
+2026-09-02 03:45:58,424 - INFO - ✅ Done
