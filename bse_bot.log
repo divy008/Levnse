@@ -61918,3 +61918,11 @@
 2026-09-02 18:45:26,221 - INFO - ⏰ Window (IST): 00:09:26 – 00:15:26
 2026-09-02 18:45:26,225 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40922
 2026-09-02 18:45:26,225 - INFO - ✅ Done
+2026-09-02 18:51:08,275 - INFO - 🚀 BSE Watch starting at 2026-09-02 18:51:08.275390
+2026-09-02 18:51:08,275 - INFO - 📡 Source: cronjobs.org
+2026-09-02 18:51:08,276 - INFO - ✅ BSE Database initialized
+2026-09-02 18:51:08,763 - INFO - ⏰ Window (IST): 00:15:08 – 00:21:08
+2026-09-02 18:51:08,928 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-02 18:51:10,041 - INFO - 📊 Excel updated with 500 announcements
+2026-09-02 18:51:10,043 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=40923
+2026-09-02 18:51:10,043 - INFO - ✅ Done
