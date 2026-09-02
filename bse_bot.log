@@ -60623,3 +60623,11 @@
 2026-09-02 06:26:11,359 - INFO - 📊 Excel updated with 160 announcements
 2026-09-02 06:26:11,362 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=3, Skipped=0, Total DB=40693
 2026-09-02 06:26:11,362 - INFO - ✅ Done
+2026-09-02 06:30:29,506 - INFO - 🚀 BSE Watch starting at 2026-09-02 06:30:29.506005
+2026-09-02 06:30:29,506 - INFO - 📡 Source: cronjobs.org
+2026-09-02 06:30:29,506 - INFO - ✅ BSE Database initialized
+2026-09-02 06:30:32,168 - INFO - ⏰ Window (IST): 11:54:32 – 12:00:32
+2026-09-02 06:30:32,529 - INFO - 📤 Sending 8 alerts to Telegram...
+2026-09-02 06:30:42,485 - INFO - 📊 Excel updated with 168 announcements
+2026-09-02 06:30:42,487 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=20, Skipped=0, Total DB=40701
+2026-09-02 06:30:42,487 - INFO - ✅ Done
