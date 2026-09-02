@@ -61570,3 +61570,14 @@
 2026-09-02 15:26:19,020 - INFO - 📊 Excel updated with 500 announcements
 2026-09-02 15:26:19,022 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=0, Skipped=0, Total DB=40859
 2026-09-02 15:26:19,022 - INFO - ✅ Done
+2026-09-02 15:31:31,625 - INFO - 🚀 BSE Watch starting at 2026-09-02 15:31:31.625220
+2026-09-02 15:31:31,625 - INFO - 📡 Source: cronjobs.org
+2026-09-02 15:31:31,625 - INFO - ✅ BSE Database initialized
+2026-09-02 15:31:31,640 - INFO - 🧹 Cleaned up 4 old BSE announcements
+2026-09-02 15:31:37,085 - INFO - ⏰ Window (IST): 20:55:37 – 21:01:37
+2026-09-02 15:31:37,632 - INFO - 📤 Sending 12 alerts to Telegram...
+2026-09-02 15:31:55,983 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-09-02 15:32:20,478 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Max retries exceeded with url: /bot7962400055:AAExRxgxDoispYs2w4dWZ29uYwqDfQyrP3Q/sendMessage (Caused by NewConnectionError("HTTPSConnection(host='api.telegram.org', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+2026-09-02 15:32:28,991 - INFO - 📊 Excel updated with 500 announcements
+2026-09-02 15:32:28,993 - INFO - 📊 SUMMARY (Last 6 min IST): New=12, Dups=0, Skipped=0, Total DB=40867
+2026-09-02 15:32:28,994 - INFO - ✅ Done
