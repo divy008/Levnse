@@ -61544,3 +61544,12 @@
 2026-09-02 15:10:43,544 - INFO - ⏰ Window (IST): 20:34:43 – 20:40:43
 2026-09-02 15:10:43,954 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40853
 2026-09-02 15:10:43,954 - INFO - ✅ Done
+2026-09-02 15:16:05,889 - INFO - 🚀 BSE Watch starting at 2026-09-02 15:16:05.889823
+2026-09-02 15:16:05,889 - INFO - 📡 Source: cronjobs.org
+2026-09-02 15:16:05,890 - INFO - ✅ BSE Database initialized
+2026-09-02 15:16:05,904 - INFO - 🧹 Cleaned up 7 old BSE announcements
+2026-09-02 15:16:10,227 - INFO - ⏰ Window (IST): 20:40:10 – 20:46:10
+2026-09-02 15:16:10,761 - INFO - 📤 Sending 7 alerts to Telegram...
+2026-09-02 15:16:18,089 - INFO - 📊 Excel updated with 500 announcements
+2026-09-02 15:16:18,091 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=5, Skipped=0, Total DB=40853
+2026-09-02 15:16:18,091 - INFO - ✅ Done
