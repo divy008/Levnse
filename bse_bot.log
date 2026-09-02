@@ -61276,3 +61276,12 @@
 2026-09-02 12:36:45,436 - INFO - 📊 Excel updated with 500 announcements
 2026-09-02 12:36:45,438 - INFO - 📊 SUMMARY (Last 6 min IST): New=26, Dups=8, Skipped=0, Total DB=40851
 2026-09-02 12:36:45,438 - INFO - ✅ Done
+2026-09-02 12:41:14,370 - INFO - 🚀 BSE Watch starting at 2026-09-02 12:41:14.370528
+2026-09-02 12:41:14,370 - INFO - 📡 Source: cronjobs.org
+2026-09-02 12:41:14,371 - INFO - ✅ BSE Database initialized
+2026-09-02 12:41:14,387 - INFO - 🧹 Cleaned up 20 old BSE announcements
+2026-09-02 12:41:18,168 - INFO - ⏰ Window (IST): 18:05:18 – 18:11:18
+2026-09-02 12:41:18,662 - INFO - 📤 Sending 23 alerts to Telegram...
+2026-09-02 12:41:48,818 - INFO - 📊 Excel updated with 500 announcements
+2026-09-02 12:41:48,820 - INFO - 📊 SUMMARY (Last 6 min IST): New=23, Dups=3, Skipped=0, Total DB=40854
+2026-09-02 12:41:48,820 - INFO - ✅ Done
