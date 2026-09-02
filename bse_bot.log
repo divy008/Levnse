@@ -61831,3 +61831,10 @@
 2026-09-02 17:51:10,659 - INFO - 📊 Excel updated with 500 announcements
 2026-09-02 17:51:10,661 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=1, Skipped=0, Total DB=40917
 2026-09-02 17:51:10,662 - INFO - ✅ Done
+2026-09-02 17:55:55,797 - INFO - 🚀 BSE Watch starting at 2026-09-02 17:55:55.797002
+2026-09-02 17:55:55,797 - INFO - 📡 Source: cronjobs.org
+2026-09-02 17:55:55,797 - INFO - ✅ BSE Database initialized
+2026-09-02 17:55:55,812 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-09-02 17:55:58,358 - INFO - ⏰ Window (IST): 23:19:58 – 23:25:58
+2026-09-02 17:55:58,754 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1, Skipped=0, Total DB=40914
+2026-09-02 17:55:58,754 - INFO - ✅ Done
