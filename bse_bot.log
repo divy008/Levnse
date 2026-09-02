@@ -60290,3 +60290,10 @@
 2026-09-02 03:05:24,737 - INFO - ⏰ Window (IST): 08:29:24 – 08:35:24
 2026-09-02 03:05:24,843 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40640
 2026-09-02 03:05:24,843 - INFO - ✅ Done
+2026-09-02 03:11:00,193 - INFO - 🚀 BSE Watch starting at 2026-09-02 03:11:00.192982
+2026-09-02 03:11:00,193 - INFO - 📡 Source: cronjobs.org
+2026-09-02 03:11:00,193 - INFO - ✅ BSE Database initialized
+2026-09-02 03:11:00,204 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-09-02 03:11:00,935 - INFO - ⏰ Window (IST): 08:35:00 – 08:41:00
+2026-09-02 03:11:01,001 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40638
+2026-09-02 03:11:01,001 - INFO - ✅ Done
