@@ -60351,3 +60351,10 @@
 2026-09-02 03:45:58,422 - INFO - 📊 Excel updated with 7 announcements
 2026-09-02 03:45:58,424 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=62, Skipped=0, Total DB=40639
 2026-09-02 03:45:58,424 - INFO - ✅ Done
+2026-09-02 03:50:24,411 - INFO - 🚀 BSE Watch starting at 2026-09-02 03:50:24.411573
+2026-09-02 03:50:24,411 - INFO - 📡 Source: cronjobs.org
+2026-09-02 03:50:24,412 - INFO - ✅ BSE Database initialized
+2026-09-02 03:50:24,683 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-02 03:50:25,572 - INFO - ⏰ Window (IST): 09:14:25 – 09:20:25
+2026-09-02 03:50:25,658 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40638
+2026-09-02 03:50:25,658 - INFO - ✅ Done
