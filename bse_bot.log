@@ -63027,3 +63027,12 @@
 2026-09-03 09:55:56,865 - INFO - 🧹 Cleaned up 19 old BSE announcements
 2026-09-03 09:56:07,449 - ERROR - ❌ Failed to fetch BSE feed
 2026-09-03 09:56:07,449 - INFO - ✅ Done
+2026-09-03 10:01:20,908 - INFO - 🚀 BSE Watch starting at 2026-09-03 10:01:20.908495
+2026-09-03 10:01:20,908 - INFO - 📡 Source: cronjobs.org
+2026-09-03 10:01:20,909 - INFO - ✅ BSE Database initialized
+2026-09-03 10:01:20,925 - INFO - 🧹 Cleaned up 17 old BSE announcements
+2026-09-03 10:01:22,764 - INFO - ⏰ Window (IST): 15:25:22 – 15:31:22
+2026-09-03 10:01:23,031 - INFO - 📤 Sending 18 alerts to Telegram...
+2026-09-03 10:01:51,870 - INFO - 📊 Excel updated with 500 announcements
+2026-09-03 10:01:51,872 - INFO - 📊 SUMMARY (Last 6 min IST): New=18, Dups=7, Skipped=0, Total DB=40879
+2026-09-03 10:01:51,872 - INFO - ✅ Done
