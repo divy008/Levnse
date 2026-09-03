@@ -62315,3 +62315,12 @@
 2026-09-03 03:00:37,269 - INFO - ⏰ Window (IST): 08:24:37 – 08:30:37
 2026-09-03 03:00:37,310 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40924
 2026-09-03 03:00:37,310 - INFO - ✅ Done
+2026-09-03 03:05:52,727 - INFO - 🚀 BSE Watch starting at 2026-09-03 03:05:52.727948
+2026-09-03 03:05:52,728 - INFO - 📡 Source: cronjobs.org
+2026-09-03 03:05:52,728 - INFO - ✅ BSE Database initialized
+2026-09-03 03:05:52,743 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-09-03 03:05:53,296 - INFO - ⏰ Window (IST): 08:29:53 – 08:35:53
+2026-09-03 03:05:53,324 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-03 03:05:54,286 - INFO - 📊 Excel updated with 5 announcements
+2026-09-03 03:05:54,289 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=40923
+2026-09-03 03:05:54,289 - INFO - ✅ Done
