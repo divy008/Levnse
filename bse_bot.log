@@ -63959,3 +63959,11 @@
 2026-09-03 19:05:42,282 - INFO - ⏰ Window (IST): 00:29:42 – 00:35:42
 2026-09-03 19:05:42,342 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=41055
 2026-09-03 19:05:42,342 - INFO - ✅ Done
+2026-09-03 19:15:27,300 - INFO - 🚀 BSE Watch starting at 2026-09-03 19:15:27.300150
+2026-09-03 19:15:27,300 - INFO - 📡 Source: cronjobs.org
+2026-09-03 19:15:27,300 - INFO - ✅ BSE Database initialized
+2026-09-03 19:15:28,128 - INFO - ⏰ Window (IST): 00:39:28 – 00:45:28
+2026-09-03 19:15:28,471 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-03 19:15:30,433 - INFO - 📊 Excel updated with 500 announcements
+2026-09-03 19:15:30,435 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=1052, Skipped=86, Total DB=41057
+2026-09-03 19:15:30,435 - INFO - ✅ Done
