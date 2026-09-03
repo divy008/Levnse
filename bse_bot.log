@@ -63698,3 +63698,11 @@
 2026-09-03 16:26:11,317 - INFO - 📊 Excel updated with 500 announcements
 2026-09-03 16:26:11,318 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=0, Skipped=0, Total DB=41007
 2026-09-03 16:26:11,319 - INFO - ✅ Done
+2026-09-03 16:31:09,136 - INFO - 🚀 BSE Watch starting at 2026-09-03 16:31:09.136475
+2026-09-03 16:31:09,136 - INFO - 📡 Source: cronjobs.org
+2026-09-03 16:31:09,137 - INFO - ✅ BSE Database initialized
+2026-09-03 16:31:11,478 - INFO - ⏰ Window (IST): 21:55:11 – 22:01:11
+2026-09-03 16:31:11,939 - INFO - 📤 Sending 7 alerts to Telegram...
+2026-09-03 16:31:19,516 - INFO - 📊 Excel updated with 500 announcements
+2026-09-03 16:31:19,518 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=3, Skipped=2, Total DB=41014
+2026-09-03 16:31:19,518 - INFO - ✅ Done
