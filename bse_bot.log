@@ -63624,3 +63624,11 @@
 2026-09-03 15:41:30,517 - WARNING - ⚠️ Fetch attempt 1 failed for https://beta.bseindia.com/data/xml/announcements.xml: HTTPSConnectionPool(host='beta.bseindia.com', port=443): Read timed out. (read timeout=25)
 2026-09-03 15:41:34,430 - ERROR - ❌ Failed to fetch BSE feed
 2026-09-03 15:41:34,430 - INFO - ✅ Done
+2026-09-03 15:46:12,147 - INFO - 🚀 BSE Watch starting at 2026-09-03 15:46:12.147311
+2026-09-03 15:46:12,147 - INFO - 📡 Source: cronjobs.org
+2026-09-03 15:46:12,148 - INFO - ✅ BSE Database initialized
+2026-09-03 15:46:15,593 - INFO - ⏰ Window (IST): 21:10:15 – 21:16:15
+2026-09-03 15:46:16,204 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-03 15:46:19,447 - INFO - 📊 Excel updated with 500 announcements
+2026-09-03 15:46:19,448 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=3, Skipped=0, Total DB=40985
+2026-09-03 15:46:19,449 - INFO - ✅ Done
