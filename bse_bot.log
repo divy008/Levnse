@@ -65817,3 +65817,10 @@
 2026-09-04 17:21:13,333 - INFO - 📊 Excel updated with 500 announcements
 2026-09-04 17:21:13,335 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=41112
 2026-09-04 17:21:13,335 - INFO - ✅ Done
+2026-09-04 17:25:57,674 - INFO - 🚀 BSE Watch starting at 2026-09-04 17:25:57.674882
+2026-09-04 17:25:57,675 - INFO - 📡 Source: cronjobs.org
+2026-09-04 17:25:57,675 - INFO - ✅ BSE Database initialized
+2026-09-04 17:25:57,691 - INFO - 🧹 Cleaned up 7 old BSE announcements
+2026-09-04 17:26:01,592 - INFO - ⏰ Window (IST): 22:50:01 – 22:56:01
+2026-09-04 17:26:02,252 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1, Skipped=0, Total DB=41105
+2026-09-04 17:26:02,252 - INFO - ✅ Done
