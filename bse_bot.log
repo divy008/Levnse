@@ -65176,3 +65176,11 @@
 2026-09-04 11:16:57,121 - INFO - 📊 Excel updated with 500 announcements
 2026-09-04 11:16:57,124 - INFO - 📊 SUMMARY (Last 6 min IST): New=22, Dups=11, Skipped=0, Total DB=41105
 2026-09-04 11:16:57,124 - INFO - ✅ Done
+2026-09-04 11:21:03,245 - INFO - 🚀 BSE Watch starting at 2026-09-04 11:21:03.245401
+2026-09-04 11:21:03,245 - INFO - 📡 Source: cronjobs.org
+2026-09-04 11:21:03,246 - INFO - ✅ BSE Database initialized
+2026-09-04 11:21:06,443 - INFO - ⏰ Window (IST): 16:45:06 – 16:51:06
+2026-09-04 11:21:06,940 - INFO - 📤 Sending 15 alerts to Telegram...
+2026-09-04 11:21:28,423 - INFO - 📊 Excel updated with 500 announcements
+2026-09-04 11:21:28,425 - INFO - 📊 SUMMARY (Last 6 min IST): New=15, Dups=10, Skipped=0, Total DB=41120
+2026-09-04 11:21:28,425 - INFO - ✅ Done
