@@ -64821,3 +64821,12 @@
 2026-09-04 07:55:25,657 - INFO - ⏰ Window (IST): 13:19:25 – 13:25:25
 2026-09-04 07:55:26,140 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=41061
 2026-09-04 07:55:26,140 - INFO - ✅ Done
+2026-09-04 08:01:09,025 - INFO - 🚀 BSE Watch starting at 2026-09-04 08:01:09.025253
+2026-09-04 08:01:09,025 - INFO - 📡 Source: cronjobs.org
+2026-09-04 08:01:09,025 - INFO - ✅ BSE Database initialized
+2026-09-04 08:01:09,041 - INFO - 🧹 Cleaned up 18 old BSE announcements
+2026-09-04 08:01:11,330 - INFO - ⏰ Window (IST): 13:25:11 – 13:31:11
+2026-09-04 08:01:11,796 - INFO - 📤 Sending 12 alerts to Telegram...
+2026-09-04 08:01:26,639 - INFO - 📊 Excel updated with 337 announcements
+2026-09-04 08:01:26,641 - INFO - 📊 SUMMARY (Last 6 min IST): New=12, Dups=2, Skipped=0, Total DB=41055
+2026-09-04 08:01:26,641 - INFO - ✅ Done
