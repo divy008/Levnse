@@ -65954,3 +65954,11 @@
 2026-09-04 18:41:00,207 - INFO - ⏰ Window (IST): 00:05:00 – 00:11:00
 2026-09-04 18:41:00,621 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=41112
 2026-09-04 18:41:00,621 - INFO - ✅ Done
+2026-09-04 18:45:57,762 - INFO - 🚀 BSE Watch starting at 2026-09-04 18:45:57.762072
+2026-09-04 18:45:57,762 - INFO - 📡 Source: cronjobs.org
+2026-09-04 18:45:57,762 - INFO - ✅ BSE Database initialized
+2026-09-04 18:45:59,606 - INFO - ⏰ Window (IST): 00:09:59 – 00:15:59
+2026-09-04 18:45:59,674 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-04 18:46:02,309 - INFO - 📊 Excel updated with 500 announcements
+2026-09-04 18:46:02,311 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=1164, Skipped=139, Total DB=41115
+2026-09-04 18:46:02,312 - INFO - ✅ Done
