@@ -64531,3 +64531,12 @@
 2026-09-04 05:11:01,531 - INFO - 📊 Excel updated with 53 announcements
 2026-09-04 05:11:01,532 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=398, Skipped=4, Total DB=41077
 2026-09-04 05:11:01,532 - INFO - ✅ Done
+2026-09-04 05:15:57,944 - INFO - 🚀 BSE Watch starting at 2026-09-04 05:15:57.944108
+2026-09-04 05:15:57,944 - INFO - 📡 Source: cronjobs.org
+2026-09-04 05:15:57,944 - INFO - ✅ BSE Database initialized
+2026-09-04 05:15:58,011 - INFO - 🧹 Cleaned up 6 old BSE announcements
+2026-09-04 05:15:59,538 - INFO - ⏰ Window (IST): 10:39:59 – 10:45:59
+2026-09-04 05:15:59,656 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-04 05:16:01,710 - INFO - 📊 Excel updated with 55 announcements
+2026-09-04 05:16:01,712 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=5, Skipped=2, Total DB=41073
+2026-09-04 05:16:01,712 - INFO - ✅ Done
