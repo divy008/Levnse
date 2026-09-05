@@ -67025,3 +67025,12 @@
 2026-09-05 09:41:33,642 - INFO - 📊 Excel updated with 500 announcements
 2026-09-05 09:41:33,644 - INFO - 📊 SUMMARY (Last 6 min IST): New=17, Dups=2, Skipped=0, Total DB=41210
 2026-09-05 09:41:33,644 - INFO - ✅ Done
+2026-09-05 09:46:09,889 - INFO - 🚀 BSE Watch starting at 2026-09-05 09:46:09.889875
+2026-09-05 09:46:09,890 - INFO - 📡 Source: cronjobs.org
+2026-09-05 09:46:09,890 - INFO - ✅ BSE Database initialized
+2026-09-05 09:46:09,905 - INFO - 🧹 Cleaned up 13 old BSE announcements
+2026-09-05 09:46:10,893 - INFO - ⏰ Window (IST): 15:10:10 – 15:16:10
+2026-09-05 09:46:11,056 - INFO - 📤 Sending 21 alerts to Telegram...
+2026-09-05 09:46:41,765 - INFO - 📊 Excel updated with 500 announcements
+2026-09-05 09:46:41,767 - INFO - 📊 SUMMARY (Last 6 min IST): New=21, Dups=29, Skipped=0, Total DB=41218
+2026-09-05 09:46:41,767 - INFO - ✅ Done
