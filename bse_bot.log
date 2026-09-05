@@ -66493,3 +66493,10 @@
 2026-09-05 04:35:29,532 - INFO - 📊 Excel updated with 6 announcements
 2026-09-05 04:35:29,534 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=41091
 2026-09-05 04:35:29,534 - INFO - ✅ Done
+2026-09-05 04:41:03,002 - INFO - 🚀 BSE Watch starting at 2026-09-05 04:41:03.002244
+2026-09-05 04:41:03,002 - INFO - 📡 Source: cronjobs.org
+2026-09-05 04:41:03,003 - INFO - ✅ BSE Database initialized
+2026-09-05 04:41:03,034 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-09-05 04:41:03,569 - INFO - ⏰ Window (IST): 10:05:03 – 10:11:03
+2026-09-05 04:41:03,612 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=41089
+2026-09-05 04:41:03,612 - INFO - ✅ Done
