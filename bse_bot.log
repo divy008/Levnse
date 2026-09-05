@@ -67437,3 +67437,12 @@
 2026-09-05 13:36:32,267 - INFO - 📊 Excel updated with 500 announcements
 2026-09-05 13:36:32,268 - INFO - 📊 SUMMARY (Last 6 min IST): New=19, Dups=23, Skipped=0, Total DB=41055
 2026-09-05 13:36:32,269 - INFO - ✅ Done
+2026-09-05 13:41:07,823 - INFO - 🚀 BSE Watch starting at 2026-09-05 13:41:07.823010
+2026-09-05 13:41:07,823 - INFO - 📡 Source: cronjobs.org
+2026-09-05 13:41:07,823 - INFO - ✅ BSE Database initialized
+2026-09-05 13:41:07,838 - INFO - 🧹 Cleaned up 13 old BSE announcements
+2026-09-05 13:41:09,199 - INFO - ⏰ Window (IST): 19:05:09 – 19:11:09
+2026-09-05 13:41:09,404 - INFO - 📤 Sending 13 alerts to Telegram...
+2026-09-05 13:41:30,299 - INFO - 📊 Excel updated with 500 announcements
+2026-09-05 13:41:30,301 - INFO - 📊 SUMMARY (Last 6 min IST): New=13, Dups=15, Skipped=0, Total DB=41055
+2026-09-05 13:41:30,301 - INFO - ✅ Done
