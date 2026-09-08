@@ -70375,3 +70375,12 @@
 2026-09-08 03:05:55,837 - INFO - 📊 Excel updated with 1 announcements
 2026-09-08 03:05:55,840 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=40111
 2026-09-08 03:05:55,840 - INFO - ✅ Done
+2026-09-08 03:10:30,812 - INFO - 🚀 BSE Watch starting at 2026-09-08 03:10:30.812366
+2026-09-08 03:10:30,812 - INFO - 📡 Source: cronjobs.org
+2026-09-08 03:10:30,812 - INFO - ✅ BSE Database initialized
+2026-09-08 03:10:31,439 - INFO - ⏰ Window (IST): 08:34:31 – 08:40:31
+2026-09-08 03:10:31,671 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-08 03:10:32,914 - ERROR - ❌ Telegram error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-09-08 03:10:33,282 - INFO - 📊 Excel updated with 3 announcements
+2026-09-08 03:10:33,283 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=1, Skipped=0, Total DB=40113
+2026-09-08 03:10:33,283 - INFO - ✅ Done
