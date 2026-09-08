@@ -70884,3 +70884,11 @@
 2026-09-08 08:41:26,698 - INFO - ⏰ Window (IST): 14:05:26 – 14:11:26
 2026-09-08 08:41:27,001 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40486
 2026-09-08 08:41:27,001 - INFO - ✅ Done
+2026-09-08 08:45:59,084 - INFO - 🚀 BSE Watch starting at 2026-09-08 08:45:59.084077
+2026-09-08 08:45:59,084 - INFO - 📡 Source: cronjobs.org
+2026-09-08 08:45:59,084 - INFO - ✅ BSE Database initialized
+2026-09-08 08:46:03,496 - INFO - ⏰ Window (IST): 14:10:03 – 14:16:03
+2026-09-08 08:46:03,743 - INFO - 📤 Sending 9 alerts to Telegram...
+2026-09-08 08:46:14,697 - INFO - 📊 Excel updated with 385 announcements
+2026-09-08 08:46:14,699 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=0, Skipped=0, Total DB=40495
+2026-09-08 08:46:14,699 - INFO - ✅ Done
