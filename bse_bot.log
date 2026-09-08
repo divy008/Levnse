@@ -71138,3 +71138,11 @@
 2026-09-08 11:26:32,173 - INFO - ⏰ Window (IST): 16:50:32 – 16:56:32
 2026-09-08 11:26:32,602 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=40881
 2026-09-08 11:26:32,602 - INFO - ✅ Done
+2026-09-08 11:31:13,963 - INFO - 🚀 BSE Watch starting at 2026-09-08 11:31:13.963449
+2026-09-08 11:31:13,963 - INFO - 📡 Source: cronjobs.org
+2026-09-08 11:31:13,964 - INFO - ✅ BSE Database initialized
+2026-09-08 11:31:16,530 - INFO - ⏰ Window (IST): 16:55:16 – 17:01:16
+2026-09-08 11:31:16,947 - INFO - 📤 Sending 15 alerts to Telegram...
+2026-09-08 11:31:38,854 - INFO - 📊 Excel updated with 500 announcements
+2026-09-08 11:31:38,857 - INFO - 📊 SUMMARY (Last 6 min IST): New=15, Dups=2, Skipped=0, Total DB=40896
+2026-09-08 11:31:38,857 - INFO - ✅ Done
