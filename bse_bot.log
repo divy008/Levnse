@@ -71234,3 +71234,12 @@
 2026-09-08 12:26:31,022 - INFO - 📊 Excel updated with 500 announcements
 2026-09-08 12:26:31,024 - INFO - 📊 SUMMARY (Last 6 min IST): New=14, Dups=3, Skipped=0, Total DB=41082
 2026-09-08 12:26:31,024 - INFO - ✅ Done
+2026-09-08 12:31:43,119 - INFO - 🚀 BSE Watch starting at 2026-09-08 12:31:43.119042
+2026-09-08 12:31:43,119 - INFO - 📡 Source: cronjobs.org
+2026-09-08 12:31:43,119 - INFO - ✅ BSE Database initialized
+2026-09-08 12:31:47,911 - INFO - ⏰ Window (IST): 17:55:47 – 18:01:47
+2026-09-08 12:31:48,259 - INFO - 📤 Sending 28 alerts to Telegram...
+2026-09-08 12:32:15,978 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-09-08 12:32:57,909 - INFO - 📊 Excel updated with 500 announcements
+2026-09-08 12:32:57,911 - INFO - 📊 SUMMARY (Last 6 min IST): New=28, Dups=15, Skipped=0, Total DB=41110
+2026-09-08 12:32:57,912 - INFO - ✅ Done
