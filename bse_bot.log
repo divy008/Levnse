@@ -75640,3 +75640,10 @@
 2026-09-10 16:26:02,330 - INFO - ⏰ Window (IST): 21:50:02 – 21:56:02
 2026-09-10 16:26:02,960 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=1, Total DB=39342
 2026-09-10 16:26:02,960 - INFO - ✅ Done
+2026-09-10 16:31:06,926 - INFO - 🚀 BSE Watch starting at 2026-09-10 16:31:06.926692
+2026-09-10 16:31:06,926 - INFO - 📡 Source: cronjobs.org
+2026-09-10 16:31:06,927 - INFO - ✅ BSE Database initialized
+2026-09-10 16:31:06,942 - INFO - 🧹 Cleaned up 4 old BSE announcements
+2026-09-10 16:31:10,162 - INFO - ⏰ Window (IST): 21:55:10 – 22:01:10
+2026-09-10 16:31:10,603 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=39338
+2026-09-10 16:31:10,603 - INFO - ✅ Done
