@@ -77138,3 +77138,12 @@
 2026-09-11 12:01:33,859 - INFO - 📊 Excel updated with 500 announcements
 2026-09-11 12:01:33,860 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=0, Skipped=0, Total DB=38336
 2026-09-11 12:01:33,860 - INFO - ✅ Done
+2026-09-11 12:06:11,496 - INFO - 🚀 BSE Watch starting at 2026-09-11 12:06:11.496691
+2026-09-11 12:06:11,496 - INFO - 📡 Source: cronjobs.org
+2026-09-11 12:06:11,497 - INFO - ✅ BSE Database initialized
+2026-09-11 12:06:11,529 - INFO - 🧹 Cleaned up 89 old BSE announcements
+2026-09-11 12:06:13,635 - INFO - ⏰ Window (IST): 17:30:13 – 17:36:13
+2026-09-11 12:06:13,939 - INFO - 📤 Sending 15 alerts to Telegram...
+2026-09-11 12:06:32,336 - INFO - 📊 Excel updated with 500 announcements
+2026-09-11 12:06:32,337 - INFO - 📊 SUMMARY (Last 6 min IST): New=15, Dups=58, Skipped=0, Total DB=38262
+2026-09-11 12:06:32,337 - INFO - ✅ Done
