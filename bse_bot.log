@@ -77400,3 +77400,11 @@
 2026-09-11 14:31:32,773 - INFO - 📊 Excel updated with 500 announcements
 2026-09-11 14:31:32,775 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=0, Skipped=0, Total DB=37524
 2026-09-11 14:31:32,775 - INFO - ✅ Done
+2026-09-11 14:36:00,193 - INFO - 🚀 BSE Watch starting at 2026-09-11 14:36:00.193853
+2026-09-11 14:36:00,193 - INFO - 📡 Source: cronjobs.org
+2026-09-11 14:36:00,194 - INFO - ✅ BSE Database initialized
+2026-09-11 14:36:02,921 - INFO - ⏰ Window (IST): 20:00:02 – 20:06:02
+2026-09-11 14:36:03,403 - INFO - 📤 Sending 6 alerts to Telegram...
+2026-09-11 14:36:12,559 - INFO - 📊 Excel updated with 500 announcements
+2026-09-11 14:36:12,560 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=853, Skipped=72, Total DB=37530
+2026-09-11 14:36:12,561 - INFO - ✅ Done
