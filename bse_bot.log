@@ -78256,3 +78256,11 @@
 2026-09-12 03:35:22,718 - INFO - ⏰ Window (IST): 08:59:22 – 09:05:22
 2026-09-12 03:35:22,771 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=37282
 2026-09-12 03:35:22,771 - INFO - ✅ Done
+2026-09-12 03:40:27,089 - INFO - 🚀 BSE Watch starting at 2026-09-12 03:40:27.089207
+2026-09-12 03:40:27,089 - INFO - 📡 Source: cronjobs.org
+2026-09-12 03:40:27,089 - INFO - ✅ BSE Database initialized
+2026-09-12 03:40:27,712 - INFO - ⏰ Window (IST): 09:04:27 – 09:10:27
+2026-09-12 03:40:27,813 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-12 03:40:28,989 - INFO - 📊 Excel updated with 1 announcements
+2026-09-12 03:40:28,991 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=3, Skipped=0, Total DB=37283
+2026-09-12 03:40:28,991 - INFO - ✅ Done
