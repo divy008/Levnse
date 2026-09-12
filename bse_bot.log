@@ -79185,3 +79185,12 @@
 2026-09-12 12:55:58,281 - INFO - 📊 Excel updated with 275 announcements
 2026-09-12 12:55:58,283 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=0, Skipped=0, Total DB=35168
 2026-09-12 12:55:58,284 - INFO - ✅ Done
+2026-09-12 13:00:40,180 - INFO - 🚀 BSE Watch starting at 2026-09-12 13:00:40.180507
+2026-09-12 13:00:40,180 - INFO - 📡 Source: cronjobs.org
+2026-09-12 13:00:40,181 - INFO - ✅ BSE Database initialized
+2026-09-12 13:00:40,209 - INFO - 🧹 Cleaned up 50 old BSE announcements
+2026-09-12 13:00:41,276 - INFO - ⏰ Window (IST): 18:24:41 – 18:30:41
+2026-09-12 13:00:41,410 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-09-12 13:00:45,019 - INFO - 📊 Excel updated with 279 announcements
+2026-09-12 13:00:45,021 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=0, Skipped=0, Total DB=35122
+2026-09-12 13:00:45,021 - INFO - ✅ Done
