@@ -78230,3 +78230,10 @@
 2026-09-12 03:15:25,598 - INFO - ⏰ Window (IST): 08:39:25 – 08:45:25
 2026-09-12 03:15:25,693 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=37286
 2026-09-12 03:15:25,693 - INFO - ✅ Done
+2026-09-12 03:20:25,159 - INFO - 🚀 BSE Watch starting at 2026-09-12 03:20:25.159171
+2026-09-12 03:20:25,159 - INFO - 📡 Source: cronjobs.org
+2026-09-12 03:20:25,160 - INFO - ✅ BSE Database initialized
+2026-09-12 03:20:25,186 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-09-12 03:20:26,062 - INFO - ⏰ Window (IST): 08:44:26 – 08:50:26
+2026-09-12 03:20:26,165 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=37284
+2026-09-12 03:20:26,166 - INFO - ✅ Done
