@@ -79160,3 +79160,10 @@
 2026-09-12 12:40:59,711 - INFO - ⏰ Window (IST): 18:04:59 – 18:10:59
 2026-09-12 12:40:59,783 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=35276
 2026-09-12 12:40:59,784 - INFO - ✅ Done
+2026-09-12 12:45:27,321 - INFO - 🚀 BSE Watch starting at 2026-09-12 12:45:27.321307
+2026-09-12 12:45:27,321 - INFO - 📡 Source: cronjobs.org
+2026-09-12 12:45:27,321 - INFO - ✅ BSE Database initialized
+2026-09-12 12:45:27,604 - INFO - 🧹 Cleaned up 34 old BSE announcements
+2026-09-12 12:45:28,341 - INFO - ⏰ Window (IST): 18:09:28 – 18:15:28
+2026-09-12 12:45:28,413 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=35242
+2026-09-12 12:45:28,413 - INFO - ✅ Done
