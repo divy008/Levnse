@@ -80158,3 +80158,12 @@
 2026-09-14 04:21:10,849 - INFO - ⏰ Window (IST): 09:45:10 – 09:51:10
 2026-09-14 04:21:10,852 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1, Skipped=0, Total DB=30461
 2026-09-14 04:21:10,852 - INFO - ✅ Done
+2026-09-14 04:25:55,824 - INFO - 🚀 BSE Watch starting at 2026-09-14 04:25:55.824441
+2026-09-14 04:25:55,824 - INFO - 📡 Source: cronjobs.org
+2026-09-14 04:25:55,825 - INFO - ✅ BSE Database initialized
+2026-09-14 04:25:55,835 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-14 04:25:56,187 - INFO - ⏰ Window (IST): 09:49:56 – 09:55:56
+2026-09-14 04:25:56,191 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-14 04:25:57,275 - INFO - 📊 Excel updated with 5 announcements
+2026-09-14 04:25:57,277 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=1, Skipped=0, Total DB=30461
+2026-09-14 04:25:57,277 - INFO - ✅ Done
