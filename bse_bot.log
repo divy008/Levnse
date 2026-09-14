@@ -80107,3 +80107,11 @@
 2026-09-14 03:45:27,147 - INFO - ⏰ Window (IST): 09:09:27 – 09:15:27
 2026-09-14 03:45:27,150 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30461
 2026-09-14 03:45:27,150 - INFO - ✅ Done
+2026-09-14 03:50:26,232 - INFO - 🚀 BSE Watch starting at 2026-09-14 03:50:26.232449
+2026-09-14 03:50:26,232 - INFO - 📡 Source: cronjobs.org
+2026-09-14 03:50:26,233 - INFO - ✅ BSE Database initialized
+2026-09-14 03:50:26,506 - INFO - ⏰ Window (IST): 09:14:26 – 09:20:26
+2026-09-14 03:50:26,527 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-14 03:50:27,761 - INFO - 📊 Excel updated with 2 announcements
+2026-09-14 03:50:27,763 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=30462
+2026-09-14 03:50:27,763 - INFO - ✅ Done
