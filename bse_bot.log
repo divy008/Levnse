@@ -81306,3 +81306,10 @@
 2026-09-14 16:05:54,588 - INFO - ⏰ Window (IST): 21:29:54 – 21:35:54
 2026-09-14 16:05:54,601 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30320
 2026-09-14 16:05:54,601 - INFO - ✅ Done
+2026-09-14 16:11:00,626 - INFO - 🚀 BSE Watch starting at 2026-09-14 16:11:00.626901
+2026-09-14 16:11:00,627 - INFO - 📡 Source: cronjobs.org
+2026-09-14 16:11:00,627 - INFO - ✅ BSE Database initialized
+2026-09-14 16:11:00,638 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-09-14 16:11:01,110 - INFO - ⏰ Window (IST): 21:35:01 – 21:41:01
+2026-09-14 16:11:01,134 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30318
+2026-09-14 16:11:01,134 - INFO - ✅ Done
