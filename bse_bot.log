@@ -80274,3 +80274,12 @@
 2026-09-14 05:35:23,231 - INFO - 📊 Excel updated with 16 announcements
 2026-09-14 05:35:23,233 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=3, Skipped=0, Total DB=30460
 2026-09-14 05:35:23,233 - INFO - ✅ Done
+2026-09-14 05:40:54,937 - INFO - 🚀 BSE Watch starting at 2026-09-14 05:40:54.936987
+2026-09-14 05:40:54,937 - INFO - 📡 Source: cronjobs.org
+2026-09-14 05:40:54,937 - INFO - ✅ BSE Database initialized
+2026-09-14 05:40:54,970 - INFO - 🧹 Cleaned up 7 old BSE announcements
+2026-09-14 05:40:55,482 - INFO - ⏰ Window (IST): 11:04:55 – 11:10:55
+2026-09-14 05:40:55,491 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-14 05:40:58,132 - INFO - 📊 Excel updated with 19 announcements
+2026-09-14 05:40:58,134 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=30456
+2026-09-14 05:40:58,135 - INFO - ✅ Done
