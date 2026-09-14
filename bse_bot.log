@@ -81170,3 +81170,12 @@
 2026-09-14 14:35:57,863 - INFO - ⏰ Window (IST): 19:59:57 – 20:05:57
 2026-09-14 14:35:57,873 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30329
 2026-09-14 14:35:57,873 - INFO - ✅ Done
+2026-09-14 14:40:25,701 - INFO - 🚀 BSE Watch starting at 2026-09-14 14:40:25.701620
+2026-09-14 14:40:25,701 - INFO - 📡 Source: cronjobs.org
+2026-09-14 14:40:25,702 - INFO - ✅ BSE Database initialized
+2026-09-14 14:40:25,729 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-14 14:40:26,837 - INFO - ⏰ Window (IST): 20:04:26 – 20:10:26
+2026-09-14 14:40:26,860 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-14 14:40:28,722 - INFO - 📊 Excel updated with 199 announcements
+2026-09-14 14:40:28,724 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=30330
+2026-09-14 14:40:28,724 - INFO - ✅ Done
