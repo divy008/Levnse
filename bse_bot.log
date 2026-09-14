@@ -80922,3 +80922,12 @@
 2026-09-14 12:05:59,003 - INFO - 📊 Excel updated with 144 announcements
 2026-09-14 12:05:59,005 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=11, Skipped=0, Total DB=30336
 2026-09-14 12:05:59,005 - INFO - ✅ Done
+2026-09-14 12:11:00,409 - INFO - 🚀 BSE Watch starting at 2026-09-14 12:11:00.409599
+2026-09-14 12:11:00,409 - INFO - 📡 Source: cronjobs.org
+2026-09-14 12:11:00,410 - INFO - ✅ BSE Database initialized
+2026-09-14 12:11:00,428 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-14 12:11:00,769 - INFO - ⏰ Window (IST): 17:35:00 – 17:41:00
+2026-09-14 12:11:00,781 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-14 12:11:02,918 - INFO - 📊 Excel updated with 146 announcements
+2026-09-14 12:11:02,920 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=10, Skipped=0, Total DB=30337
+2026-09-14 12:11:02,920 - INFO - ✅ Done
