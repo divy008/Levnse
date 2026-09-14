@@ -80513,3 +80513,10 @@
 2026-09-14 08:05:57,144 - INFO - 📊 Excel updated with 45 announcements
 2026-09-14 08:05:57,146 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=30395
 2026-09-14 08:05:57,146 - INFO - ✅ Done
+2026-09-14 08:10:30,282 - INFO - 🚀 BSE Watch starting at 2026-09-14 08:10:30.282360
+2026-09-14 08:10:30,282 - INFO - 📡 Source: cronjobs.org
+2026-09-14 08:10:30,282 - INFO - ✅ BSE Database initialized
+2026-09-14 08:10:30,721 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-09-14 08:10:31,147 - INFO - ⏰ Window (IST): 13:34:31 – 13:40:31
+2026-09-14 08:10:31,152 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1, Skipped=0, Total DB=30392
+2026-09-14 08:10:31,153 - INFO - ✅ Done
