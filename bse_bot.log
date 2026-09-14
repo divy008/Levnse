@@ -80221,3 +80221,11 @@
 2026-09-14 05:01:15,309 - INFO - 📊 Excel updated with 10 announcements
 2026-09-14 05:01:15,311 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=30463
 2026-09-14 05:01:15,311 - INFO - ✅ Done
+2026-09-14 05:05:20,548 - INFO - 🚀 BSE Watch starting at 2026-09-14 05:05:20.548079
+2026-09-14 05:05:20,548 - INFO - 📡 Source: cronjobs.org
+2026-09-14 05:05:20,548 - INFO - ✅ BSE Database initialized
+2026-09-14 05:05:21,031 - INFO - ⏰ Window (IST): 10:29:21 – 10:35:21
+2026-09-14 05:05:21,054 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-14 05:05:23,844 - INFO - 📊 Excel updated with 13 announcements
+2026-09-14 05:05:23,846 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=30466
+2026-09-14 05:05:23,846 - INFO - ✅ Done
