@@ -80134,3 +80134,12 @@
 2026-09-14 04:05:21,585 - INFO - ⏰ Window (IST): 09:29:21 – 09:35:21
 2026-09-14 04:05:21,588 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30461
 2026-09-14 04:05:21,588 - INFO - ✅ Done
+2026-09-14 04:10:58,274 - INFO - 🚀 BSE Watch starting at 2026-09-14 04:10:58.274916
+2026-09-14 04:10:58,275 - INFO - 📡 Source: cronjobs.org
+2026-09-14 04:10:58,275 - INFO - ✅ BSE Database initialized
+2026-09-14 04:10:58,286 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-14 04:10:59,156 - INFO - ⏰ Window (IST): 09:34:59 – 09:40:59
+2026-09-14 04:10:59,161 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-14 04:11:00,083 - INFO - 📊 Excel updated with 3 announcements
+2026-09-14 04:11:00,085 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=30461
+2026-09-14 04:11:00,085 - INFO - ✅ Done
