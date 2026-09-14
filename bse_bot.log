@@ -80358,3 +80358,10 @@
 2026-09-14 06:30:33,815 - INFO - ⏰ Window (IST): 11:54:33 – 12:00:33
 2026-09-14 06:30:33,822 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30436
 2026-09-14 06:30:33,822 - INFO - ✅ Done
+2026-09-14 06:35:25,584 - INFO - 🚀 BSE Watch starting at 2026-09-14 06:35:25.584492
+2026-09-14 06:35:25,584 - INFO - 📡 Source: cronjobs.org
+2026-09-14 06:35:25,585 - INFO - ✅ BSE Database initialized
+2026-09-14 06:35:25,611 - INFO - 🧹 Cleaned up 5 old BSE announcements
+2026-09-14 06:35:26,130 - INFO - ⏰ Window (IST): 11:59:26 – 12:05:26
+2026-09-14 06:35:26,135 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30431
+2026-09-14 06:35:26,136 - INFO - ✅ Done
