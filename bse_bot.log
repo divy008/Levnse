@@ -80243,3 +80243,11 @@
 2026-09-14 05:15:26,994 - INFO - ⏰ Window (IST): 10:39:26 – 10:45:26
 2026-09-14 05:15:26,999 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30459
 2026-09-14 05:15:26,999 - INFO - ✅ Done
+2026-09-14 05:20:59,080 - INFO - 🚀 BSE Watch starting at 2026-09-14 05:20:59.080049
+2026-09-14 05:20:59,080 - INFO - 📡 Source: cronjobs.org
+2026-09-14 05:20:59,080 - INFO - ✅ BSE Database initialized
+2026-09-14 05:20:59,673 - INFO - ⏰ Window (IST): 10:44:59 – 10:50:59
+2026-09-14 05:20:59,680 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-14 05:21:00,815 - INFO - 📊 Excel updated with 14 announcements
+2026-09-14 05:21:00,817 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=11, Skipped=0, Total DB=30460
+2026-09-14 05:21:00,817 - INFO - ✅ Done
