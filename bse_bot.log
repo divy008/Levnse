@@ -80301,3 +80301,10 @@
 2026-09-14 05:50:57,651 - INFO - 📊 Excel updated with 21 announcements
 2026-09-14 05:50:57,654 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=30455
 2026-09-14 05:50:57,654 - INFO - ✅ Done
+2026-09-14 05:55:22,995 - INFO - 🚀 BSE Watch starting at 2026-09-14 05:55:22.994982
+2026-09-14 05:55:22,995 - INFO - 📡 Source: cronjobs.org
+2026-09-14 05:55:22,995 - INFO - ✅ BSE Database initialized
+2026-09-14 05:55:23,224 - INFO - 🧹 Cleaned up 5 old BSE announcements
+2026-09-14 05:55:23,585 - INFO - ⏰ Window (IST): 11:19:23 – 11:25:23
+2026-09-14 05:55:23,590 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30450
+2026-09-14 05:55:23,590 - INFO - ✅ Done
