@@ -80608,3 +80608,10 @@
 2026-09-14 09:05:25,288 - INFO - 📊 Excel updated with 56 announcements
 2026-09-14 09:05:25,290 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=30364
 2026-09-14 09:05:25,290 - INFO - ✅ Done
+2026-09-14 09:10:30,007 - INFO - 🚀 BSE Watch starting at 2026-09-14 09:10:30.007504
+2026-09-14 09:10:30,007 - INFO - 📡 Source: cronjobs.org
+2026-09-14 09:10:30,008 - INFO - ✅ BSE Database initialized
+2026-09-14 09:10:30,408 - INFO - 🧹 Cleaned up 5 old BSE announcements
+2026-09-14 09:10:30,909 - INFO - ⏰ Window (IST): 14:34:30 – 14:40:30
+2026-09-14 09:10:30,915 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30359
+2026-09-14 09:10:30,915 - INFO - ✅ Done
