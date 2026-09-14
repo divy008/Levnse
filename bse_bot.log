@@ -80345,3 +80345,10 @@
 2026-09-14 06:20:26,249 - INFO - 📊 Excel updated with 23 announcements
 2026-09-14 06:20:26,251 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=30443
 2026-09-14 06:20:26,251 - INFO - ✅ Done
+2026-09-14 06:25:24,460 - INFO - 🚀 BSE Watch starting at 2026-09-14 06:25:24.459977
+2026-09-14 06:25:24,460 - INFO - 📡 Source: cronjobs.org
+2026-09-14 06:25:24,460 - INFO - ✅ BSE Database initialized
+2026-09-14 06:25:24,484 - INFO - 🧹 Cleaned up 7 old BSE announcements
+2026-09-14 06:25:24,990 - INFO - ⏰ Window (IST): 11:49:24 – 11:55:24
+2026-09-14 06:25:24,995 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30436
+2026-09-14 06:25:24,996 - INFO - ✅ Done
