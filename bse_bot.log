@@ -80940,3 +80940,12 @@
 2026-09-14 12:16:07,131 - INFO - 📊 Excel updated with 148 announcements
 2026-09-14 12:16:07,132 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=3, Skipped=0, Total DB=30338
 2026-09-14 12:16:07,132 - INFO - ✅ Done
+2026-09-14 12:21:01,773 - INFO - 🚀 BSE Watch starting at 2026-09-14 12:21:01.773652
+2026-09-14 12:21:01,773 - INFO - 📡 Source: cronjobs.org
+2026-09-14 12:21:01,774 - INFO - ✅ BSE Database initialized
+2026-09-14 12:21:01,784 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-14 12:21:02,212 - INFO - ⏰ Window (IST): 17:45:02 – 17:51:02
+2026-09-14 12:21:02,226 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-14 12:21:05,350 - INFO - 📊 Excel updated with 151 announcements
+2026-09-14 12:21:05,351 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=1, Skipped=0, Total DB=30340
+2026-09-14 12:21:05,351 - INFO - ✅ Done
