@@ -80093,3 +80093,11 @@
 2026-09-14 03:35:23,497 - INFO - ✅ BSE Database initialized
 2026-09-14 03:35:24,291 - ERROR - ❌ Failed to fetch BSE feed
 2026-09-14 03:35:24,291 - INFO - ✅ Done
+2026-09-14 03:40:57,140 - INFO - 🚀 BSE Watch starting at 2026-09-14 03:40:57.139983
+2026-09-14 03:40:57,140 - INFO - 📡 Source: cronjobs.org
+2026-09-14 03:40:57,140 - INFO - ✅ BSE Database initialized
+2026-09-14 03:40:57,862 - INFO - ⏰ Window (IST): 09:04:57 – 09:10:57
+2026-09-14 03:40:57,866 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-14 03:40:58,816 - INFO - 📊 Excel updated with 1 announcements
+2026-09-14 03:40:58,818 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=21, Skipped=0, Total DB=30461
+2026-09-14 03:40:58,818 - INFO - ✅ Done
