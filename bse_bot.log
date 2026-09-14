@@ -80088,3 +80088,8 @@
 2026-09-14 03:30:33,201 - INFO - 🧹 Cleaned up 1 old BSE announcements
 2026-09-14 03:30:34,685 - ERROR - ❌ Failed to fetch BSE feed
 2026-09-14 03:30:34,685 - INFO - ✅ Done
+2026-09-14 03:35:23,497 - INFO - 🚀 BSE Watch starting at 2026-09-14 03:35:23.497141
+2026-09-14 03:35:23,497 - INFO - 📡 Source: cronjobs.org
+2026-09-14 03:35:23,497 - INFO - ✅ BSE Database initialized
+2026-09-14 03:35:24,291 - ERROR - ❌ Failed to fetch BSE feed
+2026-09-14 03:35:24,291 - INFO - ✅ Done
