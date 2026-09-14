@@ -80877,3 +80877,12 @@
 2026-09-14 11:40:31,827 - INFO - 📊 Excel updated with 124 announcements
 2026-09-14 11:40:31,829 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=30337
 2026-09-14 11:40:31,829 - INFO - ✅ Done
+2026-09-14 11:46:00,267 - INFO - 🚀 BSE Watch starting at 2026-09-14 11:46:00.267516
+2026-09-14 11:46:00,267 - INFO - 📡 Source: cronjobs.org
+2026-09-14 11:46:00,268 - INFO - ✅ BSE Database initialized
+2026-09-14 11:46:00,277 - INFO - 🧹 Cleaned up 10 old BSE announcements
+2026-09-14 11:46:00,807 - INFO - ⏰ Window (IST): 17:10:00 – 17:16:00
+2026-09-14 11:46:01,023 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-14 11:46:03,907 - INFO - 📊 Excel updated with 127 announcements
+2026-09-14 11:46:03,908 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=30330
+2026-09-14 11:46:03,908 - INFO - ✅ Done
