@@ -80329,3 +80329,10 @@
 2026-09-14 06:10:24,875 - INFO - ⏰ Window (IST): 11:34:24 – 11:40:24
 2026-09-14 06:10:24,882 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30448
 2026-09-14 06:10:24,882 - INFO - ✅ Done
+2026-09-14 06:15:35,168 - INFO - 🚀 BSE Watch starting at 2026-09-14 06:15:35.168465
+2026-09-14 06:15:35,168 - INFO - 📡 Source: cronjobs.org
+2026-09-14 06:15:35,169 - INFO - ✅ BSE Database initialized
+2026-09-14 06:15:35,419 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-09-14 06:15:35,800 - INFO - ⏰ Window (IST): 11:39:35 – 11:45:35
+2026-09-14 06:15:35,804 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30445
+2026-09-14 06:15:35,804 - INFO - ✅ Done
