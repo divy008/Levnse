@@ -80437,3 +80437,10 @@
 2026-09-14 07:20:27,462 - INFO - ⏰ Window (IST): 12:44:27 – 12:50:27
 2026-09-14 07:20:27,469 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30410
 2026-09-14 07:20:27,469 - INFO - ✅ Done
+2026-09-14 07:25:23,229 - INFO - 🚀 BSE Watch starting at 2026-09-14 07:25:23.229617
+2026-09-14 07:25:23,229 - INFO - 📡 Source: cronjobs.org
+2026-09-14 07:25:23,230 - INFO - ✅ BSE Database initialized
+2026-09-14 07:25:23,464 - INFO - 🧹 Cleaned up 4 old BSE announcements
+2026-09-14 07:25:23,900 - INFO - ⏰ Window (IST): 12:49:23 – 12:55:23
+2026-09-14 07:25:23,905 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30406
+2026-09-14 07:25:23,905 - INFO - ✅ Done
