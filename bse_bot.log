@@ -82318,3 +82318,11 @@
 2026-09-15 08:06:04,304 - INFO - 📊 Excel updated with 156 announcements
 2026-09-15 08:06:04,306 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=0, Skipped=0, Total DB=30453
 2026-09-15 08:06:04,306 - INFO - ✅ Done
+2026-09-15 08:11:06,740 - INFO - 🚀 BSE Watch starting at 2026-09-15 08:11:06.740842
+2026-09-15 08:11:06,740 - INFO - 📡 Source: cronjobs.org
+2026-09-15 08:11:06,741 - INFO - ✅ BSE Database initialized
+2026-09-15 08:11:10,596 - INFO - ⏰ Window (IST): 13:35:10 – 13:41:10
+2026-09-15 08:11:10,924 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-09-15 08:11:15,728 - INFO - 📊 Excel updated with 161 announcements
+2026-09-15 08:11:15,730 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=2, Skipped=0, Total DB=30458
+2026-09-15 08:11:15,730 - INFO - ✅ Done
