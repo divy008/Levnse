@@ -81916,3 +81916,11 @@
 2026-09-15 03:45:26,110 - INFO - ⏰ Window (IST): 09:09:26 – 09:15:26
 2026-09-15 03:45:26,114 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30302
 2026-09-15 03:45:26,114 - INFO - ✅ Done
+2026-09-15 03:50:55,963 - INFO - 🚀 BSE Watch starting at 2026-09-15 03:50:55.963517
+2026-09-15 03:50:55,963 - INFO - 📡 Source: cronjobs.org
+2026-09-15 03:50:55,964 - INFO - ✅ BSE Database initialized
+2026-09-15 03:50:56,568 - INFO - ⏰ Window (IST): 09:14:56 – 09:20:56
+2026-09-15 03:50:56,572 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-15 03:50:57,511 - INFO - 📊 Excel updated with 6 announcements
+2026-09-15 03:50:57,513 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=2, Skipped=0, Total DB=30303
+2026-09-15 03:50:57,514 - INFO - ✅ Done
