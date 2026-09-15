@@ -81960,3 +81960,11 @@
 2026-09-15 04:15:57,797 - INFO - ⏰ Window (IST): 09:39:57 – 09:45:57
 2026-09-15 04:15:57,811 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30306
 2026-09-15 04:15:57,811 - INFO - ✅ Done
+2026-09-15 04:21:11,716 - INFO - 🚀 BSE Watch starting at 2026-09-15 04:21:11.716191
+2026-09-15 04:21:11,716 - INFO - 📡 Source: cronjobs.org
+2026-09-15 04:21:11,716 - INFO - ✅ BSE Database initialized
+2026-09-15 04:21:12,075 - INFO - ⏰ Window (IST): 09:45:12 – 09:51:12
+2026-09-15 04:21:12,132 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-15 04:21:14,204 - INFO - 📊 Excel updated with 11 announcements
+2026-09-15 04:21:14,206 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=1, Skipped=0, Total DB=30308
+2026-09-15 04:21:14,206 - INFO - ✅ Done
