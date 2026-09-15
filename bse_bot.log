@@ -82176,3 +82176,11 @@
 2026-09-15 06:36:01,155 - INFO - 📊 Excel updated with 80 announcements
 2026-09-15 06:36:01,157 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=1, Skipped=0, Total DB=30377
 2026-09-15 06:36:01,157 - INFO - ✅ Done
+2026-09-15 06:40:58,772 - INFO - 🚀 BSE Watch starting at 2026-09-15 06:40:58.772499
+2026-09-15 06:40:58,772 - INFO - 📡 Source: cronjobs.org
+2026-09-15 06:40:58,773 - INFO - ✅ BSE Database initialized
+2026-09-15 06:41:00,553 - INFO - ⏰ Window (IST): 12:05:00 – 12:11:00
+2026-09-15 06:41:00,695 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-15 06:41:03,701 - INFO - 📊 Excel updated with 83 announcements
+2026-09-15 06:41:03,702 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=1, Total DB=30380
+2026-09-15 06:41:03,702 - INFO - ✅ Done
