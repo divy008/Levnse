@@ -84408,3 +84408,12 @@
 2026-09-16 10:11:23,171 - INFO - 📊 Excel updated with 266 announcements
 2026-09-16 10:11:23,172 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=12, Skipped=0, Total DB=30700
 2026-09-16 10:11:23,172 - INFO - ✅ Done
+2026-09-16 10:16:12,448 - INFO - 🚀 BSE Watch starting at 2026-09-16 10:16:12.448591
+2026-09-16 10:16:12,448 - INFO - 📡 Source: cronjobs.org
+2026-09-16 10:16:12,449 - INFO - ✅ BSE Database initialized
+2026-09-16 10:16:12,459 - INFO - 🧹 Cleaned up 8 old BSE announcements
+2026-09-16 10:16:14,369 - INFO - ⏰ Window (IST): 15:40:14 – 15:46:14
+2026-09-16 10:16:14,734 - INFO - 📤 Sending 10 alerts to Telegram...
+2026-09-16 10:16:31,105 - INFO - 📊 Excel updated with 276 announcements
+2026-09-16 10:16:31,106 - INFO - 📊 SUMMARY (Last 6 min IST): New=10, Dups=0, Skipped=0, Total DB=30702
+2026-09-16 10:16:31,107 - INFO - ✅ Done
