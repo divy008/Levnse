@@ -85070,3 +85070,10 @@
 2026-09-16 16:31:08,244 - INFO - ⏰ Window (IST): 21:55:08 – 22:01:08
 2026-09-16 16:31:08,662 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30522
 2026-09-16 16:31:08,662 - INFO - ✅ Done
+2026-09-16 16:35:52,139 - INFO - 🚀 BSE Watch starting at 2026-09-16 16:35:52.139763
+2026-09-16 16:35:52,139 - INFO - 📡 Source: cronjobs.org
+2026-09-16 16:35:52,140 - INFO - ✅ BSE Database initialized
+2026-09-16 16:35:52,151 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-09-16 16:35:57,428 - INFO - ⏰ Window (IST): 21:59:57 – 22:05:57
+2026-09-16 16:35:57,949 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30520
+2026-09-16 16:35:57,950 - INFO - ✅ Done
