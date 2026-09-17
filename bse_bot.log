@@ -86653,3 +86653,12 @@
 2026-09-17 12:46:19,911 - INFO - 📊 Excel updated with 472 announcements
 2026-09-17 12:46:19,913 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=100, Skipped=0, Total DB=30284
 2026-09-17 12:46:19,913 - INFO - ✅ Done
+2026-09-17 12:51:02,806 - INFO - 🚀 BSE Watch starting at 2026-09-17 12:51:02.806549
+2026-09-17 12:51:02,806 - INFO - 📡 Source: cronjobs.org
+2026-09-17 12:51:02,807 - INFO - ✅ BSE Database initialized
+2026-09-17 12:51:02,818 - INFO - 🧹 Cleaned up 10 old BSE announcements
+2026-09-17 12:51:04,755 - INFO - ⏰ Window (IST): 18:15:04 – 18:21:04
+2026-09-17 12:51:05,099 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-09-17 12:51:09,264 - INFO - 📊 Excel updated with 476 announcements
+2026-09-17 12:51:09,265 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=12, Skipped=0, Total DB=30278
+2026-09-17 12:51:09,265 - INFO - ✅ Done
