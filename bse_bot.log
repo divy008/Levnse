@@ -86635,3 +86635,12 @@
 2026-09-17 12:36:06,703 - INFO - 📊 Excel updated with 457 announcements
 2026-09-17 12:36:06,706 - INFO - 📊 SUMMARY (Last 6 min IST): New=10, Dups=27, Skipped=0, Total DB=30304
 2026-09-17 12:36:06,706 - INFO - ✅ Done
+2026-09-17 12:41:03,509 - INFO - 🚀 BSE Watch starting at 2026-09-17 12:41:03.509879
+2026-09-17 12:41:03,510 - INFO - 📡 Source: cronjobs.org
+2026-09-17 12:41:03,510 - INFO - ✅ BSE Database initialized
+2026-09-17 12:41:03,524 - INFO - 🧹 Cleaned up 15 old BSE announcements
+2026-09-17 12:41:08,533 - INFO - ⏰ Window (IST): 18:05:08 – 18:11:08
+2026-09-17 12:41:08,899 - INFO - 📤 Sending 6 alerts to Telegram...
+2026-09-17 12:41:17,475 - INFO - 📊 Excel updated with 463 announcements
+2026-09-17 12:41:17,477 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=0, Skipped=0, Total DB=30295
+2026-09-17 12:41:17,477 - INFO - ✅ Done
