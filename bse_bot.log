@@ -87185,3 +87185,10 @@
 2026-09-17 18:00:48,837 - INFO - ⏰ Window (IST): 23:24:48 – 23:30:48
 2026-09-17 18:00:49,423 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=12, Total DB=30216
 2026-09-17 18:00:49,423 - INFO - ✅ Done
+2026-09-17 18:05:24,239 - INFO - 🚀 BSE Watch starting at 2026-09-17 18:05:24.239664
+2026-09-17 18:05:24,239 - INFO - 📡 Source: cronjobs.org
+2026-09-17 18:05:24,240 - INFO - ✅ BSE Database initialized
+2026-09-17 18:05:24,265 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-17 18:05:28,584 - INFO - ⏰ Window (IST): 23:29:28 – 23:35:28
+2026-09-17 18:05:29,171 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=12, Total DB=30215
+2026-09-17 18:05:29,171 - INFO - ✅ Done
