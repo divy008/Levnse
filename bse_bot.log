@@ -86457,3 +86457,12 @@
 2026-09-17 10:56:22,289 - INFO - ⏰ Window (IST): 16:20:22 – 16:26:22
 2026-09-17 10:56:22,420 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30383
 2026-09-17 10:56:22,420 - INFO - ✅ Done
+2026-09-17 11:01:21,565 - INFO - 🚀 BSE Watch starting at 2026-09-17 11:01:21.565231
+2026-09-17 11:01:21,565 - INFO - 📡 Source: cronjobs.org
+2026-09-17 11:01:21,565 - INFO - ✅ BSE Database initialized
+2026-09-17 11:01:21,579 - INFO - 🧹 Cleaned up 17 old BSE announcements
+2026-09-17 11:01:23,787 - INFO - ⏰ Window (IST): 16:25:23 – 16:31:23
+2026-09-17 11:01:24,126 - INFO - 📤 Sending 6 alerts to Telegram...
+2026-09-17 11:01:33,262 - INFO - 📊 Excel updated with 297 announcements
+2026-09-17 11:01:33,264 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=3, Skipped=0, Total DB=30372
+2026-09-17 11:01:33,264 - INFO - ✅ Done
