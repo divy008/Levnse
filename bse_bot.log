@@ -87163,3 +87163,11 @@
 2026-09-17 17:46:05,474 - INFO - 📊 Excel updated with 500 announcements
 2026-09-17 17:46:05,476 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=4, Skipped=0, Total DB=30222
 2026-09-17 17:46:05,476 - INFO - ✅ Done
+2026-09-17 17:50:28,732 - INFO - 🚀 BSE Watch starting at 2026-09-17 17:50:28.732009
+2026-09-17 17:50:28,732 - INFO - 📡 Source: cronjobs.org
+2026-09-17 17:50:28,732 - INFO - ✅ BSE Database initialized
+2026-09-17 17:50:30,605 - INFO - ⏰ Window (IST): 23:14:30 – 23:20:30
+2026-09-17 17:50:31,098 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-17 17:50:32,191 - INFO - 📊 Excel updated with 500 announcements
+2026-09-17 17:50:32,192 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=888, Skipped=73, Total DB=30223
+2026-09-17 17:50:32,192 - INFO - ✅ Done
