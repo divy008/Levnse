@@ -87215,3 +87215,12 @@
 2026-09-17 18:20:31,268 - INFO - ⏰ Window (IST): 23:44:31 – 23:50:31
 2026-09-17 18:20:31,583 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30216
 2026-09-17 18:20:31,583 - INFO - ✅ Done
+2026-09-17 18:25:24,305 - INFO - 🚀 BSE Watch starting at 2026-09-17 18:25:24.305279
+2026-09-17 18:25:24,305 - INFO - 📡 Source: cronjobs.org
+2026-09-17 18:25:24,306 - INFO - ✅ BSE Database initialized
+2026-09-17 18:25:24,335 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-17 18:25:28,196 - INFO - ⏰ Window (IST): 23:49:28 – 23:55:28
+2026-09-17 18:25:28,824 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-17 18:25:32,481 - INFO - 📊 Excel updated with 500 announcements
+2026-09-17 18:25:32,483 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=644, Skipped=100, Total DB=30218
+2026-09-17 18:25:32,484 - INFO - ✅ Done
