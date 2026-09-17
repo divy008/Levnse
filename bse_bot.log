@@ -86644,3 +86644,12 @@
 2026-09-17 12:41:17,475 - INFO - 📊 Excel updated with 463 announcements
 2026-09-17 12:41:17,477 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=0, Skipped=0, Total DB=30295
 2026-09-17 12:41:17,477 - INFO - ✅ Done
+2026-09-17 12:46:06,407 - INFO - 🚀 BSE Watch starting at 2026-09-17 12:46:06.407171
+2026-09-17 12:46:06,407 - INFO - 📡 Source: cronjobs.org
+2026-09-17 12:46:06,407 - INFO - ✅ BSE Database initialized
+2026-09-17 12:46:06,437 - INFO - 🧹 Cleaned up 20 old BSE announcements
+2026-09-17 12:46:07,764 - INFO - ⏰ Window (IST): 18:10:07 – 18:16:07
+2026-09-17 12:46:07,973 - INFO - 📤 Sending 9 alerts to Telegram...
+2026-09-17 12:46:19,911 - INFO - 📊 Excel updated with 472 announcements
+2026-09-17 12:46:19,913 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=100, Skipped=0, Total DB=30284
+2026-09-17 12:46:19,913 - INFO - ✅ Done
