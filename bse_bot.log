@@ -87795,3 +87795,12 @@
 2026-09-18 04:45:30,225 - INFO - 📊 Excel updated with 20 announcements
 2026-09-18 04:45:30,227 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=3, Skipped=3, Total DB=30232
 2026-09-18 04:45:30,228 - INFO - ✅ Done
+2026-09-18 04:51:01,592 - INFO - 🚀 BSE Watch starting at 2026-09-18 04:51:01.592071
+2026-09-18 04:51:01,592 - INFO - 📡 Source: cronjobs.org
+2026-09-18 04:51:01,592 - INFO - ✅ BSE Database initialized
+2026-09-18 04:51:01,746 - INFO - 🧹 Cleaned up 4 old BSE announcements
+2026-09-18 04:51:02,371 - INFO - ⏰ Window (IST): 10:15:02 – 10:21:02
+2026-09-18 04:51:02,441 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-18 04:51:05,341 - INFO - 📊 Excel updated with 23 announcements
+2026-09-18 04:51:05,342 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=4, Skipped=1, Total DB=30231
+2026-09-18 04:51:05,343 - INFO - ✅ Done
