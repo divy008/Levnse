@@ -90121,3 +90121,12 @@
 2026-09-19 08:06:01,749 - INFO - 📊 Excel updated with 83 announcements
 2026-09-19 08:06:01,751 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=40, Skipped=0, Total DB=30010
 2026-09-19 08:06:01,751 - INFO - ✅ Done
+2026-09-19 08:10:57,904 - INFO - 🚀 BSE Watch starting at 2026-09-19 08:10:57.904043
+2026-09-19 08:10:57,904 - INFO - 📡 Source: cronjobs.org
+2026-09-19 08:10:57,904 - INFO - ✅ BSE Database initialized
+2026-09-19 08:10:57,912 - INFO - 🧹 Cleaned up 9 old BSE announcements
+2026-09-19 08:10:58,425 - INFO - ⏰ Window (IST): 13:34:58 – 13:40:58
+2026-09-19 08:10:58,469 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-09-19 08:11:02,403 - INFO - 📊 Excel updated with 87 announcements
+2026-09-19 08:11:02,404 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=8, Skipped=0, Total DB=30005
+2026-09-19 08:11:02,405 - INFO - ✅ Done
