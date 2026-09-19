@@ -90287,3 +90287,12 @@
 2026-09-19 09:41:10,449 - INFO - 📊 Excel updated with 175 announcements
 2026-09-19 09:41:10,451 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=2, Skipped=0, Total DB=29982
 2026-09-19 09:41:10,451 - INFO - ✅ Done
+2026-09-19 09:45:55,712 - INFO - 🚀 BSE Watch starting at 2026-09-19 09:45:55.712253
+2026-09-19 09:45:55,712 - INFO - 📡 Source: cronjobs.org
+2026-09-19 09:45:55,712 - INFO - ✅ BSE Database initialized
+2026-09-19 09:45:55,950 - INFO - 🧹 Cleaned up 5 old BSE announcements
+2026-09-19 09:45:58,088 - INFO - ⏰ Window (IST): 15:09:58 – 15:15:58
+2026-09-19 09:45:58,224 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-09-19 09:46:02,091 - INFO - 📊 Excel updated with 179 announcements
+2026-09-19 09:46:02,092 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=1, Skipped=0, Total DB=29981
+2026-09-19 09:46:02,092 - INFO - ✅ Done
