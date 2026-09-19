@@ -90260,3 +90260,12 @@
 2026-09-19 09:26:00,502 - INFO - 📊 Excel updated with 152 announcements
 2026-09-19 09:26:00,504 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=1, Skipped=2, Total DB=29979
 2026-09-19 09:26:00,504 - INFO - ✅ Done
+2026-09-19 09:31:07,016 - INFO - 🚀 BSE Watch starting at 2026-09-19 09:31:07.016612
+2026-09-19 09:31:07,016 - INFO - 📡 Source: cronjobs.org
+2026-09-19 09:31:07,017 - INFO - ✅ BSE Database initialized
+2026-09-19 09:31:07,028 - INFO - 🧹 Cleaned up 8 old BSE announcements
+2026-09-19 09:31:07,816 - INFO - ⏰ Window (IST): 14:55:07 – 15:01:07
+2026-09-19 09:31:07,922 - INFO - 📤 Sending 9 alerts to Telegram...
+2026-09-19 09:31:17,780 - INFO - 📊 Excel updated with 161 announcements
+2026-09-19 09:31:17,782 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=2, Skipped=1, Total DB=29980
+2026-09-19 09:31:17,782 - INFO - ✅ Done
