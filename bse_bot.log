@@ -90613,3 +90613,12 @@
 2026-09-19 12:45:30,497 - INFO - 📊 Excel updated with 332 announcements
 2026-09-19 12:45:30,499 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=29753
 2026-09-19 12:45:30,499 - INFO - ✅ Done
+2026-09-19 12:50:56,288 - INFO - 🚀 BSE Watch starting at 2026-09-19 12:50:56.288557
+2026-09-19 12:50:56,288 - INFO - 📡 Source: cronjobs.org
+2026-09-19 12:50:56,289 - INFO - ✅ BSE Database initialized
+2026-09-19 12:50:56,302 - INFO - 🧹 Cleaned up 18 old BSE announcements
+2026-09-19 12:50:59,115 - INFO - ⏰ Window (IST): 18:14:59 – 18:20:59
+2026-09-19 12:50:59,278 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-19 12:51:01,963 - INFO - 📊 Excel updated with 335 announcements
+2026-09-19 12:51:01,965 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=29738
+2026-09-19 12:51:01,965 - INFO - ✅ Done
