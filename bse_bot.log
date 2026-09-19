@@ -90961,3 +90961,10 @@
 2026-09-19 16:11:00,712 - INFO - 📊 Excel updated with 422 announcements
 2026-09-19 16:11:00,714 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=7, Skipped=0, Total DB=29623
 2026-09-19 16:11:00,714 - INFO - ✅ Done
+2026-09-19 16:15:28,244 - INFO - 🚀 BSE Watch starting at 2026-09-19 16:15:28.244321
+2026-09-19 16:15:28,244 - INFO - 📡 Source: cronjobs.org
+2026-09-19 16:15:28,245 - INFO - ✅ BSE Database initialized
+2026-09-19 16:15:28,256 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-09-19 16:15:29,379 - INFO - ⏰ Window (IST): 21:39:29 – 21:45:29
+2026-09-19 16:15:29,550 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=29620
+2026-09-19 16:15:29,550 - INFO - ✅ Done
