@@ -90535,3 +90535,12 @@
 2026-09-19 12:01:13,872 - INFO - 📊 Excel updated with 299 announcements
 2026-09-19 12:01:13,874 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=0, Skipped=0, Total DB=29834
 2026-09-19 12:01:13,874 - INFO - ✅ Done
+2026-09-19 12:05:53,080 - INFO - 🚀 BSE Watch starting at 2026-09-19 12:05:53.080149
+2026-09-19 12:05:53,080 - INFO - 📡 Source: cronjobs.org
+2026-09-19 12:05:53,080 - INFO - ✅ BSE Database initialized
+2026-09-19 12:05:53,089 - INFO - 🧹 Cleaned up 14 old BSE announcements
+2026-09-19 12:05:54,563 - INFO - ⏰ Window (IST): 17:29:54 – 17:35:54
+2026-09-19 12:05:54,676 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-19 12:05:56,647 - INFO - 📊 Excel updated with 301 announcements
+2026-09-19 12:05:56,648 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=29822
+2026-09-19 12:05:56,648 - INFO - ✅ Done
