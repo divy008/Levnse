@@ -91107,3 +91107,12 @@
 2026-09-19 17:50:28,679 - INFO - ⏰ Window (IST): 23:14:28 – 23:20:28
 2026-09-19 17:50:28,849 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=29586
 2026-09-19 17:50:28,849 - INFO - ✅ Done
+2026-09-19 17:55:54,012 - INFO - 🚀 BSE Watch starting at 2026-09-19 17:55:54.012947
+2026-09-19 17:55:54,013 - INFO - 📡 Source: cronjobs.org
+2026-09-19 17:55:54,013 - INFO - ✅ BSE Database initialized
+2026-09-19 17:55:54,025 - INFO - 🧹 Cleaned up 5 old BSE announcements
+2026-09-19 17:56:07,266 - INFO - ⏰ Window (IST): 23:20:07 – 23:26:07
+2026-09-19 17:56:07,435 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-19 17:56:09,568 - INFO - 📊 Excel updated with 432 announcements
+2026-09-19 17:56:09,570 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=3, Skipped=0, Total DB=29583
+2026-09-19 17:56:09,570 - INFO - ✅ Done
