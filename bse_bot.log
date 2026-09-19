@@ -90103,3 +90103,12 @@
 2026-09-19 07:56:01,120 - INFO - 📊 Excel updated with 72 announcements
 2026-09-19 07:56:01,122 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=6, Skipped=0, Total DB=30012
 2026-09-19 07:56:01,123 - INFO - ✅ Done
+2026-09-19 08:01:10,253 - INFO - 🚀 BSE Watch starting at 2026-09-19 08:01:10.253520
+2026-09-19 08:01:10,253 - INFO - 📡 Source: cronjobs.org
+2026-09-19 08:01:10,254 - INFO - ✅ BSE Database initialized
+2026-09-19 08:01:10,345 - INFO - 🧹 Cleaned up 8 old BSE announcements
+2026-09-19 08:01:10,694 - INFO - ⏰ Window (IST): 13:25:10 – 13:31:10
+2026-09-19 08:01:10,765 - INFO - 📤 Sending 6 alerts to Telegram...
+2026-09-19 08:01:17,055 - INFO - 📊 Excel updated with 78 announcements
+2026-09-19 08:01:17,056 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=3, Skipped=0, Total DB=30010
+2026-09-19 08:01:17,057 - INFO - ✅ Done
