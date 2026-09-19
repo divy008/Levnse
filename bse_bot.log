@@ -91122,3 +91122,10 @@
 2026-09-19 18:00:49,392 - INFO - ⏰ Window (IST): 23:24:49 – 23:30:49
 2026-09-19 18:00:49,561 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=3, Skipped=0, Total DB=29583
 2026-09-19 18:00:49,561 - INFO - ✅ Done
+2026-09-19 18:05:53,428 - INFO - 🚀 BSE Watch starting at 2026-09-19 18:05:53.428234
+2026-09-19 18:05:53,428 - INFO - 📡 Source: cronjobs.org
+2026-09-19 18:05:53,428 - INFO - ✅ BSE Database initialized
+2026-09-19 18:05:53,440 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-09-19 18:06:05,357 - INFO - ⏰ Window (IST): 23:30:05 – 23:36:05
+2026-09-19 18:06:05,530 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=29580
+2026-09-19 18:06:05,530 - INFO - ✅ Done
