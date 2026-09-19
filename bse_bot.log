@@ -90137,3 +90137,11 @@
 2026-09-19 08:15:59,807 - INFO - ⏰ Window (IST): 13:39:59 – 13:45:59
 2026-09-19 08:15:59,877 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30002
 2026-09-19 08:15:59,877 - INFO - ✅ Done
+2026-09-19 08:20:29,000 - INFO - 🚀 BSE Watch starting at 2026-09-19 08:20:29.000842
+2026-09-19 08:20:29,000 - INFO - 📡 Source: cronjobs.org
+2026-09-19 08:20:29,001 - INFO - ✅ BSE Database initialized
+2026-09-19 08:20:29,672 - INFO - ⏰ Window (IST): 13:44:29 – 13:50:29
+2026-09-19 08:20:30,776 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-09-19 08:20:34,832 - INFO - 📊 Excel updated with 91 announcements
+2026-09-19 08:20:34,834 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=0, Skipped=0, Total DB=30006
+2026-09-19 08:20:34,834 - INFO - ✅ Done
