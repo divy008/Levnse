@@ -90544,3 +90544,12 @@
 2026-09-19 12:05:56,647 - INFO - 📊 Excel updated with 301 announcements
 2026-09-19 12:05:56,648 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=29822
 2026-09-19 12:05:56,648 - INFO - ✅ Done
+2026-09-19 12:11:07,419 - INFO - 🚀 BSE Watch starting at 2026-09-19 12:11:07.419516
+2026-09-19 12:11:07,419 - INFO - 📡 Source: cronjobs.org
+2026-09-19 12:11:07,420 - INFO - ✅ BSE Database initialized
+2026-09-19 12:11:07,700 - INFO - 🧹 Cleaned up 15 old BSE announcements
+2026-09-19 12:11:08,596 - INFO - ⏰ Window (IST): 17:35:08 – 17:41:08
+2026-09-19 12:11:08,812 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-19 12:11:11,592 - INFO - 📊 Excel updated with 304 announcements
+2026-09-19 12:11:11,593 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=4, Skipped=0, Total DB=29810
+2026-09-19 12:11:11,593 - INFO - ✅ Done
