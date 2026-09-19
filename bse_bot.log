@@ -90154,3 +90154,12 @@
 2026-09-19 08:26:34,606 - INFO - 📊 Excel updated with 95 announcements
 2026-09-19 08:26:34,608 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=1, Skipped=0, Total DB=30003
 2026-09-19 08:26:34,608 - INFO - ✅ Done
+2026-09-19 08:31:06,727 - INFO - 🚀 BSE Watch starting at 2026-09-19 08:31:06.727864
+2026-09-19 08:31:06,727 - INFO - 📡 Source: cronjobs.org
+2026-09-19 08:31:06,728 - INFO - ✅ BSE Database initialized
+2026-09-19 08:31:06,737 - INFO - 🧹 Cleaned up 7 old BSE announcements
+2026-09-19 08:31:07,360 - INFO - ⏰ Window (IST): 13:55:07 – 14:01:07
+2026-09-19 08:31:07,431 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-19 08:31:11,173 - INFO - 📊 Excel updated with 98 announcements
+2026-09-19 08:31:11,175 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=29999
+2026-09-19 08:31:11,175 - INFO - ✅ Done
