@@ -90779,3 +90779,12 @@
 2026-09-19 14:20:58,753 - INFO - ⏰ Window (IST): 19:44:58 – 19:50:58
 2026-09-19 14:20:58,906 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=29654
 2026-09-19 14:20:58,907 - INFO - ✅ Done
+2026-09-19 14:25:53,741 - INFO - 🚀 BSE Watch starting at 2026-09-19 14:25:53.741233
+2026-09-19 14:25:53,741 - INFO - 📡 Source: cronjobs.org
+2026-09-19 14:25:53,741 - INFO - ✅ BSE Database initialized
+2026-09-19 14:25:53,754 - INFO - 🧹 Cleaned up 15 old BSE announcements
+2026-09-19 14:25:55,184 - INFO - ⏰ Window (IST): 19:49:55 – 19:55:55
+2026-09-19 14:25:55,348 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-19 14:25:57,307 - INFO - 📊 Excel updated with 395 announcements
+2026-09-19 14:25:57,309 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=29641
+2026-09-19 14:25:57,309 - INFO - ✅ Done
