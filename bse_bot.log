@@ -91087,3 +91087,10 @@
 2026-09-19 17:35:24,435 - INFO - ⏰ Window (IST): 22:59:24 – 23:05:24
 2026-09-19 17:35:24,604 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=29589
 2026-09-19 17:35:24,604 - INFO - ✅ Done
+2026-09-19 17:40:59,250 - INFO - 🚀 BSE Watch starting at 2026-09-19 17:40:59.250764
+2026-09-19 17:40:59,250 - INFO - 📡 Source: cronjobs.org
+2026-09-19 17:40:59,251 - INFO - ✅ BSE Database initialized
+2026-09-19 17:40:59,263 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-09-19 17:41:00,344 - INFO - ⏰ Window (IST): 23:05:00 – 23:11:00
+2026-09-19 17:41:00,462 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=29587
+2026-09-19 17:41:00,462 - INFO - ✅ Done
