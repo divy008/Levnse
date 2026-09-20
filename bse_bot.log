@@ -91168,3 +91168,8 @@
 2026-09-20 18:35:22,176 - INFO - 🧹 Cleaned up 2 old BSE announcements
 2026-09-20 18:35:23,623 - ERROR - ❌ Failed to fetch BSE feed
 2026-09-20 18:35:23,623 - INFO - ✅ Done
+2026-09-20 18:40:27,629 - INFO - 🚀 BSE Watch starting at 2026-09-20 18:40:27.629777
+2026-09-20 18:40:27,629 - INFO - 📡 Source: cronjobs.org
+2026-09-20 18:40:27,630 - INFO - ✅ BSE Database initialized
+2026-09-20 18:40:28,420 - ERROR - ❌ Failed to fetch BSE feed
+2026-09-20 18:40:28,420 - INFO - ✅ Done
