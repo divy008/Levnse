@@ -91162,3 +91162,9 @@
 2026-09-20 18:30:39,324 - INFO - ⏰ Window (IST): 23:54:39 – 00:00:39
 2026-09-20 18:30:39,375 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=28586
 2026-09-20 18:30:39,375 - INFO - ✅ Done
+2026-09-20 18:35:22,149 - INFO - 🚀 BSE Watch starting at 2026-09-20 18:35:22.149330
+2026-09-20 18:35:22,149 - INFO - 📡 Source: cronjobs.org
+2026-09-20 18:35:22,150 - INFO - ✅ BSE Database initialized
+2026-09-20 18:35:22,176 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-09-20 18:35:23,623 - ERROR - ❌ Failed to fetch BSE feed
+2026-09-20 18:35:23,623 - INFO - ✅ Done
