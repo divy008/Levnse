@@ -91155,3 +91155,10 @@
 2026-09-19 18:25:23,292 - INFO - ⏰ Window (IST): 23:49:23 – 23:55:23
 2026-09-19 18:25:23,407 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=29577
 2026-09-19 18:25:23,407 - INFO - ✅ Done
+2026-09-20 18:30:38,500 - INFO - 🚀 BSE Watch starting at 2026-09-20 18:30:38.500472
+2026-09-20 18:30:38,500 - INFO - 📡 Source: cronjobs.org
+2026-09-20 18:30:38,501 - INFO - ✅ BSE Database initialized
+2026-09-20 18:30:38,578 - INFO - 🧹 Cleaned up 991 old BSE announcements
+2026-09-20 18:30:39,324 - INFO - ⏰ Window (IST): 23:54:39 – 00:00:39
+2026-09-20 18:30:39,375 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=28586
+2026-09-20 18:30:39,375 - INFO - ✅ Done
