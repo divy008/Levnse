@@ -91194,3 +91194,11 @@
 2026-09-20 19:00:36,745 - INFO - ✅ BSE Database initialized
 2026-09-20 19:00:37,820 - ERROR - ❌ Failed to fetch BSE feed
 2026-09-20 19:00:37,820 - INFO - ✅ Done
+2026-09-20 19:05:22,866 - INFO - 🚀 BSE Watch starting at 2026-09-20 19:05:22.866835
+2026-09-20 19:05:22,866 - INFO - 📡 Source: cronjobs.org
+2026-09-20 19:05:22,867 - INFO - ✅ BSE Database initialized
+2026-09-20 19:05:23,201 - INFO - ⏰ Window (IST): 00:29:23 – 00:35:23
+2026-09-20 19:05:23,401 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-20 19:05:24,600 - INFO - 📊 Excel updated with 1 announcements
+2026-09-20 19:05:24,601 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=28584
+2026-09-20 19:05:24,602 - INFO - ✅ Done
