@@ -91264,3 +91264,10 @@
 2026-09-20 19:55:22,076 - INFO - ⏰ Window (IST): 01:19:22 – 01:25:22
 2026-09-20 19:55:22,079 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=28582
 2026-09-20 19:55:22,079 - INFO - ✅ Done
+2026-09-20 20:01:11,728 - INFO - 🚀 BSE Watch starting at 2026-09-20 20:01:11.728417
+2026-09-20 20:01:11,728 - INFO - 📡 Source: cronjobs.org
+2026-09-20 20:01:11,729 - INFO - ✅ BSE Database initialized
+2026-09-20 20:01:11,754 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-20 20:01:12,394 - INFO - ⏰ Window (IST): 01:25:12 – 01:31:12
+2026-09-20 20:01:12,396 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=28581
+2026-09-20 20:01:12,397 - INFO - ✅ Done
