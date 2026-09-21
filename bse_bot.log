@@ -92061,3 +92061,12 @@
 2026-09-21 08:11:06,783 - INFO - 📊 Excel updated with 149 announcements
 2026-09-21 08:11:06,785 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=1, Skipped=0, Total DB=28588
 2026-09-21 08:11:06,785 - INFO - ✅ Done
+2026-09-21 08:15:58,686 - INFO - 🚀 BSE Watch starting at 2026-09-21 08:15:58.686060
+2026-09-21 08:15:58,686 - INFO - 📡 Source: cronjobs.org
+2026-09-21 08:15:58,686 - INFO - ✅ BSE Database initialized
+2026-09-21 08:15:58,698 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-09-21 08:16:03,566 - INFO - ⏰ Window (IST): 13:40:03 – 13:46:03
+2026-09-21 08:16:03,954 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-21 08:16:04,947 - INFO - 📊 Excel updated with 150 announcements
+2026-09-21 08:16:04,949 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=28586
+2026-09-21 08:16:04,949 - INFO - ✅ Done
