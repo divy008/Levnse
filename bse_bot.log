@@ -91954,3 +91954,12 @@
 2026-09-21 07:11:11,132 - INFO - 📊 Excel updated with 101 announcements
 2026-09-21 07:11:11,133 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=119, Skipped=0, Total DB=28587
 2026-09-21 07:11:11,134 - INFO - ✅ Done
+2026-09-21 07:15:57,996 - INFO - 🚀 BSE Watch starting at 2026-09-21 07:15:57.996309
+2026-09-21 07:15:57,996 - INFO - 📡 Source: cronjobs.org
+2026-09-21 07:15:57,997 - INFO - ✅ BSE Database initialized
+2026-09-21 07:15:58,007 - INFO - 🧹 Cleaned up 5 old BSE announcements
+2026-09-21 07:16:07,050 - INFO - ⏰ Window (IST): 12:40:07 – 12:46:07
+2026-09-21 07:16:07,380 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-09-21 07:16:11,797 - INFO - 📊 Excel updated with 106 announcements
+2026-09-21 07:16:11,799 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=1, Skipped=0, Total DB=28587
+2026-09-21 07:16:11,799 - INFO - ✅ Done
