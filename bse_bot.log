@@ -92519,3 +92519,12 @@
 2026-09-21 12:31:21,622 - INFO - 📊 Excel updated with 500 announcements
 2026-09-21 12:31:21,624 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=1, Skipped=0, Total DB=28808
 2026-09-21 12:31:21,624 - INFO - ✅ Done
+2026-09-21 12:36:09,100 - INFO - 🚀 BSE Watch starting at 2026-09-21 12:36:09.100876
+2026-09-21 12:36:09,100 - INFO - 📡 Source: cronjobs.org
+2026-09-21 12:36:09,101 - INFO - ✅ BSE Database initialized
+2026-09-21 12:36:09,109 - INFO - 🧹 Cleaned up 5 old BSE announcements
+2026-09-21 12:36:12,957 - INFO - ⏰ Window (IST): 18:00:12 – 18:06:12
+2026-09-21 12:36:13,151 - INFO - 📤 Sending 15 alerts to Telegram...
+2026-09-21 12:36:32,308 - INFO - 📊 Excel updated with 500 announcements
+2026-09-21 12:36:32,310 - INFO - 📊 SUMMARY (Last 6 min IST): New=15, Dups=20, Skipped=0, Total DB=28818
+2026-09-21 12:36:32,310 - INFO - ✅ Done
