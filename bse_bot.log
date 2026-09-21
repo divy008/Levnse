@@ -91841,3 +91841,12 @@
 2026-09-21 06:05:58,725 - INFO - 📊 Excel updated with 51 announcements
 2026-09-21 06:05:58,727 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=4, Skipped=0, Total DB=28579
 2026-09-21 06:05:58,727 - INFO - ✅ Done
+2026-09-21 06:11:00,380 - INFO - 🚀 BSE Watch starting at 2026-09-21 06:11:00.380527
+2026-09-21 06:11:00,380 - INFO - 📡 Source: cronjobs.org
+2026-09-21 06:11:00,381 - INFO - ✅ BSE Database initialized
+2026-09-21 06:11:00,393 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-09-21 06:11:02,601 - INFO - ⏰ Window (IST): 11:35:02 – 11:41:02
+2026-09-21 06:11:02,843 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-09-21 06:11:07,691 - INFO - 📊 Excel updated with 56 announcements
+2026-09-21 06:11:07,693 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=4, Skipped=8, Total DB=28582
+2026-09-21 06:11:07,693 - INFO - ✅ Done
