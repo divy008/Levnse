@@ -92724,3 +92724,11 @@
 2026-09-21 14:26:09,573 - INFO - 📊 Excel updated with 500 announcements
 2026-09-21 14:26:09,575 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=5, Skipped=0, Total DB=28955
 2026-09-21 14:26:09,575 - INFO - ✅ Done
+2026-09-21 14:31:16,891 - INFO - 🚀 BSE Watch starting at 2026-09-21 14:31:16.891131
+2026-09-21 14:31:16,891 - INFO - 📡 Source: cronjobs.org
+2026-09-21 14:31:16,891 - INFO - ✅ BSE Database initialized
+2026-09-21 14:31:19,859 - INFO - ⏰ Window (IST): 19:55:19 – 20:01:19
+2026-09-21 14:31:20,378 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-09-21 14:31:25,773 - INFO - 📊 Excel updated with 500 announcements
+2026-09-21 14:31:25,775 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=2, Skipped=0, Total DB=28960
+2026-09-21 14:31:25,775 - INFO - ✅ Done
