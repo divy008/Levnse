@@ -92043,3 +92043,12 @@
 2026-09-21 08:01:10,774 - INFO - 📊 Excel updated with 141 announcements
 2026-09-21 08:01:10,776 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=28589
 2026-09-21 08:01:10,776 - INFO - ✅ Done
+2026-09-21 08:05:57,972 - INFO - 🚀 BSE Watch starting at 2026-09-21 08:05:57.972607
+2026-09-21 08:05:57,972 - INFO - 📡 Source: cronjobs.org
+2026-09-21 08:05:57,973 - INFO - ✅ BSE Database initialized
+2026-09-21 08:05:57,984 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-09-21 08:06:03,345 - INFO - ⏰ Window (IST): 13:30:03 – 13:36:03
+2026-09-21 08:06:03,733 - INFO - 📤 Sending 6 alerts to Telegram...
+2026-09-21 08:06:12,382 - INFO - 📊 Excel updated with 147 announcements
+2026-09-21 08:06:12,384 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=7, Skipped=0, Total DB=28592
+2026-09-21 08:06:12,384 - INFO - ✅ Done
