@@ -92618,3 +92618,12 @@
 2026-09-21 13:26:18,237 - INFO - 📊 Excel updated with 500 announcements
 2026-09-21 13:26:18,239 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=15, Skipped=0, Total DB=28886
 2026-09-21 13:26:18,239 - INFO - ✅ Done
+2026-09-21 13:31:08,784 - INFO - 🚀 BSE Watch starting at 2026-09-21 13:31:08.784169
+2026-09-21 13:31:08,784 - INFO - 📡 Source: cronjobs.org
+2026-09-21 13:31:08,784 - INFO - ✅ BSE Database initialized
+2026-09-21 13:31:08,796 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-09-21 13:31:14,394 - INFO - ⏰ Window (IST): 18:55:14 – 19:01:14
+2026-09-21 13:31:14,859 - INFO - 📤 Sending 12 alerts to Telegram...
+2026-09-21 13:31:30,188 - INFO - 📊 Excel updated with 500 announcements
+2026-09-21 13:31:30,190 - INFO - 📊 SUMMARY (Last 6 min IST): New=12, Dups=1, Skipped=0, Total DB=28896
+2026-09-21 13:31:30,190 - INFO - ✅ Done
