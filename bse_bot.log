@@ -92070,3 +92070,11 @@
 2026-09-21 08:16:04,947 - INFO - 📊 Excel updated with 150 announcements
 2026-09-21 08:16:04,949 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=28586
 2026-09-21 08:16:04,949 - INFO - ✅ Done
+2026-09-21 08:20:59,622 - INFO - 🚀 BSE Watch starting at 2026-09-21 08:20:59.622219
+2026-09-21 08:20:59,622 - INFO - 📡 Source: cronjobs.org
+2026-09-21 08:20:59,622 - INFO - ✅ BSE Database initialized
+2026-09-21 08:21:00,941 - INFO - ⏰ Window (IST): 13:45:00 – 13:51:00
+2026-09-21 08:21:01,211 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-21 08:21:03,152 - INFO - 📊 Excel updated with 152 announcements
+2026-09-21 08:21:03,154 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=1, Skipped=0, Total DB=28588
+2026-09-21 08:21:03,155 - INFO - ✅ Done
