@@ -91927,3 +91927,12 @@
 2026-09-21 06:56:17,072 - INFO - ⏰ Window (IST): 12:20:17 – 12:26:17
 2026-09-21 06:56:17,206 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=28589
 2026-09-21 06:56:17,206 - INFO - ✅ Done
+2026-09-21 07:01:08,260 - INFO - 🚀 BSE Watch starting at 2026-09-21 07:01:08.260318
+2026-09-21 07:01:08,260 - INFO - 📡 Source: cronjobs.org
+2026-09-21 07:01:08,261 - INFO - ✅ BSE Database initialized
+2026-09-21 07:01:08,272 - INFO - 🧹 Cleaned up 5 old BSE announcements
+2026-09-21 07:01:10,709 - INFO - ⏰ Window (IST): 12:25:10 – 12:31:10
+2026-09-21 07:01:11,032 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-21 07:01:12,849 - INFO - 📊 Excel updated with 90 announcements
+2026-09-21 07:01:12,851 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=1, Skipped=0, Total DB=28586
+2026-09-21 07:01:12,851 - INFO - ✅ Done
