@@ -92893,3 +92893,11 @@
 2026-09-21 16:06:06,422 - INFO - 📊 Excel updated with 500 announcements
 2026-09-21 16:06:06,424 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=2, Skipped=0, Total DB=28985
 2026-09-21 16:06:06,424 - INFO - ✅ Done
+2026-09-21 16:11:01,506 - INFO - 🚀 BSE Watch starting at 2026-09-21 16:11:01.506093
+2026-09-21 16:11:01,506 - INFO - 📡 Source: cronjobs.org
+2026-09-21 16:11:01,506 - INFO - ✅ BSE Database initialized
+2026-09-21 16:11:05,181 - INFO - ⏰ Window (IST): 21:35:05 – 21:41:05
+2026-09-21 16:11:05,716 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-21 16:11:06,952 - INFO - 📊 Excel updated with 500 announcements
+2026-09-21 16:11:06,954 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=28986
+2026-09-21 16:11:06,954 - INFO - ✅ Done
