@@ -92510,3 +92510,12 @@
 2026-09-21 12:26:15,900 - INFO - 📊 Excel updated with 500 announcements
 2026-09-21 12:26:15,902 - INFO - 📊 SUMMARY (Last 6 min IST): New=10, Dups=3, Skipped=0, Total DB=28805
 2026-09-21 12:26:15,902 - INFO - ✅ Done
+2026-09-21 12:31:13,804 - INFO - 🚀 BSE Watch starting at 2026-09-21 12:31:13.804158
+2026-09-21 12:31:13,804 - INFO - 📡 Source: cronjobs.org
+2026-09-21 12:31:13,805 - INFO - ✅ BSE Database initialized
+2026-09-21 12:31:13,816 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-21 12:31:16,774 - INFO - ⏰ Window (IST): 17:55:16 – 18:01:16
+2026-09-21 12:31:17,215 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-09-21 12:31:21,622 - INFO - 📊 Excel updated with 500 announcements
+2026-09-21 12:31:21,624 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=1, Skipped=0, Total DB=28808
+2026-09-21 12:31:21,624 - INFO - ✅ Done
