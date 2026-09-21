@@ -92034,3 +92034,12 @@
 2026-09-21 07:56:08,291 - INFO - 📊 Excel updated with 140 announcements
 2026-09-21 07:56:08,293 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=427, Skipped=36, Total DB=28593
 2026-09-21 07:56:08,294 - INFO - ✅ Done
+2026-09-21 08:01:07,534 - INFO - 🚀 BSE Watch starting at 2026-09-21 08:01:07.534009
+2026-09-21 08:01:07,534 - INFO - 📡 Source: cronjobs.org
+2026-09-21 08:01:07,534 - INFO - ✅ BSE Database initialized
+2026-09-21 08:01:07,547 - INFO - 🧹 Cleaned up 5 old BSE announcements
+2026-09-21 08:01:09,407 - INFO - ⏰ Window (IST): 13:25:09 – 13:31:09
+2026-09-21 08:01:09,673 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-21 08:01:10,774 - INFO - 📊 Excel updated with 141 announcements
+2026-09-21 08:01:10,776 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=28589
+2026-09-21 08:01:10,776 - INFO - ✅ Done
