@@ -92008,3 +92008,12 @@
 2026-09-21 07:41:20,407 - INFO - 📊 Excel updated with 125 announcements
 2026-09-21 07:41:20,408 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=53, Skipped=0, Total DB=28585
 2026-09-21 07:41:20,409 - INFO - ✅ Done
+2026-09-21 07:46:00,761 - INFO - 🚀 BSE Watch starting at 2026-09-21 07:46:00.761195
+2026-09-21 07:46:00,761 - INFO - 📡 Source: cronjobs.org
+2026-09-21 07:46:00,761 - INFO - ✅ BSE Database initialized
+2026-09-21 07:46:00,773 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-09-21 07:46:02,589 - INFO - ⏰ Window (IST): 13:10:02 – 13:16:02
+2026-09-21 07:46:02,939 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-21 07:46:06,262 - INFO - 📊 Excel updated with 128 announcements
+2026-09-21 07:46:06,264 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=4, Skipped=0, Total DB=28585
+2026-09-21 07:46:06,264 - INFO - ✅ Done
