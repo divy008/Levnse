@@ -91903,3 +91903,12 @@
 2026-09-21 06:41:13,180 - INFO - 📊 Excel updated with 84 announcements
 2026-09-21 06:41:13,182 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=689, Skipped=33, Total DB=28587
 2026-09-21 06:41:13,182 - INFO - ✅ Done
+2026-09-21 06:46:00,424 - INFO - 🚀 BSE Watch starting at 2026-09-21 06:46:00.424674
+2026-09-21 06:46:00,424 - INFO - 📡 Source: cronjobs.org
+2026-09-21 06:46:00,425 - INFO - ✅ BSE Database initialized
+2026-09-21 06:46:00,437 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-21 06:46:02,038 - INFO - ⏰ Window (IST): 12:10:02 – 12:16:02
+2026-09-21 06:46:02,258 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-21 06:46:05,097 - INFO - 📊 Excel updated with 87 announcements
+2026-09-21 06:46:05,099 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=1, Skipped=0, Total DB=28589
+2026-09-21 06:46:05,099 - INFO - ✅ Done
