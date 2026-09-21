@@ -91963,3 +91963,12 @@
 2026-09-21 07:16:11,797 - INFO - 📊 Excel updated with 106 announcements
 2026-09-21 07:16:11,799 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=1, Skipped=0, Total DB=28587
 2026-09-21 07:16:11,799 - INFO - ✅ Done
+2026-09-21 07:20:57,784 - INFO - 🚀 BSE Watch starting at 2026-09-21 07:20:57.784916
+2026-09-21 07:20:57,785 - INFO - 📡 Source: cronjobs.org
+2026-09-21 07:20:57,785 - INFO - ✅ BSE Database initialized
+2026-09-21 07:20:57,797 - INFO - 🧹 Cleaned up 7 old BSE announcements
+2026-09-21 07:21:06,042 - INFO - ⏰ Window (IST): 12:45:06 – 12:51:06
+2026-09-21 07:21:06,370 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-21 07:21:09,053 - INFO - 📊 Excel updated with 109 announcements
+2026-09-21 07:21:09,055 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=28583
+2026-09-21 07:21:09,055 - INFO - ✅ Done
