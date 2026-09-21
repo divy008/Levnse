@@ -91981,3 +91981,12 @@
 2026-09-21 07:26:01,946 - INFO - 📊 Excel updated with 110 announcements
 2026-09-21 07:26:01,947 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=3, Skipped=0, Total DB=28581
 2026-09-21 07:26:01,948 - INFO - ✅ Done
+2026-09-21 07:31:06,889 - INFO - 🚀 BSE Watch starting at 2026-09-21 07:31:06.888984
+2026-09-21 07:31:06,889 - INFO - 📡 Source: cronjobs.org
+2026-09-21 07:31:06,889 - INFO - ✅ BSE Database initialized
+2026-09-21 07:31:06,901 - INFO - 🧹 Cleaned up 4 old BSE announcements
+2026-09-21 07:31:10,400 - INFO - ⏰ Window (IST): 12:55:10 – 13:01:10
+2026-09-21 07:31:10,736 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-09-21 07:31:14,623 - INFO - 📊 Excel updated with 114 announcements
+2026-09-21 07:31:14,625 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=93, Skipped=0, Total DB=28581
+2026-09-21 07:31:14,625 - INFO - ✅ Done
