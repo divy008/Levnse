@@ -91894,3 +91894,12 @@
 2026-09-21 06:36:07,922 - INFO - 📊 Excel updated with 77 announcements
 2026-09-21 06:36:07,924 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=28581
 2026-09-21 06:36:07,924 - INFO - ✅ Done
+2026-09-21 06:41:01,481 - INFO - 🚀 BSE Watch starting at 2026-09-21 06:41:01.481660
+2026-09-21 06:41:01,481 - INFO - 📡 Source: cronjobs.org
+2026-09-21 06:41:01,482 - INFO - ✅ BSE Database initialized
+2026-09-21 06:41:01,493 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-21 06:41:03,444 - INFO - ⏰ Window (IST): 12:05:03 – 12:11:03
+2026-09-21 06:41:03,683 - INFO - 📤 Sending 7 alerts to Telegram...
+2026-09-21 06:41:13,180 - INFO - 📊 Excel updated with 84 announcements
+2026-09-21 06:41:13,182 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=689, Skipped=33, Total DB=28587
+2026-09-21 06:41:13,182 - INFO - ✅ Done
