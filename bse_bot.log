@@ -91751,3 +91751,12 @@
 2026-09-21 05:10:32,627 - INFO - 📊 Excel updated with 25 announcements
 2026-09-21 05:10:32,629 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=2, Skipped=0, Total DB=28588
 2026-09-21 05:10:32,629 - INFO - ✅ Done
+2026-09-21 05:15:58,837 - INFO - 🚀 BSE Watch starting at 2026-09-21 05:15:58.837010
+2026-09-21 05:15:58,837 - INFO - 📡 Source: cronjobs.org
+2026-09-21 05:15:58,837 - INFO - ✅ BSE Database initialized
+2026-09-21 05:15:58,849 - INFO - 🧹 Cleaned up 11 old BSE announcements
+2026-09-21 05:15:59,260 - INFO - ⏰ Window (IST): 10:39:59 – 10:45:59
+2026-09-21 05:15:59,321 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-21 05:16:02,847 - INFO - 📊 Excel updated with 28 announcements
+2026-09-21 05:16:02,849 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=6, Skipped=2, Total DB=28580
+2026-09-21 05:16:02,849 - INFO - ✅ Done
