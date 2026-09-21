@@ -91809,3 +91809,10 @@
 2026-09-21 05:46:08,785 - INFO - 📊 Excel updated with 40 announcements
 2026-09-21 05:46:08,787 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=565, Skipped=21, Total DB=28576
 2026-09-21 05:46:08,787 - INFO - ✅ Done
+2026-09-21 05:51:02,027 - INFO - 🚀 BSE Watch starting at 2026-09-21 05:51:02.027783
+2026-09-21 05:51:02,027 - INFO - 📡 Source: cronjobs.org
+2026-09-21 05:51:02,028 - INFO - ✅ BSE Database initialized
+2026-09-21 05:51:02,037 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-21 05:51:03,175 - INFO - ⏰ Window (IST): 11:15:03 – 11:21:03
+2026-09-21 05:51:03,342 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1412, Skipped=91, Total DB=28575
+2026-09-21 05:51:03,343 - INFO - ✅ Done
