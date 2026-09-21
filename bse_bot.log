@@ -93029,3 +93029,11 @@
 2026-09-21 17:31:09,186 - INFO - 📊 Excel updated with 500 announcements
 2026-09-21 17:31:09,188 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=2, Total DB=29005
 2026-09-21 17:31:09,188 - INFO - ✅ Done
+2026-09-21 17:35:52,389 - INFO - 🚀 BSE Watch starting at 2026-09-21 17:35:52.389975
+2026-09-21 17:35:52,390 - INFO - 📡 Source: cronjobs.org
+2026-09-21 17:35:52,390 - INFO - ✅ BSE Database initialized
+2026-09-21 17:35:59,075 - INFO - ⏰ Window (IST): 22:59:59 – 23:05:59
+2026-09-21 17:35:59,615 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-09-21 17:36:03,103 - INFO - 📊 Excel updated with 500 announcements
+2026-09-21 17:36:03,105 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=226, Skipped=2, Total DB=29009
+2026-09-21 17:36:03,105 - INFO - ✅ Done
