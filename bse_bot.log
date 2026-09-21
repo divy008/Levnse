@@ -91743,3 +91743,11 @@
 2026-09-21 05:05:55,779 - INFO - ⏰ Window (IST): 10:29:55 – 10:35:55
 2026-09-21 05:05:55,805 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=28583
 2026-09-21 05:05:55,805 - INFO - ✅ Done
+2026-09-21 05:10:27,109 - INFO - 🚀 BSE Watch starting at 2026-09-21 05:10:27.109614
+2026-09-21 05:10:27,109 - INFO - 📡 Source: cronjobs.org
+2026-09-21 05:10:27,110 - INFO - ✅ BSE Database initialized
+2026-09-21 05:10:27,640 - INFO - ⏰ Window (IST): 10:34:27 – 10:40:27
+2026-09-21 05:10:27,913 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-09-21 05:10:32,627 - INFO - 📊 Excel updated with 25 announcements
+2026-09-21 05:10:32,629 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=2, Skipped=0, Total DB=28588
+2026-09-21 05:10:32,629 - INFO - ✅ Done
