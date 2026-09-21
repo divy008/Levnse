@@ -93004,3 +93004,11 @@
 2026-09-21 17:15:35,074 - INFO - ⏰ Window (IST): 22:39:35 – 22:45:35
 2026-09-21 17:15:35,372 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=29000
 2026-09-21 17:15:35,373 - INFO - ✅ Done
+2026-09-21 17:20:57,378 - INFO - 🚀 BSE Watch starting at 2026-09-21 17:20:57.378425
+2026-09-21 17:20:57,378 - INFO - 📡 Source: cronjobs.org
+2026-09-21 17:20:57,379 - INFO - ✅ BSE Database initialized
+2026-09-21 17:21:00,687 - INFO - ⏰ Window (IST): 22:45:00 – 22:51:00
+2026-09-21 17:21:01,053 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-21 17:21:03,059 - INFO - 📊 Excel updated with 500 announcements
+2026-09-21 17:21:03,061 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=1, Total DB=29002
+2026-09-21 17:21:03,061 - INFO - ✅ Done
