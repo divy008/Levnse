@@ -92528,3 +92528,12 @@
 2026-09-21 12:36:32,308 - INFO - 📊 Excel updated with 500 announcements
 2026-09-21 12:36:32,310 - INFO - 📊 SUMMARY (Last 6 min IST): New=15, Dups=20, Skipped=0, Total DB=28818
 2026-09-21 12:36:32,310 - INFO - ✅ Done
+2026-09-21 12:41:11,956 - INFO - 🚀 BSE Watch starting at 2026-09-21 12:41:11.956706
+2026-09-21 12:41:11,956 - INFO - 📡 Source: cronjobs.org
+2026-09-21 12:41:11,957 - INFO - ✅ BSE Database initialized
+2026-09-21 12:41:11,966 - INFO - 🧹 Cleaned up 6 old BSE announcements
+2026-09-21 12:41:14,052 - INFO - ⏰ Window (IST): 18:05:14 – 18:11:14
+2026-09-21 12:41:14,376 - INFO - 📤 Sending 11 alerts to Telegram...
+2026-09-21 12:41:31,883 - INFO - 📊 Excel updated with 500 announcements
+2026-09-21 12:41:31,885 - INFO - 📊 SUMMARY (Last 6 min IST): New=11, Dups=160, Skipped=0, Total DB=28823
+2026-09-21 12:41:31,885 - INFO - ✅ Done
