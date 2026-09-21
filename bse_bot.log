@@ -91936,3 +91936,12 @@
 2026-09-21 07:01:12,849 - INFO - 📊 Excel updated with 90 announcements
 2026-09-21 07:01:12,851 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=1, Skipped=0, Total DB=28586
 2026-09-21 07:01:12,851 - INFO - ✅ Done
+2026-09-21 07:06:04,252 - INFO - 🚀 BSE Watch starting at 2026-09-21 07:06:04.252147
+2026-09-21 07:06:04,252 - INFO - 📡 Source: cronjobs.org
+2026-09-21 07:06:04,252 - INFO - ✅ BSE Database initialized
+2026-09-21 07:06:04,260 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-09-21 07:06:05,618 - INFO - ⏰ Window (IST): 12:30:05 – 12:36:05
+2026-09-21 07:06:05,801 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-21 07:06:08,648 - INFO - 📊 Excel updated with 93 announcements
+2026-09-21 07:06:08,649 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=35, Skipped=0, Total DB=28586
+2026-09-21 07:06:08,649 - INFO - ✅ Done
