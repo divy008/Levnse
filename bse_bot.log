@@ -92940,3 +92940,12 @@
 2026-09-21 16:35:56,697 - INFO - ⏰ Window (IST): 21:59:56 – 22:05:56
 2026-09-21 16:35:57,242 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=28992
 2026-09-21 16:35:57,242 - INFO - ✅ Done
+2026-09-21 16:40:26,880 - INFO - 🚀 BSE Watch starting at 2026-09-21 16:40:26.880381
+2026-09-21 16:40:26,880 - INFO - 📡 Source: cronjobs.org
+2026-09-21 16:40:26,881 - INFO - ✅ BSE Database initialized
+2026-09-21 16:40:26,904 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-21 16:40:30,703 - INFO - ⏰ Window (IST): 22:04:30 – 22:10:30
+2026-09-21 16:40:31,066 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-21 16:40:33,197 - INFO - 📊 Excel updated with 500 announcements
+2026-09-21 16:40:33,200 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=28993
+2026-09-21 16:40:33,200 - INFO - ✅ Done
