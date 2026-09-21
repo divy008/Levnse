@@ -91816,3 +91816,10 @@
 2026-09-21 05:51:03,175 - INFO - ⏰ Window (IST): 11:15:03 – 11:21:03
 2026-09-21 05:51:03,342 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1412, Skipped=91, Total DB=28575
 2026-09-21 05:51:03,343 - INFO - ✅ Done
+2026-09-21 05:55:59,808 - INFO - 🚀 BSE Watch starting at 2026-09-21 05:55:59.808697
+2026-09-21 05:55:59,808 - INFO - 📡 Source: cronjobs.org
+2026-09-21 05:55:59,809 - INFO - ✅ BSE Database initialized
+2026-09-21 05:55:59,819 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-09-21 05:56:20,893 - INFO - ⏰ Window (IST): 11:20:20 – 11:26:20
+2026-09-21 05:56:21,023 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=28573
+2026-09-21 05:56:21,023 - INFO - ✅ Done
