@@ -93107,3 +93107,8 @@
 2026-09-21 18:25:29,434 - INFO - 📊 Excel updated with 500 announcements
 2026-09-21 18:25:29,436 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=29011
 2026-09-21 18:25:29,436 - INFO - ✅ Done
+2026-09-21 18:30:36,734 - INFO - 🚀 BSE Watch starting at 2026-09-21 18:30:36.734603
+2026-09-21 18:30:36,734 - INFO - 📡 Source: cronjobs.org
+2026-09-21 18:30:36,735 - INFO - ✅ BSE Database initialized
+2026-09-21 18:30:38,754 - ERROR - ❌ Failed to fetch BSE feed
+2026-09-21 18:30:38,754 - INFO - ✅ Done
