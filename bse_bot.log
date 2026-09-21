@@ -92271,3 +92271,12 @@
 2026-09-21 10:11:37,905 - INFO - 📊 Excel updated with 273 announcements
 2026-09-21 10:11:37,906 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=100, Skipped=0, Total DB=28642
 2026-09-21 10:11:37,907 - INFO - ✅ Done
+2026-09-21 10:16:40,076 - INFO - 🚀 BSE Watch starting at 2026-09-21 10:16:40.076097
+2026-09-21 10:16:40,076 - INFO - 📡 Source: cronjobs.org
+2026-09-21 10:16:40,076 - INFO - ✅ BSE Database initialized
+2026-09-21 10:16:40,088 - INFO - 🧹 Cleaned up 4 old BSE announcements
+2026-09-21 10:16:42,671 - INFO - ⏰ Window (IST): 15:40:42 – 15:46:42
+2026-09-21 10:16:43,087 - INFO - 📤 Sending 14 alerts to Telegram...
+2026-09-21 10:16:59,542 - INFO - 📊 Excel updated with 287 announcements
+2026-09-21 10:16:59,544 - INFO - 📊 SUMMARY (Last 6 min IST): New=14, Dups=26, Skipped=0, Total DB=28652
+2026-09-21 10:16:59,544 - INFO - ✅ Done
