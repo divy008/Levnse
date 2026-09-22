@@ -94519,3 +94519,11 @@
 2026-09-22 13:41:16,508 - INFO - 📊 Excel updated with 500 announcements
 2026-09-22 13:41:16,509 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=0, Skipped=0, Total DB=29970
 2026-09-22 13:41:16,509 - INFO - ✅ Done
+2026-09-22 13:46:07,233 - INFO - 🚀 BSE Watch starting at 2026-09-22 13:46:07.233309
+2026-09-22 13:46:07,233 - INFO - 📡 Source: cronjobs.org
+2026-09-22 13:46:07,233 - INFO - ✅ BSE Database initialized
+2026-09-22 13:46:10,091 - INFO - ⏰ Window (IST): 19:10:10 – 19:16:10
+2026-09-22 13:46:10,453 - INFO - 📤 Sending 8 alerts to Telegram...
+2026-09-22 13:46:18,414 - INFO - 📊 Excel updated with 500 announcements
+2026-09-22 13:46:18,415 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=75, Skipped=0, Total DB=29978
+2026-09-22 13:46:18,415 - INFO - ✅ Done
