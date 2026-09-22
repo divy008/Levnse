@@ -94527,3 +94527,11 @@
 2026-09-22 13:46:18,414 - INFO - 📊 Excel updated with 500 announcements
 2026-09-22 13:46:18,415 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=75, Skipped=0, Total DB=29978
 2026-09-22 13:46:18,415 - INFO - ✅ Done
+2026-09-22 13:51:01,472 - INFO - 🚀 BSE Watch starting at 2026-09-22 13:51:01.472463
+2026-09-22 13:51:01,472 - INFO - 📡 Source: cronjobs.org
+2026-09-22 13:51:01,473 - INFO - ✅ BSE Database initialized
+2026-09-22 13:51:05,700 - INFO - ⏰ Window (IST): 19:15:05 – 19:21:05
+2026-09-22 13:51:06,075 - INFO - 📤 Sending 13 alerts to Telegram...
+2026-09-22 13:51:22,195 - INFO - 📊 Excel updated with 500 announcements
+2026-09-22 13:51:22,197 - INFO - 📊 SUMMARY (Last 6 min IST): New=13, Dups=31, Skipped=0, Total DB=29991
+2026-09-22 13:51:22,198 - INFO - ✅ Done
