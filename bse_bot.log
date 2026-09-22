@@ -94623,3 +94623,11 @@
 2026-09-22 14:46:13,379 - INFO - 📊 Excel updated with 500 announcements
 2026-09-22 14:46:13,381 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=4, Skipped=0, Total DB=30053
 2026-09-22 14:46:13,381 - INFO - ✅ Done
+2026-09-22 14:51:01,860 - INFO - 🚀 BSE Watch starting at 2026-09-22 14:51:01.860239
+2026-09-22 14:51:01,860 - INFO - 📡 Source: cronjobs.org
+2026-09-22 14:51:01,861 - INFO - ✅ BSE Database initialized
+2026-09-22 14:51:07,262 - INFO - ⏰ Window (IST): 20:15:07 – 20:21:07
+2026-09-22 14:51:07,803 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-09-22 14:51:11,532 - INFO - 📊 Excel updated with 500 announcements
+2026-09-22 14:51:11,534 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=1, Skipped=0, Total DB=30057
+2026-09-22 14:51:11,534 - INFO - ✅ Done
