@@ -94084,3 +94084,11 @@
 2026-09-22 09:06:06,910 - INFO - 📊 Excel updated with 312 announcements
 2026-09-22 09:06:06,912 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=78, Skipped=0, Total DB=29328
 2026-09-22 09:06:06,912 - INFO - ✅ Done
+2026-09-22 09:11:09,967 - INFO - 🚀 BSE Watch starting at 2026-09-22 09:11:09.967748
+2026-09-22 09:11:09,967 - INFO - 📡 Source: cronjobs.org
+2026-09-22 09:11:09,968 - INFO - ✅ BSE Database initialized
+2026-09-22 09:11:23,051 - INFO - ⏰ Window (IST): 14:35:23 – 14:41:23
+2026-09-22 09:11:23,506 - INFO - 📤 Sending 10 alerts to Telegram...
+2026-09-22 09:11:35,555 - INFO - 📊 Excel updated with 322 announcements
+2026-09-22 09:11:35,557 - INFO - 📊 SUMMARY (Last 6 min IST): New=10, Dups=1, Skipped=0, Total DB=29338
+2026-09-22 09:11:35,557 - INFO - ✅ Done
