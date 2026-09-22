@@ -94266,3 +94266,11 @@
 2026-09-22 11:01:50,399 - INFO - 📊 Excel updated with 500 announcements
 2026-09-22 11:01:50,400 - INFO - 📊 SUMMARY (Last 6 min IST): New=12, Dups=10, Skipped=0, Total DB=29560
 2026-09-22 11:01:50,401 - INFO - ✅ Done
+2026-09-22 11:06:01,801 - INFO - 🚀 BSE Watch starting at 2026-09-22 11:06:01.801526
+2026-09-22 11:06:01,801 - INFO - 📡 Source: cronjobs.org
+2026-09-22 11:06:01,802 - INFO - ✅ BSE Database initialized
+2026-09-22 11:06:05,024 - INFO - ⏰ Window (IST): 16:30:05 – 16:36:05
+2026-09-22 11:06:05,523 - INFO - 📤 Sending 15 alerts to Telegram...
+2026-09-22 11:06:26,338 - INFO - 📊 Excel updated with 500 announcements
+2026-09-22 11:06:26,339 - INFO - 📊 SUMMARY (Last 6 min IST): New=15, Dups=214, Skipped=0, Total DB=29575
+2026-09-22 11:06:26,340 - INFO - ✅ Done
