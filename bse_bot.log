@@ -93820,3 +93820,11 @@
 2026-09-22 06:21:08,345 - INFO - 📊 Excel updated with 100 announcements
 2026-09-22 06:21:08,347 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=27, Skipped=0, Total DB=29116
 2026-09-22 06:21:08,347 - INFO - ✅ Done
+2026-09-22 06:25:59,114 - INFO - 🚀 BSE Watch starting at 2026-09-22 06:25:59.114636
+2026-09-22 06:25:59,114 - INFO - 📡 Source: cronjobs.org
+2026-09-22 06:25:59,115 - INFO - ✅ BSE Database initialized
+2026-09-22 06:26:03,639 - INFO - ⏰ Window (IST): 11:50:03 – 11:56:03
+2026-09-22 06:26:03,918 - INFO - 📤 Sending 6 alerts to Telegram...
+2026-09-22 06:26:12,638 - INFO - 📊 Excel updated with 106 announcements
+2026-09-22 06:26:12,640 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=2, Skipped=0, Total DB=29122
+2026-09-22 06:26:12,640 - INFO - ✅ Done
