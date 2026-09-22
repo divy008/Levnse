@@ -94653,3 +94653,11 @@
 2026-09-22 15:06:03,667 - INFO - ⏰ Window (IST): 20:30:03 – 20:36:03
 2026-09-22 15:06:04,212 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30066
 2026-09-22 15:06:04,212 - INFO - ✅ Done
+2026-09-22 15:11:08,716 - INFO - 🚀 BSE Watch starting at 2026-09-22 15:11:08.716893
+2026-09-22 15:11:08,717 - INFO - 📡 Source: cronjobs.org
+2026-09-22 15:11:08,717 - INFO - ✅ BSE Database initialized
+2026-09-22 15:11:12,705 - INFO - ⏰ Window (IST): 20:35:12 – 20:41:12
+2026-09-22 15:11:13,254 - INFO - 📤 Sending 8 alerts to Telegram...
+2026-09-22 15:11:21,740 - INFO - 📊 Excel updated with 500 announcements
+2026-09-22 15:11:21,741 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=55, Skipped=0, Total DB=30074
+2026-09-22 15:11:21,742 - INFO - ✅ Done
