@@ -94774,3 +94774,11 @@
 2026-09-22 16:26:03,705 - INFO - 📊 Excel updated with 500 announcements
 2026-09-22 16:26:03,707 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=65, Skipped=1, Total DB=30103
 2026-09-22 16:26:03,707 - INFO - ✅ Done
+2026-09-22 16:30:33,904 - INFO - 🚀 BSE Watch starting at 2026-09-22 16:30:33.904171
+2026-09-22 16:30:33,904 - INFO - 📡 Source: cronjobs.org
+2026-09-22 16:30:33,904 - INFO - ✅ BSE Database initialized
+2026-09-22 16:30:37,904 - INFO - ⏰ Window (IST): 21:54:37 – 22:00:37
+2026-09-22 16:30:38,481 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-22 16:30:40,836 - INFO - 📊 Excel updated with 500 announcements
+2026-09-22 16:30:40,838 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=65, Skipped=0, Total DB=30105
+2026-09-22 16:30:40,838 - INFO - ✅ Done
