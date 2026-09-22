@@ -94439,3 +94439,11 @@
 2026-09-22 12:51:59,438 - INFO - 📊 Excel updated with 500 announcements
 2026-09-22 12:51:59,440 - INFO - 📊 SUMMARY (Last 6 min IST): New=18, Dups=39, Skipped=1, Total DB=29862
 2026-09-22 12:51:59,440 - INFO - ✅ Done
+2026-09-22 12:56:23,569 - INFO - 🚀 BSE Watch starting at 2026-09-22 12:56:23.569762
+2026-09-22 12:56:23,569 - INFO - 📡 Source: cronjobs.org
+2026-09-22 12:56:23,570 - INFO - ✅ BSE Database initialized
+2026-09-22 12:56:26,604 - INFO - ⏰ Window (IST): 18:20:26 – 18:26:26
+2026-09-22 12:56:27,130 - INFO - 📤 Sending 12 alerts to Telegram...
+2026-09-22 12:56:42,904 - INFO - 📊 Excel updated with 500 announcements
+2026-09-22 12:56:42,905 - INFO - 📊 SUMMARY (Last 6 min IST): New=12, Dups=8, Skipped=0, Total DB=29874
+2026-09-22 12:56:42,905 - INFO - ✅ Done
