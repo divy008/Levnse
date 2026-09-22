@@ -94591,3 +94591,11 @@
 2026-09-22 14:26:15,512 - INFO - 📊 Excel updated with 500 announcements
 2026-09-22 14:26:15,514 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=9, Skipped=0, Total DB=30036
 2026-09-22 14:26:15,514 - INFO - ✅ Done
+2026-09-22 14:31:10,081 - INFO - 🚀 BSE Watch starting at 2026-09-22 14:31:10.081391
+2026-09-22 14:31:10,081 - INFO - 📡 Source: cronjobs.org
+2026-09-22 14:31:10,082 - INFO - ✅ BSE Database initialized
+2026-09-22 14:31:13,182 - INFO - ⏰ Window (IST): 19:55:13 – 20:01:13
+2026-09-22 14:31:13,552 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-09-22 14:31:18,559 - INFO - 📊 Excel updated with 500 announcements
+2026-09-22 14:31:18,561 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=0, Skipped=0, Total DB=30041
+2026-09-22 14:31:18,561 - INFO - ✅ Done
