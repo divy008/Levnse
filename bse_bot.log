@@ -93852,3 +93852,11 @@
 2026-09-22 06:41:57,433 - INFO - 📊 Excel updated with 134 announcements
 2026-09-22 06:41:57,435 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=1, Skipped=0, Total DB=29150
 2026-09-22 06:41:57,435 - INFO - ✅ Done
+2026-09-22 06:45:59,533 - INFO - 🚀 BSE Watch starting at 2026-09-22 06:45:59.533814
+2026-09-22 06:45:59,533 - INFO - 📡 Source: cronjobs.org
+2026-09-22 06:45:59,534 - INFO - ✅ BSE Database initialized
+2026-09-22 06:46:01,739 - INFO - ⏰ Window (IST): 12:10:01 – 12:16:01
+2026-09-22 06:46:01,963 - INFO - 📤 Sending 9 alerts to Telegram...
+2026-09-22 06:46:13,745 - INFO - 📊 Excel updated with 143 announcements
+2026-09-22 06:46:13,747 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=434, Skipped=36, Total DB=29159
+2026-09-22 06:46:13,748 - INFO - ✅ Done
