@@ -95521,3 +95521,10 @@
 2026-09-23 04:45:59,593 - INFO - ⏰ Window (IST): 10:09:59 – 10:15:59
 2026-09-23 04:45:59,726 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30122
 2026-09-23 04:45:59,727 - INFO - ✅ Done
+2026-09-23 04:51:04,489 - INFO - 🚀 BSE Watch starting at 2026-09-23 04:51:04.489174
+2026-09-23 04:51:04,489 - INFO - 📡 Source: cronjobs.org
+2026-09-23 04:51:04,490 - INFO - ✅ BSE Database initialized
+2026-09-23 04:51:04,502 - INFO - 🧹 Cleaned up 4 old BSE announcements
+2026-09-23 04:51:05,469 - INFO - ⏰ Window (IST): 10:15:05 – 10:21:05
+2026-09-23 04:51:05,562 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30118
+2026-09-23 04:51:05,562 - INFO - ✅ Done
