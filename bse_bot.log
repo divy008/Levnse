@@ -97218,3 +97218,9 @@
 2026-09-23 22:11:05,060 - INFO - ⏰ Window (IST): 03:35:05 – 03:41:05
 2026-09-23 22:11:05,065 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30348
 2026-09-23 22:11:05,065 - INFO - ✅ Done
+2026-09-23 22:15:25,487 - INFO - 🚀 BSE Watch starting at 2026-09-23 22:15:25.487854
+2026-09-23 22:15:25,487 - INFO - 📡 Source: cronjobs.org
+2026-09-23 22:15:25,488 - INFO - ✅ BSE Database initialized
+2026-09-23 22:15:26,065 - INFO - ⏰ Window (IST): 03:39:26 – 03:45:26
+2026-09-23 22:15:26,070 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1, Skipped=0, Total DB=30348
+2026-09-23 22:15:26,070 - INFO - ✅ Done
