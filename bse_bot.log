@@ -95528,3 +95528,11 @@
 2026-09-23 04:51:05,469 - INFO - ⏰ Window (IST): 10:15:05 – 10:21:05
 2026-09-23 04:51:05,562 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30118
 2026-09-23 04:51:05,562 - INFO - ✅ Done
+2026-09-23 04:55:53,475 - INFO - 🚀 BSE Watch starting at 2026-09-23 04:55:53.475847
+2026-09-23 04:55:53,475 - INFO - 📡 Source: cronjobs.org
+2026-09-23 04:55:53,476 - INFO - ✅ BSE Database initialized
+2026-09-23 04:55:54,502 - INFO - ⏰ Window (IST): 10:19:54 – 10:25:54
+2026-09-23 04:55:54,582 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-09-23 04:55:58,839 - INFO - 📊 Excel updated with 21 announcements
+2026-09-23 04:55:58,840 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=11, Skipped=7, Total DB=30122
+2026-09-23 04:55:58,841 - INFO - ✅ Done
