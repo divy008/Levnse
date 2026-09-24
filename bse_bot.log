@@ -97445,3 +97445,12 @@
 2026-09-24 04:00:40,486 - INFO - ⏰ Window (IST): 09:24:40 – 09:30:40
 2026-09-24 04:00:40,499 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=2, Skipped=0, Total DB=30350
 2026-09-24 04:00:40,499 - INFO - ✅ Done
+2026-09-24 04:05:52,929 - INFO - 🚀 BSE Watch starting at 2026-09-24 04:05:52.929812
+2026-09-24 04:05:52,929 - INFO - 📡 Source: cronjobs.org
+2026-09-24 04:05:52,930 - INFO - ✅ BSE Database initialized
+2026-09-24 04:05:52,942 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-24 04:05:53,475 - INFO - ⏰ Window (IST): 09:29:53 – 09:35:53
+2026-09-24 04:05:53,495 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-24 04:05:54,429 - INFO - 📊 Excel updated with 11 announcements
+2026-09-24 04:05:54,431 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=30350
+2026-09-24 04:05:54,431 - INFO - ✅ Done
