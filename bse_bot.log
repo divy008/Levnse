@@ -97303,3 +97303,11 @@
 2026-09-24 02:20:57,413 - INFO - ⏰ Window (IST): 07:44:57 – 07:50:57
 2026-09-24 02:20:57,417 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1, Skipped=0, Total DB=30347
 2026-09-24 02:20:57,418 - INFO - ✅ Done
+2026-09-24 02:25:30,742 - INFO - 🚀 BSE Watch starting at 2026-09-24 02:25:30.742618
+2026-09-24 02:25:30,742 - INFO - 📡 Source: cronjobs.org
+2026-09-24 02:25:30,743 - INFO - ✅ BSE Database initialized
+2026-09-24 02:25:31,287 - INFO - ⏰ Window (IST): 07:49:31 – 07:55:31
+2026-09-24 02:25:32,310 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-09-24 02:25:33,800 - INFO - 📊 Excel updated with 1 announcements
+2026-09-24 02:25:33,801 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=30348
+2026-09-24 02:25:33,801 - INFO - ✅ Done
