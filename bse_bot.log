@@ -97580,3 +97580,12 @@
 2026-09-24 05:21:22,297 - INFO - ⏰ Window (IST): 10:45:22 – 10:51:22
 2026-09-24 05:21:22,825 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=30357
 2026-09-24 05:21:22,825 - INFO - ✅ Done
+2026-09-24 05:26:01,386 - INFO - 🚀 BSE Watch starting at 2026-09-24 05:26:01.386653
+2026-09-24 05:26:01,386 - INFO - 📡 Source: cronjobs.org
+2026-09-24 05:26:01,387 - INFO - ✅ BSE Database initialized
+2026-09-24 05:26:01,398 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-09-24 05:26:02,044 - INFO - ⏰ Window (IST): 10:50:02 – 10:56:02
+2026-09-24 05:26:02,106 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-09-24 05:26:06,492 - INFO - 📊 Excel updated with 56 announcements
+2026-09-24 05:26:06,494 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=1, Skipped=0, Total DB=30359
+2026-09-24 05:26:06,494 - INFO - ✅ Done
