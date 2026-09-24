@@ -98301,3 +98301,12 @@
 2026-09-24 12:06:45,300 - INFO - 📊 Excel updated with 500 announcements
 2026-09-24 12:06:45,302 - INFO - 📊 SUMMARY (Last 6 min IST): New=16, Dups=11, Skipped=0, Total DB=30703
 2026-09-24 12:06:45,302 - INFO - ✅ Done
+2026-09-24 12:11:24,406 - INFO - 🚀 BSE Watch starting at 2026-09-24 12:11:24.406336
+2026-09-24 12:11:24,406 - INFO - 📡 Source: cronjobs.org
+2026-09-24 12:11:24,407 - INFO - ✅ BSE Database initialized
+2026-09-24 12:11:24,421 - INFO - 🧹 Cleaned up 26 old BSE announcements
+2026-09-24 12:11:27,472 - INFO - ⏰ Window (IST): 17:35:27 – 17:41:27
+2026-09-24 12:11:27,874 - INFO - 📤 Sending 24 alerts to Telegram...
+2026-09-24 12:11:56,660 - INFO - 📊 Excel updated with 500 announcements
+2026-09-24 12:11:56,662 - INFO - 📊 SUMMARY (Last 6 min IST): New=24, Dups=32, Skipped=0, Total DB=30701
+2026-09-24 12:11:56,663 - INFO - ✅ Done
