@@ -99659,3 +99659,12 @@
 2026-09-25 06:01:31,070 - INFO - 📊 Excel updated with 144 announcements
 2026-09-25 06:01:31,072 - INFO - 📊 SUMMARY (Last 6 min IST): New=11, Dups=0, Skipped=0, Total DB=30784
 2026-09-25 06:01:31,072 - INFO - ✅ Done
+2026-09-25 06:06:00,197 - INFO - 🚀 BSE Watch starting at 2026-09-25 06:06:00.197615
+2026-09-25 06:06:00,197 - INFO - 📡 Source: cronjobs.org
+2026-09-25 06:06:00,198 - INFO - ✅ BSE Database initialized
+2026-09-25 06:06:00,209 - INFO - 🧹 Cleaned up 5 old BSE announcements
+2026-09-25 06:06:01,567 - INFO - ⏰ Window (IST): 11:30:01 – 11:36:01
+2026-09-25 06:06:01,834 - INFO - 📤 Sending 14 alerts to Telegram...
+2026-09-25 06:06:18,073 - INFO - 📊 Excel updated with 158 announcements
+2026-09-25 06:06:18,075 - INFO - 📊 SUMMARY (Last 6 min IST): New=14, Dups=19, Skipped=0, Total DB=30793
+2026-09-25 06:06:18,075 - INFO - ✅ Done
