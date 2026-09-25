@@ -99650,3 +99650,12 @@
 2026-09-25 05:56:16,162 - INFO - 📊 Excel updated with 133 announcements
 2026-09-25 05:56:16,164 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=4, Skipped=8, Total DB=30779
 2026-09-25 05:56:16,164 - INFO - ✅ Done
+2026-09-25 06:01:15,666 - INFO - 🚀 BSE Watch starting at 2026-09-25 06:01:15.666835
+2026-09-25 06:01:15,666 - INFO - 📡 Source: cronjobs.org
+2026-09-25 06:01:15,667 - INFO - ✅ BSE Database initialized
+2026-09-25 06:01:15,679 - INFO - 🧹 Cleaned up 6 old BSE announcements
+2026-09-25 06:01:17,053 - INFO - ⏰ Window (IST): 11:25:17 – 11:31:17
+2026-09-25 06:01:17,320 - INFO - 📤 Sending 11 alerts to Telegram...
+2026-09-25 06:01:31,070 - INFO - 📊 Excel updated with 144 announcements
+2026-09-25 06:01:31,072 - INFO - 📊 SUMMARY (Last 6 min IST): New=11, Dups=0, Skipped=0, Total DB=30784
+2026-09-25 06:01:31,072 - INFO - ✅ Done
