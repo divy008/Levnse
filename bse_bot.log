@@ -102774,3 +102774,11 @@
 2026-09-26 16:36:00,700 - INFO - ⏰ Window (IST): 22:00:00 – 22:06:00
 2026-09-26 16:36:00,869 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=31465
 2026-09-26 16:36:00,869 - INFO - ✅ Done
+2026-09-26 16:40:59,998 - INFO - 🚀 BSE Watch starting at 2026-09-26 16:40:59.998255
+2026-09-26 16:40:59,998 - INFO - 📡 Source: cronjobs.org
+2026-09-26 16:40:59,999 - INFO - ✅ BSE Database initialized
+2026-09-26 16:41:03,740 - INFO - ⏰ Window (IST): 22:05:03 – 22:11:03
+2026-09-26 16:41:03,868 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-09-26 16:41:06,697 - INFO - 📊 Excel updated with 500 announcements
+2026-09-26 16:41:06,699 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=31468
+2026-09-26 16:41:06,699 - INFO - ✅ Done
