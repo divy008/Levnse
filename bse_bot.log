@@ -101444,3 +101444,11 @@
 2026-09-26 03:45:57,275 - INFO - ⏰ Window (IST): 09:09:57 – 09:15:57
 2026-09-26 03:45:57,366 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=31687
 2026-09-26 03:45:57,367 - INFO - ✅ Done
+2026-09-26 03:50:25,182 - INFO - 🚀 BSE Watch starting at 2026-09-26 03:50:25.182443
+2026-09-26 03:50:25,182 - INFO - 📡 Source: cronjobs.org
+2026-09-26 03:50:25,182 - INFO - ✅ BSE Database initialized
+2026-09-26 03:50:25,751 - INFO - ⏰ Window (IST): 09:14:25 – 09:20:25
+2026-09-26 03:50:25,995 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-26 03:50:28,090 - INFO - 📊 Excel updated with 9 announcements
+2026-09-26 03:50:28,091 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=31689
+2026-09-26 03:50:28,091 - INFO - ✅ Done
