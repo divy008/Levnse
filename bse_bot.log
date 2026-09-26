@@ -101519,3 +101519,12 @@
 2026-09-26 04:35:23,710 - INFO - ⏰ Window (IST): 09:59:23 – 10:05:23
 2026-09-26 04:35:23,803 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=31677
 2026-09-26 04:35:23,803 - INFO - ✅ Done
+2026-09-26 04:40:56,073 - INFO - 🚀 BSE Watch starting at 2026-09-26 04:40:56.073654
+2026-09-26 04:40:56,073 - INFO - 📡 Source: cronjobs.org
+2026-09-26 04:40:56,074 - INFO - ✅ BSE Database initialized
+2026-09-26 04:40:56,085 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-26 04:40:57,285 - INFO - ⏰ Window (IST): 10:04:57 – 10:10:57
+2026-09-26 04:40:57,378 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-26 04:40:59,158 - INFO - 📊 Excel updated with 16 announcements
+2026-09-26 04:40:59,160 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=31678
+2026-09-26 04:40:59,160 - INFO - ✅ Done
