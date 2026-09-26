@@ -101466,3 +101466,11 @@
 2026-09-26 04:01:08,495 - INFO - ⏰ Window (IST): 09:25:08 – 09:31:08
 2026-09-26 04:01:08,591 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=31683
 2026-09-26 04:01:08,591 - INFO - ✅ Done
+2026-09-26 04:05:52,434 - INFO - 🚀 BSE Watch starting at 2026-09-26 04:05:52.434033
+2026-09-26 04:05:52,434 - INFO - 📡 Source: cronjobs.org
+2026-09-26 04:05:52,434 - INFO - ✅ BSE Database initialized
+2026-09-26 04:05:54,755 - INFO - ⏰ Window (IST): 09:29:54 – 09:35:54
+2026-09-26 04:05:54,822 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-09-26 04:05:56,629 - INFO - 📊 Excel updated with 11 announcements
+2026-09-26 04:05:56,631 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=31685
+2026-09-26 04:05:56,631 - INFO - ✅ Done
