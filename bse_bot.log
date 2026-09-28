@@ -103334,3 +103334,9 @@
 2026-09-28 02:50:58,529 - INFO - 📊 Excel updated with 3 announcements
 2026-09-28 02:50:58,531 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=30606
 2026-09-28 02:50:58,532 - INFO - ✅ Done
+2026-09-28 02:56:00,578 - INFO - 🚀 BSE Watch starting at 2026-09-28 02:56:00.578431
+2026-09-28 02:56:00,578 - INFO - 📡 Source: cronjobs.org
+2026-09-28 02:56:00,579 - INFO - ✅ BSE Database initialized
+2026-09-28 02:56:00,999 - INFO - ⏰ Window (IST): 08:20:00 – 08:26:00
+2026-09-28 02:56:01,002 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1, Skipped=0, Total DB=30606
+2026-09-28 02:56:01,002 - INFO - ✅ Done
