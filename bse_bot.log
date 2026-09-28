@@ -104660,3 +104660,12 @@
 2026-09-28 15:36:08,341 - INFO - 🧹 Cleaned up 2 old BSE announcements
 2026-09-28 15:36:20,241 - ERROR - ❌ Failed to fetch BSE feed
 2026-09-28 15:36:20,241 - INFO - ✅ Done
+2026-09-28 15:41:03,988 - INFO - 🚀 BSE Watch starting at 2026-09-28 15:41:03.988392
+2026-09-28 15:41:03,988 - INFO - 📡 Source: cronjobs.org
+2026-09-28 15:41:03,989 - INFO - ✅ BSE Database initialized
+2026-09-28 15:41:04,002 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-09-28 15:41:08,638 - INFO - ⏰ Window (IST): 21:05:08 – 21:11:08
+2026-09-28 15:41:09,365 - INFO - 📤 Sending 8 alerts to Telegram...
+2026-09-28 15:41:18,100 - INFO - 📊 Excel updated with 500 announcements
+2026-09-28 15:41:18,102 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=0, Skipped=0, Total DB=32252
+2026-09-28 15:41:18,103 - INFO - ✅ Done
