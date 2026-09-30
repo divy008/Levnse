@@ -109026,3 +109026,10 @@
 2026-09-30 20:45:25,976 - INFO - ⏰ Window (IST): 02:09:25 – 02:15:25
 2026-09-30 20:45:26,006 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=12, Total DB=36135
 2026-09-30 20:45:26,006 - INFO - ✅ Done
+2026-09-30 20:50:25,214 - INFO - 🚀 BSE Watch starting at 2026-09-30 20:50:25.214204
+2026-09-30 20:50:25,214 - INFO - 📡 Source: cronjobs.org
+2026-09-30 20:50:25,215 - INFO - ✅ BSE Database initialized
+2026-09-30 20:50:25,238 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-09-30 20:50:25,831 - INFO - ⏰ Window (IST): 02:14:25 – 02:20:25
+2026-09-30 20:50:25,861 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=36134
+2026-09-30 20:50:25,861 - INFO - ✅ Done
