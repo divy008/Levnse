@@ -109941,3 +109941,10 @@
 2026-10-09 02:35:26,345 - INFO - 📊 Excel updated with 3 announcements
 2026-10-09 02:35:26,347 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=22834
 2026-10-09 02:35:26,347 - INFO - ✅ Done
+2026-10-09 02:40:58,203 - INFO - 🚀 BSE Watch starting at 2026-10-09 02:40:58.203242
+2026-10-09 02:40:58,203 - INFO - 📡 Source: cronjobs.org
+2026-10-09 02:40:58,203 - INFO - ✅ BSE Database initialized
+2026-10-09 02:40:58,213 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-10-09 02:40:59,237 - INFO - ⏰ Window (IST): 08:04:59 – 08:10:59
+2026-10-09 02:40:59,278 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=22833
+2026-10-09 02:40:59,278 - INFO - ✅ Done
