@@ -110201,3 +110201,11 @@
 2026-10-09 05:31:23,109 - INFO - 📊 Excel updated with 62 announcements
 2026-10-09 05:31:23,111 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=5, Skipped=0, Total DB=22847
 2026-10-09 05:31:23,111 - INFO - ✅ Done
+2026-10-09 05:35:57,979 - INFO - 🚀 BSE Watch starting at 2026-10-09 05:35:57.979416
+2026-10-09 05:35:57,979 - INFO - 📡 Source: cronjobs.org
+2026-10-09 05:35:57,979 - INFO - ✅ BSE Database initialized
+2026-10-09 05:35:59,773 - INFO - ⏰ Window (IST): 10:59:59 – 11:05:59
+2026-10-09 05:35:59,892 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-10-09 05:36:02,923 - INFO - 📊 Excel updated with 65 announcements
+2026-10-09 05:36:02,925 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=1, Skipped=0, Total DB=22850
+2026-10-09 05:36:02,925 - INFO - ✅ Done
