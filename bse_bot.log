@@ -112115,3 +112115,12 @@
 2026-10-10 05:05:26,792 - INFO - 📊 Excel updated with 8 announcements
 2026-10-10 05:05:26,794 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=22896
 2026-10-10 05:05:26,794 - INFO - ✅ Done
+2026-10-10 05:10:55,231 - INFO - 🚀 BSE Watch starting at 2026-10-10 05:10:55.231084
+2026-10-10 05:10:55,231 - INFO - 📡 Source: cronjobs.org
+2026-10-10 05:10:55,231 - INFO - ✅ BSE Database initialized
+2026-10-10 05:10:55,240 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-10-10 05:10:55,731 - INFO - ⏰ Window (IST): 10:34:55 – 10:40:55
+2026-10-10 05:10:55,735 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-10-10 05:10:56,799 - INFO - 📊 Excel updated with 9 announcements
+2026-10-10 05:10:56,801 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=22895
+2026-10-10 05:10:56,801 - INFO - ✅ Done
