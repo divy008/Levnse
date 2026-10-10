@@ -111952,3 +111952,10 @@
 2026-10-10 03:10:31,131 - INFO - ⏰ Window (IST): 08:34:31 – 08:40:31
 2026-10-10 03:10:31,133 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=22917
 2026-10-10 03:10:31,134 - INFO - ✅ Done
+2026-10-10 03:15:27,616 - INFO - 🚀 BSE Watch starting at 2026-10-10 03:15:27.616628
+2026-10-10 03:15:27,616 - INFO - 📡 Source: cronjobs.org
+2026-10-10 03:15:27,617 - INFO - ✅ BSE Database initialized
+2026-10-10 03:15:27,643 - INFO - 🧹 Cleaned up 6 old BSE announcements
+2026-10-10 03:15:27,953 - INFO - ⏰ Window (IST): 08:39:27 – 08:45:27
+2026-10-10 03:15:27,956 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=22911
+2026-10-10 03:15:27,956 - INFO - ✅ Done
