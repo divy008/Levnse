@@ -112015,3 +112015,10 @@
 2026-10-10 04:00:33,998 - INFO - ⏰ Window (IST): 09:24:33 – 09:30:33
 2026-10-10 04:00:34,000 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=22907
 2026-10-10 04:00:34,000 - INFO - ✅ Done
+2026-10-10 04:05:21,959 - INFO - 🚀 BSE Watch starting at 2026-10-10 04:05:21.959493
+2026-10-10 04:05:21,959 - INFO - 📡 Source: cronjobs.org
+2026-10-10 04:05:21,960 - INFO - ✅ BSE Database initialized
+2026-10-10 04:05:21,983 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-10-10 04:05:22,417 - INFO - ⏰ Window (IST): 09:29:22 – 09:35:22
+2026-10-10 04:05:22,420 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1, Skipped=0, Total DB=22905
+2026-10-10 04:05:22,420 - INFO - ✅ Done
