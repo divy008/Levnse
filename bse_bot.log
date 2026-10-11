@@ -113541,3 +113541,8 @@
 2026-10-11 19:35:22,023 - INFO - 🧹 Cleaned up 1 old BSE announcements
 2026-10-11 19:35:23,447 - ERROR - ❌ Failed to fetch BSE feed
 2026-10-11 19:35:23,447 - INFO - ✅ Done
+2026-10-11 19:40:24,008 - INFO - 🚀 BSE Watch starting at 2026-10-11 19:40:24.008280
+2026-10-11 19:40:24,008 - INFO - 📡 Source: cronjobs.org
+2026-10-11 19:40:24,009 - INFO - ✅ BSE Database initialized
+2026-10-11 19:40:25,207 - ERROR - ❌ Failed to fetch BSE feed
+2026-10-11 19:40:25,208 - INFO - ✅ Done
