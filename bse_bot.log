@@ -113746,3 +113746,9 @@
 2026-10-12 02:00:36,091 - INFO - ✅ BSE Database initialized
 2026-10-12 02:00:39,641 - ERROR - ❌ Failed to fetch BSE feed
 2026-10-12 02:00:39,641 - INFO - ✅ Done
+2026-10-12 02:05:24,069 - INFO - 🚀 BSE Watch starting at 2026-10-12 02:05:24.069414
+2026-10-12 02:05:24,069 - INFO - 📡 Source: cronjobs.org
+2026-10-12 02:05:24,070 - INFO - ✅ BSE Database initialized
+2026-10-12 02:05:24,556 - INFO - ⏰ Window (IST): 07:29:24 – 07:35:24
+2026-10-12 02:05:24,558 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=2, Total DB=21754
+2026-10-12 02:05:24,558 - INFO - ✅ Done
