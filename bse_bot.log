@@ -117636,3 +117636,12 @@
 2026-10-14 03:50:26,004 - INFO - 📊 Excel updated with 11 announcements
 2026-10-14 03:50:26,005 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=23831
 2026-10-14 03:50:26,006 - INFO - ✅ Done
+2026-10-14 03:55:53,742 - INFO - 🚀 BSE Watch starting at 2026-10-14 03:55:53.742539
+2026-10-14 03:55:53,742 - INFO - 📡 Source: cronjobs.org
+2026-10-14 03:55:53,743 - INFO - ✅ BSE Database initialized
+2026-10-14 03:55:53,752 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-10-14 03:55:54,250 - INFO - ⏰ Window (IST): 09:19:54 – 09:25:54
+2026-10-14 03:55:54,254 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-10-14 03:55:55,188 - INFO - 📊 Excel updated with 12 announcements
+2026-10-14 03:55:55,190 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=2, Total DB=23831
+2026-10-14 03:55:55,190 - INFO - ✅ Done
