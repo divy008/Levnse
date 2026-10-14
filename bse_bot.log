@@ -118231,3 +118231,12 @@
 2026-10-14 09:46:12,360 - INFO - 📊 Excel updated with 423 announcements
 2026-10-14 09:46:12,362 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=105, Skipped=0, Total DB=24171
 2026-10-14 09:46:12,362 - INFO - ✅ Done
+2026-10-14 09:51:09,355 - INFO - 🚀 BSE Watch starting at 2026-10-14 09:51:09.355125
+2026-10-14 09:51:09,355 - INFO - 📡 Source: cronjobs.org
+2026-10-14 09:51:09,355 - INFO - ✅ BSE Database initialized
+2026-10-14 09:51:09,374 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-10-14 09:51:10,809 - INFO - ⏰ Window (IST): 15:15:10 – 15:21:10
+2026-10-14 09:51:11,002 - INFO - 📤 Sending 13 alerts to Telegram...
+2026-10-14 09:51:30,107 - INFO - 📊 Excel updated with 436 announcements
+2026-10-14 09:51:30,108 - INFO - 📊 SUMMARY (Last 6 min IST): New=13, Dups=3, Skipped=0, Total DB=24183
+2026-10-14 09:51:30,108 - INFO - ✅ Done
