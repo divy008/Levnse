@@ -120731,3 +120731,12 @@
 2026-10-15 15:06:05,984 - INFO - 📊 Excel updated with 500 announcements
 2026-10-15 15:06:05,985 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=25225
 2026-10-15 15:06:05,986 - INFO - ✅ Done
+2026-10-15 15:10:56,976 - INFO - 🚀 BSE Watch starting at 2026-10-15 15:10:56.976018
+2026-10-15 15:10:56,976 - INFO - 📡 Source: cronjobs.org
+2026-10-15 15:10:56,976 - INFO - ✅ BSE Database initialized
+2026-10-15 15:10:56,986 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-10-15 15:11:04,404 - INFO - ⏰ Window (IST): 20:35:04 – 20:41:04
+2026-10-15 15:11:05,135 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-10-15 15:11:08,025 - INFO - 📊 Excel updated with 500 announcements
+2026-10-15 15:11:08,027 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=2, Skipped=0, Total DB=25227
+2026-10-15 15:11:08,027 - INFO - ✅ Done
