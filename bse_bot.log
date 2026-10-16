@@ -122319,3 +122319,11 @@
 2026-10-16 11:26:18,111 - INFO - 📊 Excel updated with 500 announcements
 2026-10-16 11:26:18,113 - INFO - 📊 SUMMARY (Last 6 min IST): New=6, Dups=1, Skipped=0, Total DB=25412
 2026-10-16 11:26:18,113 - INFO - ✅ Done
+2026-10-16 11:31:10,852 - INFO - 🚀 BSE Watch starting at 2026-10-16 11:31:10.852240
+2026-10-16 11:31:10,852 - INFO - 📡 Source: cronjobs.org
+2026-10-16 11:31:10,853 - INFO - ✅ BSE Database initialized
+2026-10-16 11:31:12,830 - INFO - ⏰ Window (IST): 16:55:12 – 17:01:12
+2026-10-16 11:31:13,132 - INFO - 📤 Sending 13 alerts to Telegram...
+2026-10-16 11:31:34,163 - INFO - 📊 Excel updated with 500 announcements
+2026-10-16 11:31:34,165 - INFO - 📊 SUMMARY (Last 6 min IST): New=13, Dups=0, Skipped=0, Total DB=25425
+2026-10-16 11:31:34,165 - INFO - ✅ Done
