@@ -122706,3 +122706,11 @@
 2026-10-16 15:06:06,737 - INFO - 📊 Excel updated with 500 announcements
 2026-10-16 15:06:06,738 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=1, Skipped=0, Total DB=25402
 2026-10-16 15:06:06,739 - INFO - ✅ Done
+2026-10-16 15:10:58,170 - INFO - 🚀 BSE Watch starting at 2026-10-16 15:10:58.170597
+2026-10-16 15:10:58,170 - INFO - 📡 Source: cronjobs.org
+2026-10-16 15:10:58,171 - INFO - ✅ BSE Database initialized
+2026-10-16 15:11:02,237 - INFO - ⏰ Window (IST): 20:35:02 – 20:41:02
+2026-10-16 15:11:02,820 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-10-16 15:11:04,009 - INFO - 📊 Excel updated with 500 announcements
+2026-10-16 15:11:04,011 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=2, Skipped=0, Total DB=25403
+2026-10-16 15:11:04,011 - INFO - ✅ Done
