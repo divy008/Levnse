@@ -121499,3 +121499,11 @@
 2026-10-16 03:21:04,388 - INFO - 📊 Excel updated with 6 announcements
 2026-10-16 03:21:04,390 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=25274
 2026-10-16 03:21:04,390 - INFO - ✅ Done
+2026-10-16 03:25:19,857 - INFO - 🚀 BSE Watch starting at 2026-10-16 03:25:19.857435
+2026-10-16 03:25:19,857 - INFO - 📡 Source: cronjobs.org
+2026-10-16 03:25:19,858 - INFO - ✅ BSE Database initialized
+2026-10-16 03:25:20,397 - INFO - ⏰ Window (IST): 08:49:20 – 08:55:20
+2026-10-16 03:25:20,417 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-10-16 03:25:21,440 - INFO - 📊 Excel updated with 7 announcements
+2026-10-16 03:25:21,441 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=1, Skipped=0, Total DB=25275
+2026-10-16 03:25:21,442 - INFO - ✅ Done
