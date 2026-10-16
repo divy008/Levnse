@@ -121575,3 +121575,10 @@
 2026-10-16 04:10:59,509 - INFO - 📊 Excel updated with 14 announcements
 2026-10-16 04:10:59,511 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=10, Skipped=0, Total DB=25280
 2026-10-16 04:10:59,512 - INFO - ✅ Done
+2026-10-16 04:15:23,667 - INFO - 🚀 BSE Watch starting at 2026-10-16 04:15:23.667195
+2026-10-16 04:15:23,667 - INFO - 📡 Source: cronjobs.org
+2026-10-16 04:15:23,667 - INFO - ✅ BSE Database initialized
+2026-10-16 04:15:23,898 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-10-16 04:15:24,474 - INFO - ⏰ Window (IST): 09:39:24 – 09:45:24
+2026-10-16 04:15:24,484 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=25279
+2026-10-16 04:15:24,484 - INFO - ✅ Done
