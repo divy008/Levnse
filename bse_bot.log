@@ -121913,3 +121913,12 @@
 2026-10-16 07:31:17,712 - INFO - 📊 Excel updated with 196 announcements
 2026-10-16 07:31:17,713 - INFO - 📊 SUMMARY (Last 6 min IST): New=10, Dups=6, Skipped=0, Total DB=25355
 2026-10-16 07:31:17,714 - INFO - ✅ Done
+2026-10-16 07:36:03,205 - INFO - 🚀 BSE Watch starting at 2026-10-16 07:36:03.205596
+2026-10-16 07:36:03,205 - INFO - 📡 Source: cronjobs.org
+2026-10-16 07:36:03,206 - INFO - ✅ BSE Database initialized
+2026-10-16 07:36:03,217 - INFO - 🧹 Cleaned up 12 old BSE announcements
+2026-10-16 07:36:05,851 - INFO - ⏰ Window (IST): 13:00:05 – 13:06:05
+2026-10-16 07:36:06,117 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-10-16 07:36:09,438 - INFO - 📊 Excel updated with 199 announcements
+2026-10-16 07:36:09,440 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=1, Skipped=0, Total DB=25346
+2026-10-16 07:36:09,440 - INFO - ✅ Done
