@@ -121730,3 +121730,12 @@
 2026-10-16 05:45:59,344 - INFO - 📊 Excel updated with 64 announcements
 2026-10-16 05:45:59,346 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=75, Skipped=0, Total DB=25299
 2026-10-16 05:45:59,346 - INFO - ✅ Done
+2026-10-16 05:50:56,726 - INFO - 🚀 BSE Watch starting at 2026-10-16 05:50:56.726529
+2026-10-16 05:50:56,726 - INFO - 📡 Source: cronjobs.org
+2026-10-16 05:50:56,727 - INFO - ✅ BSE Database initialized
+2026-10-16 05:50:56,738 - INFO - 🧹 Cleaned up 5 old BSE announcements
+2026-10-16 05:50:57,937 - INFO - ⏰ Window (IST): 11:14:57 – 11:20:57
+2026-10-16 05:50:58,112 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-10-16 05:51:02,579 - INFO - 📊 Excel updated with 69 announcements
+2026-10-16 05:51:02,581 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=1437, Skipped=92, Total DB=25299
+2026-10-16 05:51:02,581 - INFO - ✅ Done
