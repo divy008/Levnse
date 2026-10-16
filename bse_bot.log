@@ -121424,3 +121424,10 @@
 2026-10-16 02:25:21,047 - INFO - ⏰ Window (IST): 07:49:21 – 07:55:21
 2026-10-16 02:25:21,049 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=25271
 2026-10-16 02:25:21,050 - INFO - ✅ Done
+2026-10-16 02:30:31,696 - INFO - 🚀 BSE Watch starting at 2026-10-16 02:30:31.696510
+2026-10-16 02:30:31,696 - INFO - 📡 Source: cronjobs.org
+2026-10-16 02:30:31,697 - INFO - ✅ BSE Database initialized
+2026-10-16 02:30:31,726 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-10-16 02:30:31,881 - INFO - ⏰ Window (IST): 07:54:31 – 08:00:31
+2026-10-16 02:30:31,883 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=25268
+2026-10-16 02:30:31,884 - INFO - ✅ Done
