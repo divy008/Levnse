@@ -124516,3 +124516,12 @@
 2026-10-17 13:40:58,473 - INFO - ⏰ Window (IST): 19:04:58 – 19:10:58
 2026-10-17 13:40:58,513 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=25219
 2026-10-17 13:40:58,513 - INFO - ✅ Done
+2026-10-17 13:45:56,510 - INFO - 🚀 BSE Watch starting at 2026-10-17 13:45:56.510773
+2026-10-17 13:45:56,510 - INFO - 📡 Source: cronjobs.org
+2026-10-17 13:45:56,511 - INFO - ✅ BSE Database initialized
+2026-10-17 13:45:56,522 - INFO - 🧹 Cleaned up 9 old BSE announcements
+2026-10-17 13:45:57,536 - INFO - ⏰ Window (IST): 19:09:57 – 19:15:57
+2026-10-17 13:45:57,590 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-10-17 13:45:59,468 - INFO - 📊 Excel updated with 371 announcements
+2026-10-17 13:45:59,470 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=1, Skipped=0, Total DB=25212
+2026-10-17 13:45:59,470 - INFO - ✅ Done
