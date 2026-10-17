@@ -123629,3 +123629,10 @@
 2026-10-17 05:10:25,546 - INFO - 📊 Excel updated with 16 announcements
 2026-10-17 05:10:25,547 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=25404
 2026-10-17 05:10:25,547 - INFO - ✅ Done
+2026-10-17 05:15:58,019 - INFO - 🚀 BSE Watch starting at 2026-10-17 05:15:58.018998
+2026-10-17 05:15:58,019 - INFO - 📡 Source: cronjobs.org
+2026-10-17 05:15:58,019 - INFO - ✅ BSE Database initialized
+2026-10-17 05:15:58,031 - INFO - 🧹 Cleaned up 4 old BSE announcements
+2026-10-17 05:16:00,062 - INFO - ⏰ Window (IST): 10:40:00 – 10:46:00
+2026-10-17 05:16:00,105 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=25400
+2026-10-17 05:16:00,105 - INFO - ✅ Done
