@@ -124525,3 +124525,12 @@
 2026-10-17 13:45:59,468 - INFO - 📊 Excel updated with 371 announcements
 2026-10-17 13:45:59,470 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=1, Skipped=0, Total DB=25212
 2026-10-17 13:45:59,470 - INFO - ✅ Done
+2026-10-17 13:50:58,117 - INFO - 🚀 BSE Watch starting at 2026-10-17 13:50:58.117077
+2026-10-17 13:50:58,117 - INFO - 📡 Source: cronjobs.org
+2026-10-17 13:50:58,117 - INFO - ✅ BSE Database initialized
+2026-10-17 13:50:58,128 - INFO - 🧹 Cleaned up 3 old BSE announcements
+2026-10-17 13:51:00,606 - INFO - ⏰ Window (IST): 19:15:00 – 19:21:00
+2026-10-17 13:51:00,701 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-10-17 13:51:04,239 - INFO - 📊 Excel updated with 375 announcements
+2026-10-17 13:51:04,241 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=6, Skipped=0, Total DB=25213
+2026-10-17 13:51:04,241 - INFO - ✅ Done
