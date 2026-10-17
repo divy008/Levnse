@@ -124534,3 +124534,12 @@
 2026-10-17 13:51:04,239 - INFO - 📊 Excel updated with 375 announcements
 2026-10-17 13:51:04,241 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=6, Skipped=0, Total DB=25213
 2026-10-17 13:51:04,241 - INFO - ✅ Done
+2026-10-17 13:55:51,478 - INFO - 🚀 BSE Watch starting at 2026-10-17 13:55:51.478835
+2026-10-17 13:55:51,478 - INFO - 📡 Source: cronjobs.org
+2026-10-17 13:55:51,479 - INFO - ✅ BSE Database initialized
+2026-10-17 13:55:51,489 - INFO - 🧹 Cleaned up 6 old BSE announcements
+2026-10-17 13:55:52,456 - INFO - ⏰ Window (IST): 19:19:52 – 19:25:52
+2026-10-17 13:55:52,557 - INFO - 📤 Sending 3 alerts to Telegram...
+2026-10-17 13:55:55,479 - INFO - 📊 Excel updated with 378 announcements
+2026-10-17 13:55:55,481 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=0, Skipped=0, Total DB=25210
+2026-10-17 13:55:55,481 - INFO - ✅ Done
