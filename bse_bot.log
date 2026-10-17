@@ -124509,3 +124509,10 @@
 2026-10-17 13:36:23,122 - INFO - ⏰ Window (IST): 19:00:23 – 19:06:23
 2026-10-17 13:36:23,502 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=25223
 2026-10-17 13:36:23,502 - INFO - ✅ Done
+2026-10-17 13:40:57,514 - INFO - 🚀 BSE Watch starting at 2026-10-17 13:40:57.514161
+2026-10-17 13:40:57,514 - INFO - 📡 Source: cronjobs.org
+2026-10-17 13:40:57,514 - INFO - ✅ BSE Database initialized
+2026-10-17 13:40:57,522 - INFO - 🧹 Cleaned up 4 old BSE announcements
+2026-10-17 13:40:58,473 - INFO - ⏰ Window (IST): 19:04:58 – 19:10:58
+2026-10-17 13:40:58,513 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=25219
+2026-10-17 13:40:58,513 - INFO - ✅ Done
