@@ -124982,3 +124982,10 @@
 2026-10-17 18:25:27,320 - INFO - ⏰ Window (IST): 23:49:27 – 23:55:27
 2026-10-17 18:25:27,428 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=25162
 2026-10-17 18:25:27,429 - INFO - ✅ Done
+2026-10-18 18:30:33,521 - INFO - 🚀 BSE Watch starting at 2026-10-18 18:30:33.521121
+2026-10-18 18:30:33,521 - INFO - 📡 Source: cronjobs.org
+2026-10-18 18:30:33,522 - INFO - ✅ BSE Database initialized
+2026-10-18 18:30:33,605 - INFO - 🧹 Cleaned up 931 old BSE announcements
+2026-10-18 18:30:34,064 - INFO - ⏰ Window (IST): 23:54:34 – 00:00:34
+2026-10-18 18:30:34,071 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=24231
+2026-10-18 18:30:34,071 - INFO - ✅ Done
