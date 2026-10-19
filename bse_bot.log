@@ -125406,3 +125406,11 @@
 2026-10-19 03:15:26,162 - INFO - ⏰ Window (IST): 08:39:26 – 08:45:26
 2026-10-19 03:15:26,165 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=24230
 2026-10-19 03:15:26,165 - INFO - ✅ Done
+2026-10-19 03:20:22,279 - INFO - 🚀 BSE Watch starting at 2026-10-19 03:20:22.279698
+2026-10-19 03:20:22,279 - INFO - 📡 Source: cronjobs.org
+2026-10-19 03:20:22,280 - INFO - ✅ BSE Database initialized
+2026-10-19 03:20:22,992 - INFO - ⏰ Window (IST): 08:44:22 – 08:50:22
+2026-10-19 03:20:23,234 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-10-19 03:20:24,278 - INFO - 📊 Excel updated with 2 announcements
+2026-10-19 03:20:24,280 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=24231
+2026-10-19 03:20:24,280 - INFO - ✅ Done
