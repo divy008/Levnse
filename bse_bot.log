@@ -126911,3 +126911,11 @@
 2026-10-19 18:16:03,978 - INFO - ⏰ Window (IST): 23:40:03 – 23:46:03
 2026-10-19 18:16:04,890 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=2, Total DB=24602
 2026-10-19 18:16:04,890 - INFO - ✅ Done
+2026-10-19 18:21:00,833 - INFO - 🚀 BSE Watch starting at 2026-10-19 18:21:00.833717
+2026-10-19 18:21:00,833 - INFO - 📡 Source: cronjobs.org
+2026-10-19 18:21:00,834 - INFO - ✅ BSE Database initialized
+2026-10-19 18:21:03,728 - INFO - ⏰ Window (IST): 23:45:03 – 23:51:03
+2026-10-19 18:21:04,416 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-10-19 18:21:06,451 - INFO - 📊 Excel updated with 500 announcements
+2026-10-19 18:21:06,452 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=1, Skipped=0, Total DB=24604
+2026-10-19 18:21:06,452 - INFO - ✅ Done
