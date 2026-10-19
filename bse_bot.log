@@ -126326,3 +126326,12 @@
 2026-10-19 12:26:15,253 - INFO - 📊 Excel updated with 500 announcements
 2026-10-19 12:26:15,255 - INFO - 📊 SUMMARY (Last 6 min IST): New=8, Dups=4, Skipped=0, Total DB=24414
 2026-10-19 12:26:15,255 - INFO - ✅ Done
+2026-10-19 12:31:11,749 - INFO - 🚀 BSE Watch starting at 2026-10-19 12:31:11.749025
+2026-10-19 12:31:11,749 - INFO - 📡 Source: cronjobs.org
+2026-10-19 12:31:11,749 - INFO - ✅ BSE Database initialized
+2026-10-19 12:31:11,757 - INFO - 🧹 Cleaned up 4 old BSE announcements
+2026-10-19 12:31:15,293 - INFO - ⏰ Window (IST): 17:55:15 – 18:01:15
+2026-10-19 12:31:15,535 - INFO - 📤 Sending 14 alerts to Telegram...
+2026-10-19 12:31:36,042 - INFO - 📊 Excel updated with 500 announcements
+2026-10-19 12:31:36,044 - INFO - 📊 SUMMARY (Last 6 min IST): New=14, Dups=1, Skipped=0, Total DB=24424
+2026-10-19 12:31:36,044 - INFO - ✅ Done
