@@ -128226,3 +128226,11 @@
 2026-10-20 13:21:06,558 - INFO - ⏰ Window (IST): 18:45:06 – 18:51:06
 2026-10-20 13:21:06,602 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=1, Skipped=0, Total DB=24739
 2026-10-20 13:21:06,603 - INFO - ✅ Done
+2026-10-20 13:25:56,805 - INFO - 🚀 BSE Watch starting at 2026-10-20 13:25:56.805432
+2026-10-20 13:25:56,805 - INFO - 📡 Source: cronjobs.org
+2026-10-20 13:25:56,806 - INFO - ✅ BSE Database initialized
+2026-10-20 13:25:58,254 - INFO - ⏰ Window (IST): 18:49:58 – 18:55:58
+2026-10-20 13:25:58,336 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-10-20 13:26:00,308 - INFO - 📊 Excel updated with 127 announcements
+2026-10-20 13:26:00,310 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=24741
+2026-10-20 13:26:00,310 - INFO - ✅ Done
