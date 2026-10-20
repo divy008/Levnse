@@ -127706,3 +127706,11 @@
 2026-10-20 07:26:01,130 - INFO - 📊 Excel updated with 41 announcements
 2026-10-20 07:26:01,132 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=24655
 2026-10-20 07:26:01,132 - INFO - ✅ Done
+2026-10-20 07:31:03,805 - INFO - 🚀 BSE Watch starting at 2026-10-20 07:31:03.805460
+2026-10-20 07:31:03,805 - INFO - 📡 Source: cronjobs.org
+2026-10-20 07:31:03,806 - INFO - ✅ BSE Database initialized
+2026-10-20 07:31:04,589 - INFO - ⏰ Window (IST): 12:55:04 – 13:01:04
+2026-10-20 07:31:04,646 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-10-20 07:31:05,670 - INFO - 📊 Excel updated with 42 announcements
+2026-10-20 07:31:05,672 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=21, Skipped=0, Total DB=24656
+2026-10-20 07:31:05,672 - INFO - ✅ Done
