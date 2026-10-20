@@ -128556,3 +128556,12 @@
 2026-10-20 17:25:23,700 - INFO - ⏰ Window (IST): 22:49:23 – 22:55:23
 2026-10-20 17:25:23,785 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=24763
 2026-10-20 17:25:23,785 - INFO - ✅ Done
+2026-10-20 17:30:34,590 - INFO - 🚀 BSE Watch starting at 2026-10-20 17:30:34.590642
+2026-10-20 17:30:34,590 - INFO - 📡 Source: cronjobs.org
+2026-10-20 17:30:34,591 - INFO - ✅ BSE Database initialized
+2026-10-20 17:30:35,211 - INFO - ⏰ Window (IST): 22:54:35 – 23:00:35
+2026-10-20 17:30:35,269 - INFO - 📤 Sending 1 alerts to Telegram...
+2026-10-20 17:30:50,550 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-10-20 17:30:50,985 - INFO - 📊 Excel updated with 150 announcements
+2026-10-20 17:30:50,987 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=0, Skipped=0, Total DB=24764
+2026-10-20 17:30:50,987 - INFO - ✅ Done
