@@ -129583,3 +129583,12 @@
 2026-10-21 08:31:14,099 - INFO - 📊 Excel updated with 203 announcements
 2026-10-21 08:31:14,100 - INFO - 📊 SUMMARY (Last 6 min IST): New=1, Dups=45, Skipped=0, Total DB=24820
 2026-10-21 08:31:14,100 - INFO - ✅ Done
+2026-10-21 08:35:54,056 - INFO - 🚀 BSE Watch starting at 2026-10-21 08:35:54.056582
+2026-10-21 08:35:54,056 - INFO - 📡 Source: cronjobs.org
+2026-10-21 08:35:54,057 - INFO - ✅ BSE Database initialized
+2026-10-21 08:35:54,067 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-10-21 08:35:57,010 - INFO - ⏰ Window (IST): 13:59:57 – 14:05:57
+2026-10-21 08:35:57,352 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-10-21 08:36:00,951 - INFO - 📊 Excel updated with 207 announcements
+2026-10-21 08:36:00,953 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=4, Skipped=0, Total DB=24822
+2026-10-21 08:36:00,953 - INFO - ✅ Done
