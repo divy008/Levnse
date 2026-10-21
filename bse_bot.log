@@ -129934,3 +129934,12 @@
 2026-10-21 11:56:16,377 - INFO - 📊 Excel updated with 500 announcements
 2026-10-21 11:56:16,379 - INFO - 📊 SUMMARY (Last 6 min IST): New=12, Dups=85, Skipped=27, Total DB=24825
 2026-10-21 11:56:16,379 - INFO - ✅ Done
+2026-10-21 12:01:16,621 - INFO - 🚀 BSE Watch starting at 2026-10-21 12:01:16.621048
+2026-10-21 12:01:16,621 - INFO - 📡 Source: cronjobs.org
+2026-10-21 12:01:16,621 - INFO - ✅ BSE Database initialized
+2026-10-21 12:01:16,633 - INFO - 🧹 Cleaned up 17 old BSE announcements
+2026-10-21 12:01:19,125 - INFO - ⏰ Window (IST): 17:25:19 – 17:31:19
+2026-10-21 12:01:19,521 - INFO - 📤 Sending 11 alerts to Telegram...
+2026-10-21 12:01:34,094 - INFO - 📊 Excel updated with 500 announcements
+2026-10-21 12:01:34,096 - INFO - 📊 SUMMARY (Last 6 min IST): New=11, Dups=0, Skipped=0, Total DB=24819
+2026-10-21 12:01:34,097 - INFO - ✅ Done
