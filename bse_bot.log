@@ -132619,3 +132619,10 @@
 2026-10-22 18:55:24,779 - INFO - ⏰ Window (IST): 00:19:24 – 00:25:24
 2026-10-22 18:55:24,781 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=24638
 2026-10-22 18:55:24,781 - INFO - ✅ Done
+2026-10-22 19:00:40,179 - INFO - 🚀 BSE Watch starting at 2026-10-22 19:00:40.179752
+2026-10-22 19:00:40,179 - INFO - 📡 Source: cronjobs.org
+2026-10-22 19:00:40,180 - INFO - ✅ BSE Database initialized
+2026-10-22 19:00:40,429 - INFO - 🧹 Cleaned up 2 old BSE announcements
+2026-10-22 19:00:40,745 - INFO - ⏰ Window (IST): 00:24:40 – 00:30:40
+2026-10-22 19:00:40,748 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=12, Total DB=24636
+2026-10-22 19:00:40,748 - INFO - ✅ Done
