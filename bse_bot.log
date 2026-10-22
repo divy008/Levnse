@@ -131944,3 +131944,12 @@
 2026-10-22 12:06:32,290 - INFO - ⏰ Window (IST): 17:30:32 – 17:36:32
 2026-10-22 12:06:32,751 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=24670
 2026-10-22 12:06:32,751 - INFO - ✅ Done
+2026-10-22 12:11:16,207 - INFO - 🚀 BSE Watch starting at 2026-10-22 12:11:16.207826
+2026-10-22 12:11:16,207 - INFO - 📡 Source: cronjobs.org
+2026-10-22 12:11:16,208 - INFO - ✅ BSE Database initialized
+2026-10-22 12:11:46,729 - WARNING - ⚠️ Fetch attempt 1 failed for https://beta.bseindia.com/data/xml/announcements.xml: HTTPSConnectionPool(host='beta.bseindia.com', port=443): Read timed out.
+2026-10-22 12:12:00,615 - INFO - ⏰ Window (IST): 17:36:00 – 17:42:00
+2026-10-22 12:12:00,987 - INFO - 📤 Sending 5 alerts to Telegram...
+2026-10-22 12:12:05,889 - INFO - 📊 Excel updated with 500 announcements
+2026-10-22 12:12:05,890 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=12, Skipped=0, Total DB=24675
+2026-10-22 12:12:05,891 - INFO - ✅ Done
