@@ -135927,3 +135927,12 @@
 2026-10-24 12:01:25,632 - INFO - 📊 Excel updated with 341 announcements
 2026-10-24 12:01:25,634 - INFO - 📊 SUMMARY (Last 6 min IST): New=11, Dups=0, Skipped=0, Total DB=23856
 2026-10-24 12:01:25,634 - INFO - ✅ Done
+2026-10-24 12:06:00,539 - INFO - 🚀 BSE Watch starting at 2026-10-24 12:06:00.539791
+2026-10-24 12:06:00,539 - INFO - 📡 Source: cronjobs.org
+2026-10-24 12:06:00,540 - INFO - ✅ BSE Database initialized
+2026-10-24 12:06:00,548 - INFO - 🧹 Cleaned up 20 old BSE announcements
+2026-10-24 12:06:01,285 - INFO - ⏰ Window (IST): 17:30:01 – 17:36:01
+2026-10-24 12:06:01,345 - INFO - 📤 Sending 7 alerts to Telegram...
+2026-10-24 12:06:10,917 - INFO - 📊 Excel updated with 348 announcements
+2026-10-24 12:06:10,919 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=3, Skipped=0, Total DB=23843
+2026-10-24 12:06:10,919 - INFO - ✅ Done
