@@ -141039,3 +141039,12 @@
 2026-10-28 05:41:02,749 - INFO - 📊 Excel updated with 53 announcements
 2026-10-28 05:41:02,750 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=1, Skipped=0, Total DB=22597
 2026-10-28 05:41:02,751 - INFO - ✅ Done
+2026-10-28 05:45:55,417 - INFO - 🚀 BSE Watch starting at 2026-10-28 05:45:55.417421
+2026-10-28 05:45:55,417 - INFO - 📡 Source: cronjobs.org
+2026-10-28 05:45:55,418 - INFO - ✅ BSE Database initialized
+2026-10-28 05:45:55,428 - INFO - 🧹 Cleaned up 11 old BSE announcements
+2026-10-28 05:45:58,076 - INFO - ⏰ Window (IST): 11:09:58 – 11:15:58
+2026-10-28 05:45:58,169 - INFO - 📤 Sending 2 alerts to Telegram...
+2026-10-28 05:45:59,952 - INFO - 📊 Excel updated with 55 announcements
+2026-10-28 05:45:59,954 - INFO - 📊 SUMMARY (Last 6 min IST): New=2, Dups=0, Skipped=0, Total DB=22588
+2026-10-28 05:45:59,954 - INFO - ✅ Done
