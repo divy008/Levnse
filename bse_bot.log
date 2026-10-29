@@ -142924,3 +142924,10 @@
 2026-10-29 04:00:38,030 - INFO - ⏰ Window (IST): 09:24:38 – 09:30:38
 2026-10-29 04:00:38,036 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=21755
 2026-10-29 04:00:38,036 - INFO - ✅ Done
+2026-10-29 04:05:26,214 - INFO - 🚀 BSE Watch starting at 2026-10-29 04:05:26.214335
+2026-10-29 04:05:26,214 - INFO - 📡 Source: cronjobs.org
+2026-10-29 04:05:26,214 - INFO - ✅ BSE Database initialized
+2026-10-29 04:05:26,442 - INFO - 🧹 Cleaned up 1 old BSE announcements
+2026-10-29 04:05:27,689 - INFO - ⏰ Window (IST): 09:29:27 – 09:35:27
+2026-10-29 04:05:27,693 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=21754
+2026-10-29 04:05:27,693 - INFO - ✅ Done
