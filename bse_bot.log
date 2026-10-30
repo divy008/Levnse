@@ -145825,3 +145825,12 @@
 2026-10-30 12:20:50,634 - INFO - ⏰ Window (IST): 17:44:50 – 17:50:50
 2026-10-30 12:20:51,049 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=20404
 2026-10-30 12:20:51,050 - INFO - ✅ Done
+2026-10-30 12:25:25,949 - INFO - 🚀 BSE Watch starting at 2026-10-30 12:25:25.949922
+2026-10-30 12:25:25,950 - INFO - 📡 Source: cronjobs.org
+2026-10-30 12:25:25,950 - INFO - ✅ BSE Database initialized
+2026-10-30 12:25:25,981 - INFO - 🧹 Cleaned up 49 old BSE announcements
+2026-10-30 12:25:29,103 - INFO - ⏰ Window (IST): 17:49:29 – 17:55:29
+2026-10-30 12:25:29,678 - INFO - 📤 Sending 35 alerts to Telegram...
+2026-10-30 12:26:09,708 - INFO - 📊 Excel updated with 500 announcements
+2026-10-30 12:26:09,710 - INFO - 📊 SUMMARY (Last 6 min IST): New=35, Dups=1, Skipped=0, Total DB=20390
+2026-10-30 12:26:09,710 - INFO - ✅ Done
