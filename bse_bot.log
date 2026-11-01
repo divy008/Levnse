@@ -148290,3 +148290,8 @@
 2026-10-31 18:25:24,306 - INFO - ⏰ Window (IST): 23:49:24 – 23:55:24
 2026-10-31 18:25:24,364 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=20636
 2026-10-31 18:25:24,364 - INFO - ✅ Done
+2026-11-01 18:30:33,676 - INFO - 🚀 BSE Watch starting at 2026-11-01 18:30:33.676111
+2026-11-01 18:30:33,676 - INFO - 📡 Source: cronjobs.org
+2026-11-01 18:30:33,676 - INFO - ✅ BSE Database initialized
+2026-11-01 18:30:37,182 - ERROR - ❌ Failed to fetch BSE feed
+2026-11-01 18:30:37,182 - INFO - ✅ Done
