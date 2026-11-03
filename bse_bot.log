@@ -151769,3 +151769,15 @@
 2026-11-03 16:11:10,377 - INFO - 📊 Excel updated with 500 announcements
 2026-11-03 16:11:10,378 - INFO - 📊 SUMMARY (Last 6 min IST): New=3, Dups=2, Skipped=0, Total DB=24521
 2026-11-03 16:11:10,378 - INFO - ✅ Done
+2026-11-03 16:16:07,003 - INFO - 🚀 BSE Watch starting at 2026-11-03 16:16:07.003879
+2026-11-03 16:16:07,004 - INFO - 📡 Source: cronjobs.org
+2026-11-03 16:16:07,004 - INFO - ✅ BSE Database initialized
+2026-11-03 16:16:10,367 - INFO - ⏰ Window (IST): 21:40:10 – 21:46:10
+2026-11-03 16:16:10,849 - INFO - 📤 Sending 4 alerts to Telegram...
+2026-11-03 16:16:26,088 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-11-03 16:16:41,630 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-11-03 16:16:57,184 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-11-03 16:17:12,727 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-11-03 16:17:13,153 - INFO - 📊 Excel updated with 500 announcements
+2026-11-03 16:17:13,155 - INFO - 📊 SUMMARY (Last 6 min IST): New=4, Dups=0, Skipped=1, Total DB=24525
+2026-11-03 16:17:13,155 - INFO - ✅ Done
