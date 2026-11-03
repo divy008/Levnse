@@ -151813,3 +151813,11 @@
 2026-11-03 16:36:03,839 - INFO - 📊 Excel updated with 500 announcements
 2026-11-03 16:36:03,840 - INFO - 📊 SUMMARY (Last 6 min IST): New=5, Dups=1, Skipped=0, Total DB=24544
 2026-11-03 16:36:03,840 - INFO - ✅ Done
+2026-11-03 16:41:01,504 - INFO - 🚀 BSE Watch starting at 2026-11-03 16:41:01.504962
+2026-11-03 16:41:01,505 - INFO - 📡 Source: cronjobs.org
+2026-11-03 16:41:01,505 - INFO - ✅ BSE Database initialized
+2026-11-03 16:41:07,976 - INFO - ⏰ Window (IST): 22:05:07 – 22:11:07
+2026-11-03 16:41:08,581 - INFO - 📤 Sending 7 alerts to Telegram...
+2026-11-03 16:41:16,135 - INFO - 📊 Excel updated with 500 announcements
+2026-11-03 16:41:16,136 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=7, Skipped=0, Total DB=24551
+2026-11-03 16:41:16,137 - INFO - ✅ Done
