@@ -153521,3 +153521,11 @@
 2026-11-04 15:01:20,039 - INFO - ⏰ Window (IST): 20:25:20 – 20:31:20
 2026-11-04 15:01:20,765 - INFO - 📊 SUMMARY (Last 6 min IST): New=0, Dups=0, Skipped=0, Total DB=26857
 2026-11-04 15:01:20,765 - INFO - ✅ Done
+2026-11-04 15:06:40,215 - INFO - 🚀 BSE Watch starting at 2026-11-04 15:06:40.215925
+2026-11-04 15:06:40,216 - INFO - 📡 Source: cronjobs.org
+2026-11-04 15:06:40,216 - INFO - ✅ BSE Database initialized
+2026-11-04 15:06:45,188 - INFO - ⏰ Window (IST): 20:30:45 – 20:36:45
+2026-11-04 15:06:45,904 - INFO - 📤 Sending 7 alerts to Telegram...
+2026-11-04 15:06:53,020 - INFO - 📊 Excel updated with 500 announcements
+2026-11-04 15:06:53,022 - INFO - 📊 SUMMARY (Last 6 min IST): New=7, Dups=0, Skipped=0, Total DB=26864
+2026-11-04 15:06:53,022 - INFO - ✅ Done
