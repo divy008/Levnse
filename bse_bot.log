@@ -155140,3 +155140,12 @@
 2026-11-05 12:22:34,143 - INFO - 📊 Excel updated with 500 announcements
 2026-11-05 12:22:34,145 - INFO - 📊 SUMMARY (Last 6 min IST): New=50, Dups=15, Skipped=0, Total DB=28994
 2026-11-05 12:22:34,146 - INFO - ✅ Done
+2026-11-05 12:26:35,090 - INFO - 🚀 BSE Watch starting at 2026-11-05 12:26:35.090083
+2026-11-05 12:26:35,090 - INFO - 📡 Source: cronjobs.org
+2026-11-05 12:26:35,090 - INFO - ✅ BSE Database initialized
+2026-11-05 12:26:36,979 - INFO - ⏰ Window (IST): 17:50:36 – 17:56:36
+2026-11-05 12:26:37,318 - INFO - 📤 Sending 25 alerts to Telegram...
+2026-11-05 12:27:05,921 - ERROR - ❌ Telegram error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-11-05 12:27:06,323 - INFO - 📊 Excel updated with 500 announcements
+2026-11-05 12:27:06,325 - INFO - 📊 SUMMARY (Last 6 min IST): New=25, Dups=66, Skipped=0, Total DB=29019
+2026-11-05 12:27:06,325 - INFO - ✅ Done
