@@ -155099,3 +155099,12 @@
 2026-11-05 11:57:18,552 - INFO - 📊 Excel updated with 500 announcements
 2026-11-05 11:57:18,554 - INFO - 📊 SUMMARY (Last 6 min IST): New=45, Dups=1, Skipped=0, Total DB=28791
 2026-11-05 11:57:18,555 - INFO - ✅ Done
+2026-11-05 12:01:50,274 - INFO - 🚀 BSE Watch starting at 2026-11-05 12:01:50.274922
+2026-11-05 12:01:50,275 - INFO - 📡 Source: cronjobs.org
+2026-11-05 12:01:50,275 - INFO - ✅ BSE Database initialized
+2026-11-05 12:01:55,198 - INFO - ⏰ Window (IST): 17:25:55 – 17:31:55
+2026-11-05 12:01:55,592 - INFO - 📤 Sending 46 alerts to Telegram...
+2026-11-05 12:02:43,811 - ERROR - ❌ Telegram error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2026-11-05 12:02:48,007 - INFO - 📊 Excel updated with 500 announcements
+2026-11-05 12:02:48,009 - INFO - 📊 SUMMARY (Last 6 min IST): New=46, Dups=73, Skipped=0, Total DB=28837
+2026-11-05 12:02:48,009 - INFO - ✅ Done
