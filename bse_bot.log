@@ -155413,3 +155413,18 @@
 2026-11-05 15:11:40,684 - INFO - 📊 Excel updated with 500 announcements
 2026-11-05 15:11:40,687 - INFO - 📊 SUMMARY (Last 6 min IST): New=9, Dups=23, Skipped=0, Total DB=29920
 2026-11-05 15:11:40,687 - INFO - ✅ Done
+2026-11-05 15:17:54,959 - INFO - 🚀 BSE Watch starting at 2026-11-05 15:17:54.959881
+2026-11-05 15:17:54,960 - INFO - 📡 Source: cronjobs.org
+2026-11-05 15:17:54,960 - INFO - ✅ BSE Database initialized
+2026-11-05 15:17:59,391 - INFO - ⏰ Window (IST): 20:41:59 – 20:47:59
+2026-11-05 15:18:00,088 - INFO - 📤 Sending 13 alerts to Telegram...
+2026-11-05 15:18:15,401 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-11-05 15:18:30,902 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-11-05 15:18:47,561 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-11-05 15:19:03,065 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-11-05 15:19:18,579 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-11-05 15:19:34,102 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-11-05 15:19:49,610 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-11-05 15:20:05,115 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-11-05 15:20:20,681 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
+2026-11-05 15:20:37,329 - ERROR - ❌ Telegram error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=15)
